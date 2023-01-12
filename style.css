@@ -1,0 +1,58 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  }
+  
+a {
+    color: #0563bb;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: #067ded;
+    text-decoration: none;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.main{
+    text-align: center;
+    padding: 32px;
+}
+
+.circleRegion {
+  width:65vw;
+  height:240vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .circleRegion {
+    width:90vw;
+    height:250vw;
+    margin: auto;
+  }
+}
+
+
