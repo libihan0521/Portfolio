@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bihan Design</title>
 
-    <link href="assets/image/Favicons.png" rel="icon">
+    <link href="image/Favicons.png" rel="icon">
     <link href="" rel="apple-touch-icon"> 
 
     <link rel="stylesheet" href="style.css" />
@@ -24,7 +24,7 @@
 
   <body style="background-color: #F6F5E8;">
     <!-- ======= Hero Section ======= -->
-    <section id="Home">
+    <section id="Home" style="margin:0; padding:0;">
       <div style="width: 100%; height: 46vw; background-image: url('image/banner.png'); background-repeat: no-repeat;background-size: 100%; position: relative; top:0px;"> 
           <img id="titleBG" src="image/titleBG2.gif" style="width: 65%; position: absolute; left:22%; top:8vw;">
           <img  onmouseenter="showPortrait()" onmouseleave="closePortrait()" id="title"  src="image/title.png" style="width: 45%; position:absolute; left:36%; top:21vw;">   
@@ -35,22 +35,22 @@
         <nav id="navbar" class="nav-menu" style="z-index: 20;">
           <ul>
             <li>
-              <a id="HomeIcon" href="#Home" style="background:#CD5641;"><img class="navIcon" src="image/HomeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Home</span></a>
+              <a id="HomeIcon" href="#Home" style="background:#CD5641; text-decoration-line: none;"><img class="navIcon" src="image/HomeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Home</span></a>
             </li>
             <li onmouseenter="portfolioActive()" onmouseleave="portfolioInactive()">
-              <a id="PortfolioIcon" href="#Portfolio" style="background:#EBBD5B;"><img class="navIcon" src="image/PortfolioIcon.svg" style="width:27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Portfolio</span></a>
+              <a id="PortfolioIcon" href="#Portfolio" style="background:#EBBD5B; text-decoration-line: none;"><img class="navIcon" src="image/PortfolioIcon.svg" style="width:27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Portfolio</span></a>
             </li>
             <li onmouseenter="aboutActive()" onmouseleave="aboutInactive()">
-              <a id="AboutIcon" href="#About"  style="background: #589F4F;"><img class="navIcon" src="image/AboutIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;About</span></a>
+              <a id="AboutIcon" href="#About"  style="background: #589F4F; text-decoration-line: none;"><img class="navIcon" src="image/AboutIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;About</span></a>
             </li>
             <li onmouseenter="skillsActive()" onmouseleave="skillsInactive()">
-              <a id="SkillsIcon" href="#Skills" style="background: #4FADAC;"><img class="navIcon" src="image/SkillIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Skills</span></a>
+              <a id="SkillsIcon" href="#Skills" style="background: #4FADAC; text-decoration-line: none;"><img class="navIcon" src="image/SkillIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Skills</span></a>
             </li>
             <li onmouseenter="resumeActive()" onmouseleave="resumeInactive()">
-              <a id="ResumeIcon" href="#Resume" style="background: #3548F9; "><img class="navIcon" src="image/ResumeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Resume</span></a>
+              <a id="ResumeIcon" href="#Resume" style="background: #3548F9; text-decoration-line: none;"><img class="navIcon" src="image/ResumeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Resume</span></a>
             </li>
             <li onmouseenter="contactActive()" onmouseleave="contactInactive()">
-              <a id="ContactIcon" href="#Contact" style="background: #A375D2;"><img class="navIcon" src="image/ContactIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Contact</span></a>
+              <a id="ContactIcon" href="#Contact" style="background: #A375D2; text-decoration-line: none;"><img class="navIcon" src="image/ContactIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Contact</span></a>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@
     <!-- End Hero -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="Portfolio" style="padding-top: 2vw;"  onmouseenter="portfolioActive()" onmouseleave="portfolioInactive()">
+    <section id="Portfolio" class="sectionBlock"  onmouseover="portfolioActive()" onmouseout="portfolioInactive()">
       <div>
         <h1 style="color: #EBBD5B;">PORTFOLIO</h1>
       </div>
@@ -106,14 +106,14 @@
     <!-- End Portfolio -->
 
     <!-- ======= About Section ======= -->
-    <section id="About" onmouseenter="aboutActive()" onmouseleave="aboutInactive()" class="sectionBlock">
+    <section id="About" onmouseover="aboutActive()" onmouseout="aboutInactive()" class="sectionBlock">
       <div>
        <h1 style="color: #589F4F;">ABOUT</h1>
       </div>
       <div class="aboutColumn">
         <div class ="aboutText">
           <p style="margin:0;"> I am Bihan Li (李碧涵). "bi-碧" means pure green, and "han-涵" means ocean-vast deep water.</p>
-          <img src="image/aboutGraphic.svg" style="width:80%;height:auto; margin:5%;">
+          <img src="image/aboutGraphic.svg" style="width:100%;height:auto; margin:5%;">
           <p>&nbsp</p>
           <p>I learned Landscape Architecture in college. But then I found I am more interested in designing things combined with business, media, and technology instead of terrain, architecture, and plants. Therefore, I pursue an MFA degree in the Design and Technology program at Parsons.
           </p>
@@ -131,7 +131,7 @@
     </section>
     <!-- End About -->
     <!-- ======= Skills Section ======= -->
-    <section id="Skills" onmouseenter="skillsActive()" onmouseleave="skillsInactive()" class="sectionBlock">
+    <section id="Skills" onmouseover="skillsActive()" onmouseout="skillsInactive()" class="sectionBlock">
       <div>
         <div>
           <h1 style="color: #4FADAC; margin: 0;">SKILLS</h1>
@@ -215,39 +215,61 @@
     <!-- End Skills -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="Resume" onmouseenter="resumeActive()" onmouseleave="resumeInactive()" class="sectionBlock">
+    <section id="Resume" onmouseover="resumeActive()" onmouseout="resumeInactive()" class="sectionBlock">
       <div class="mainTitle">
-        <h1 style="text-align: center; color: #3548F9;">RESUME</h1>
+        <h1 style="text-align: center; color: #3548F9; margin:0 0 28px 0;">RESUME</h1>
       </div>
       <div class="resumeSection">
         <div class="resumeColumn">
-         <div class="leftborder"></div>
-         <div style="margin:0 60px 0 60px;">
+         <div class="leftborder">
+          <img src="image/resumeBorder1.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
+          <img src="image/resumeBorder2.svg" style="width:100%;height:auto; margin:45px 0 auto 0; padding:0;">
+         </div>
+         <div style="margin:0 60px 0 32px;">
            <h3 class="resumeHead">EDUCATION</h3>
            <h4 class="secondHead">Master of fine art </h4>
            <p><span class="yearText">2020.8~2021.8 & 2022.8~2023.5</span><br>Parsons School of Design-Design and Technology </p>
            <p><span class="yearText">2020.8~2021.6</span><br>Tsinghua University&nbsp-Exchange student</p>
            <h4 class="secondHead">Bachelor of engineering </h4>
-           <p><span class="yearText">2014.9~2019.7</span><br>Xi'an University of Architecture and Technology</p>
+           <p><span class="yearText">2014.9~2019.7</span><br>Xi'an University of Architecture and Technology-Landscape Architecture</p>
            <p>&nbsp</p>
            <h3 class="resumeHead">AWARDS</h3>
            <p><span class="yearText">2021</span><br>Mobile Application Innovation Competition (Issued by Apple):<br>First prize in South China Division</p>
-           <p><span class="yearText">2020</span><br>URS China Interactive Public Art Installation Design Competition 2020<br>Global Top 30</p>
+           <p><span class="yearText">2020</span><br>URS China Interactive Public Art Installation Design Competition 2020:<br>Global Top 30</p>
            <p>&nbsp</p>
          </div>
         </div>
         <div class="resumeColumn">
-          <div class="leftborder"></div>
-          <div style="margin:0 60px 0 60px;">
+          <div class="leftborder">
+            <img src="image/resumeBorder3.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
+          </div>
+          <div style="margin:0 60px 0 32px;">
             <h3 class="resumeHead">WORK EXPERIENCE</h3>
-            <h4 class="secondHead">Roblox<span style="font-weight: normal;"> | Virtual Fashion designer</span></h4>
-            <p>• Create layered clothing products for Parsons Roblox virtual fashion studio</p>
-            <h4 class="secondHead">Product Manager & Game Designer & 3D Artist </h4>
-            <p>•Guide a team of 4 to develop game project</p>
-            <p>2020~2021<br>Tsinghua University&nbsp(Exchange student)Tsinghua University&nbsp( Unige student)</p>
-            <h4 class="secondHead">UX/UI Design Intern </h4>
-            <p>2014~2019 <br>Xi'an University of Architecture and Technology</p>
-            <h4 class="secondHead">New Media Operation</h4>
+            <h4 style="margin:32px 0 0 0; padding: 0;" class="secondHead"><span class="yearText">2023.2~Now</span><br>Roblox<span style="font-weight: normal;"> | Virtual Fashion designer</span></h4>
+            <ul class="resumeList">
+              <li>Create layered clothing products in DCC tools and Roblox studio</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2021.5~2022.7</span><br><a href="https://ottor.cn/">Ottor Game</a><span style="font-weight: normal;"> | Game Designer & 3D Artist</span></h4>
+            <ul class="resumeList">
+              <li>Lead a team of 4 to develop a sandbox game</li>
+              <li>Create 3D assets</li>
+              <li>Conduct market research</li>
+              <li>Write documents for the programmer </li>
+              <li>Polish the business plan for attracting investment</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2020.8~2020.12</span><br><a href="https://www.citydnatech.com">CityDNA</a><span style="font-weight: normal;"> | UX Intern</span></h4>
+            <ul class="resumeList">
+              <li>Design the features of the <a href="https://pinsurvey.citydnatech.com/">PinSurvey</a> mobile application and PinSurvey web servers platform.</li>
+              <li>Design the introduction website for PinSurvey.</li>
+              <li>Design the features of the PinMage mobile application.</li>
+              <li>Design the map marker features of the <a href="https://www.pinstreet.cn/">PinStreet</a>  mobile application.</li>
+              <li>Create content for the social media account of PinSurvey, using manga to introduce the functions of PinSurvey to the mass public.</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2019.1~2019.2</span><br><a href="https://www.racstudio.cn/rac/index/index.html">RAC studio</a><span style="font-weight: normal;"> | Media Operation</span></h4>
+            <ul class="resumeList">
+              <li>Write articles, and design graphic for the media account.</li>
+              <li>Arrange the space for off-line activities.</li>
+            </ul>
           </div>
          </div>
       </div>
@@ -255,7 +277,7 @@
     <!-- End Resume -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="Contact" onmouseenter="contactActive()" onmouseleave="contactInactive()" class="sectionBlock">
+    <section id="Contact" onmouseover="contactActive()" onmouseout="contactInactive()" class="sectionBlock">
       <div>
         <div class="mainTitle">
           <h1 style="text-align: center; color: #A375D2;">CONTACT</h1>
@@ -263,7 +285,7 @@
         <div class="contactInfo" style="width:80%; margin:auto; text-align:left; padding-bottom:7vw;padding-left:6vw;">
           <div class="contactItem">
             <img class="contactIcon" src="image/contactLocationIcon.svg">
-            <h3 style="">Location</h3>
+            <h3>Location</h3>
             <p>New Port, NJ 07310</p>
           </div>         
           <div class="contactItem">

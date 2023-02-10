@@ -10,6 +10,7 @@ body {
 a {
     color: #0563bb;
     text-decoration: none;
+    text-decoration-line: underline;
   }
   
 a:hover {
@@ -214,7 +215,7 @@ p{
 
 }
 
-/*-----------# Contact-----------*/
+/*-----------Contact-----------*/
 .contactInfo {
   display: flex;
   flex-direction: row;
@@ -244,7 +245,7 @@ p{
   width:50%;
   padding:0 8px 0 8px;
   margin: 0 48px 0 48px;
-  border-left: #2444F5;
+  border-left: #589F4F;
   border-width: 6px;
   border-left-style:dotted;
 }
@@ -276,6 +277,10 @@ p{
 }
 .resumeColumn{
   position:relative;
+  width:50%;
+  left:0;
+  margin:0;
+  padding:0;
 }
 
 .yearText{
@@ -293,15 +298,17 @@ p{
 }
 
 .leftborder{
-  width:24px; height:100%; position:absolute; top:0; left:24px; background-color: #1C2122;
+  width:24px; 
+  height:100%; 
+  position:absolute; 
+  top:0; 
+  left:0px; 
+  padding:0; 
+  margin:0; 
 }
 
-.borderDot{
-  width: 24px;
-  height:24px;
-  border-radius: 25px;
-  background:#3548F9;
-  margin: 0;
+.resumeList{
+  margin:8px auto 0 18px;
   padding:0;
 }
 
@@ -309,10 +316,10 @@ p{
   display: flex;
   flex-direction: row;
   text-align: left; 
-  width:70%; 
+  width:75%; 
   height:auto; 
-  margin:0 auto 0 auto;
-  padding:0 auto 0 auto;
+  margin:auto;
+  padding:0;
 }
 @media screen and (max-width: 800px) {
   .resumeSection{
