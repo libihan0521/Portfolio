@@ -4,13 +4,13 @@ let n=200;
 
 function showPortrait() {
         document.getElementById("clearPortrait").style.visibility = "visible";
-        document.getElementById("title").src = "assets/image/titleBlur.png";
+        document.getElementById("title").src = "image/titleBlur.png";
         document.getElementById("titleBG").style.visibility = "hidden";   
   }
 
 function closePortrait() {
         document.getElementById("clearPortrait").style.visibility = "hidden";
-        document.getElementById("title").src = "assets/image/title.png";
+        document.getElementById("title").src = "image/title.png";
         document.getElementById("titleBG").style.visibility = "visible";
   }
 

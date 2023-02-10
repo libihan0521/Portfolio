@@ -22,21 +22,56 @@ a:hover {
 h1{
   font-family: 'Anton';
   font-size: 60px;
+  text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2{
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3{
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4{
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: bold;
+}
+
+p{
+  font-family: 'Roboto';
+  font-size: 17px;
+}
 
 
 * {
   box-sizing: border-box;
 }
 
+/*--------------section-------------------------*/
+.sectionBlock {
+  margin:160px auto 0 auto;
+}
 
-.main{
-    text-align: center;
+@media screen and (max-width: 600px) {
+  .sectionBlock {
+    margin:120px auto 0 auto;
+  }
 }
 
 
-/*--------------responsive parts-------------------------*/
+/*--------------portfolio-------------------------*/
 .circleRegion {
   width:65vw;
   height:240vw;
@@ -110,79 +145,180 @@ h1{
 
 
 /*-----------# Skills-----------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
+.progressContainer {
+  width: 360px;
+  height: 12px;
+  border-radius: 25px;
+  background: #DBEBEA;
   margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
+  padding:0;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.progressBar {
+  height: inherit;
+  border-radius: 25px;
+  background:linear-gradient(90deg,#00FC28, #05dada);
+  margin: 0;
+  padding:0;
 }
 
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
+.skillName{
+  font-family: 'Comfortaa';
+  font-size: 13px;
+  color: #1C2122;
+  font-weight: bolder;
+  margin-bottom: 8px;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
+.skillContainer{
+  padding: 6px;;
+  margin: 0 24PX 24px 40px;
+}
+
+.skillTypeName{
+  font-family: 'Anton';
+  font-size: 24px;
+  color:#DBEBEA;
+  text-align: left;
+  width:90%;
+  padding-left:8vw;
+  margin:32px auto 8px auto;
+}
+
+.skillBlock{
+  display: flex;
+  flex-direction: row;
+  text-align: left; 
+  width:100%; 
+  height:auto; 
+  margin:auto;
+  padding:0;
+  margin:0 48px 0 0;
+}
+
+.skillRow{
+  width:70%; 
+  height:auto; 
+  margin:0 0 0 10vw; 
+  padding:0;
+}
+
+@media screen and (max-width: 900px) {
+  .skillBlock{
+    flex-direction: column;
+  }
+  .skillTypeName{
+    text-align: center;
+    padding:0;
+  }
+
 }
 
 /*-----------# Contact-----------*/
-.contact .info {
-  width: 100%;
-  margin-top: 40px;
+.contactInfo {
+  display: flex;
+  flex-direction: row;
 }
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #45505b;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #728394;
-}
-
-.contact .info span{
-  width:30%;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding:0,30px,30px,30px;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
   }
 }
 
+.contactItem{
+  width:320px; 
+  height: 100px; 
+  margin: auto;
+}
+
+.contactIcon{
+  width:90px;
+  float:left;
+  padding: 18px;
+}
+
+/*-----------About-----------*/
+.aboutText{
+  width:50%;
+  padding:0 8px 0 8px;
+  margin: 0 48px 0 48px;
+  border-left: #2444F5;
+  border-width: 6px;
+  border-left-style:dotted;
+}
+.aboutColumn{
+  display: flex;
+  flex-direction: row;
+  text-align: left; 
+  width:60%; 
+  height:auto; 
+  margin:0 auto 0 auto;
+  padding:0 auto 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .aboutColumn{
+    width:100%;
+    flex-direction: column;
+  }
+  .aboutText{
+    width:80%;
+    margin: 40px auto 0 auto;
+  }
+}
+
+/*-----------Resume-----------*/
+.resumeHead{
+  color: #3548F9;
+  margin: 24px auto 0 0;
+  padding:0;
+}
+.resumeColumn{
+  position:relative;
+}
+
+.yearText{
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight:bold;
+  margin:24px auto 0px 0;
+  padding:0;
+  color: #646776;
+}
+
+.secondHead{
+  margin: 38px auto 0 0;
+  padding:0;
+}
+
+.leftborder{
+  width:24px; height:100%; position:absolute; top:0; left:24px; background-color: #1C2122;
+}
+
+.borderDot{
+  width: 24px;
+  height:24px;
+  border-radius: 25px;
+  background:#3548F9;
+  margin: 0;
+  padding:0;
+}
+
+.resumeSection{
+  display: flex;
+  flex-direction: row;
+  text-align: left; 
+  width:70%; 
+  height:auto; 
+  margin:0 auto 0 auto;
+  padding:0 auto 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .resumeSection{
+    flex-direction: column;
+  }
+}
 
 
 
