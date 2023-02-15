@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto';
+    color: #1C2122;
+    margin: 0;
+  }
+  
+a {
+    color: #0563bb;
+    text-decoration: none;
+    text-decoration-line: underline;
+  }
+  
+a:hover {
+    color: #067ded;
+    text-decoration: none;
+  }
+
+
+
+h1{
+  font-family: "Abril Fatface";
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #112970;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2{
+  font-family: 'Abril Fatface';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3{
+  font-family: 'Abril Fatface';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4{
+  font-family: 'Abril Fatface';
+  font-size: 19px;
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  color:#ffffff;
+}
+
+p{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color:#ffffff;
+  font-weight:lighter;
+  letter-spacing: 0.4px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+/*--------------section-------------------------*/
+.sectionBlock {
+  margin:2vw auto 0 auto;
+  width:80%;
+}
+
+@media screen and (max-width: 600px) {
+  .sectionBlock {
+    margin:60px auto 0 auto;
+  }
+}
+
+/*--------------columRow-------------------------*/
+.columRow{
+  display: flex;
+  flex-direction: row;
+  text-align: left; 
+  width:100%; 
+  height:auto; 
+  margin:0 auto 0 auto;
+  padding:0 auto 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .columRow{
+    width:100%;
+    flex-direction: column;
+  }
+}
