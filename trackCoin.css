@@ -21,7 +21,7 @@ h1{
   font-family: "Abril Fatface";
   font-size: 36px;
   letter-spacing: 1px;
-  color: #112970;
+  color: #0048EE;
 }
 
 @media screen and (max-width: 600px) {
@@ -31,15 +31,18 @@ h1{
 }
 
 h2{
-  font-family: 'Abril Fatface';
+  font-family: 'Montserrat';
   font-size: 32px;
   font-weight: bold;
+  color: #0048EE;
 }
 
 h3{
   font-family: 'Abril Fatface';
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 590;
+  letter-spacing: 1.5px;
+  color:#112970;
 }
 
 h4{
@@ -55,6 +58,10 @@ p{
   font-size: 16px;
   color:#112970;
   letter-spacing: 0.4px;
+}
+
+ul{
+  color:#112970;
 }
 
 
@@ -88,7 +95,7 @@ p{
   margin:0 auto 0 auto;
   padding:0 auto 0 auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .columRow{
     width:100%;
     flex-direction: column;
@@ -96,12 +103,14 @@ p{
 }
 
 .columChildren1{
-  width:37.5vw; margin-right: 3.75vw;
+  width:37.5vw; 
+  margin-right: 3.75vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .columChildren1{
-    width:100%; margin: auto;
+    width:100%; 
+    margin: auto;
   }
 }
 
@@ -109,27 +118,58 @@ p{
   width:47vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .columChildren2{
     width:100%;
   }
 }
 
+.columChildren3{
+  width:45vw; margin-right: 3.75vw;
+}
+
+@media screen and (max-width: 600px) {
+  .columChildren3{
+    width:100%;
+  }
+}
+
+.columChildren4{
+  width:30%; 
+  margin:2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .columChildren4{
+    width:100%;
+  }
+}
+
+
 /*--------------Animation-------------------------*/
 @keyframes topHifiGo {
-  0%   {top:50vw;}
-  100% {top:22vw;}
+  0%   {top:50vw;opacity:0;}
+  100% {top:22vw;opacity:1;}
 }
 
 .topHifi1{
   display: flex; 
+  opacity:0;
   flex-direction: row; 
   width:100%; 
   height:auto; 
   margin:auto; 
   position:absolute; 
-  top:22vw; 
+  top:50vw; 
   margin:auto;
   animation-name:topHifiGo;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes topBG{
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+
