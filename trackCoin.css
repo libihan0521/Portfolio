@@ -47,14 +47,13 @@ h4{
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 0.8px;
-  color:#ffffff;
+  color:#112970;
 }
 
 p{
   font-family: 'Montserrat';
   font-size: 16px;
-  color:#ffffff;
-  font-weight:lighter;
+  color:#112970;
   letter-spacing: 0.4px;
 }
 
@@ -94,4 +93,43 @@ p{
     width:100%;
     flex-direction: column;
   }
+}
+
+.columChildren1{
+  width:37.5vw; margin-right: 3.75vw;
+}
+
+@media screen and (max-width: 800px) {
+  .columChildren1{
+    width:100%; margin: auto;
+  }
+}
+
+.columChildren2{
+  width:47vw;
+}
+
+@media screen and (max-width: 800px) {
+  .columChildren2{
+    width:100%;
+  }
+}
+
+/*--------------Animation-------------------------*/
+@keyframes topHifiGo {
+  0%   {top:50vw;}
+  100% {top:22vw;}
+}
+
+.topHifi1{
+  display: flex; 
+  flex-direction: row; 
+  width:100%; 
+  height:auto; 
+  margin:auto; 
+  position:absolute; 
+  top:22vw; 
+  margin:auto;
+  animation-name:topHifiGo;
+  animation-duration: 2.5s;
 }
