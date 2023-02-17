@@ -54,7 +54,19 @@ function contactInactive(){
     document.getElementById("ContactIcon").style.width = "60px";
 }
 
+function playAnimation(){
+    document.getElementById("la01").style.animationName = "laImage1";
+    document.getElementById("la02").style.animationName = "laImage2";
+    document.getElementById("la03").style.animationName = "laImage3";
+    document.getElementById("la04").style.animationName = "laImage4";
+}
 
+function withdrawAnimation(){
+    document.getElementById("la01").style.animationName = "laImage1-1";
+    document.getElementById("la02").style.animationName = "laImage2-1";
+    document.getElementById("la03").style.animationName = "laImage3-1";
+    document.getElementById("la04").style.animationName = "laImage4-1";
+}
 
 
 

@@ -328,4 +328,52 @@ p{
 }
 
 
+/*-----------Animation-----------*/
+@keyframes laImage1{
+  0%   {top:15vw; left:1vw;}
+  100% {top:12vw; left:-2vw;}
+}
+
+@keyframes laImage2{
+  0%   {top:14vw; left:21vw;}
+  100% {top:17vw; left:24vw;}
+}
+
+@keyframes laImage3{
+  0%   {top:11vw; left:9vw;}
+  100% {top:7vw; left:9vw;}
+}
+
+@keyframes laImage4{
+  0%   {top:20vw; left:12vw;}
+  100% {top:23vw; left:12vw;}
+}
+
+
+@keyframes laImage1-1{
+  0% {top:12vw; left:-2vw;}
+  100%   {top:15vw; left:1vw;}
+}
+
+@keyframes laImage2-1{
+  0% {top:17vw; left:24vw;}
+  100%   {top:14vw; left:21vw;}
+}
+
+@keyframes laImage3-1{
+  0% {top:7vw; left:9vw;}
+  100%   {top:11vw; left:9vw;}
+}
+
+@keyframes laImage4-1{
+  0% {top:23vw; left:12vw;}
+  100%   {top:20vw; left:12vw;}
+}
+
+.laImage{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 
