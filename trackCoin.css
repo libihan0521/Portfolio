@@ -173,25 +173,7 @@ ul{
   100% {opacity:1;}
 }
 
-@keyframes laImage1{
-  0%   {opacity:0;}
-  100% {top:15vw; left:1vw;}
-}
 
-@keyframes laImage2{
-  0%   {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes laImage3{
-  0%   {opacity:0;}
-  100% {opacity:1;}
-}
-
-@keyframes laImage4{
-  0%   {opacity:0;}
-  100% {opacity:1;}
-}
 
 
 

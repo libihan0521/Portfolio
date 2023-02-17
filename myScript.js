@@ -54,18 +54,36 @@ function contactInactive(){
     document.getElementById("ContactIcon").style.width = "60px";
 }
 
-function playAnimation(){
+function playlaAnimation(){
     document.getElementById("la01").style.animationName = "laImage1";
     document.getElementById("la02").style.animationName = "laImage2";
     document.getElementById("la03").style.animationName = "laImage3";
     document.getElementById("la04").style.animationName = "laImage4";
 }
 
-function withdrawAnimation(){
+function withdrawlaAnimation(){
     document.getElementById("la01").style.animationName = "laImage1-1";
     document.getElementById("la02").style.animationName = "laImage2-1";
     document.getElementById("la03").style.animationName = "laImage3-1";
     document.getElementById("la04").style.animationName = "laImage4-1";
+}
+
+function playMgAnimation(){
+    document.getElementById("mg01").style.animationName = "mgImage1";
+    document.getElementById("mg01").setAttribute("src","Margot/margot2-1.jpg");
+    document.getElementById("mg02").style.animationName = "mgImage2";
+    document.getElementById("mg02").setAttribute("src","Margot/margot3-1.jpg");
+    document.getElementById("mg03").style.animationName = "mgImage3";
+    document.getElementById("mg03").setAttribute("src","Margot/margot1-1.jpg");
+}
+
+function withdrawMgAnimation(){
+    document.getElementById("mg01").style.animationName = "mgImage1-1";
+    document.getElementById("mg01").setAttribute("src","Margot/margot2.jpg");
+    document.getElementById("mg02").style.animationName = "mgImage2-1";
+    document.getElementById("mg02").setAttribute("src","Margot/margot3.jpg");
+    document.getElementById("mg03").style.animationName = "mgImage3-1";
+    document.getElementById("mg03").setAttribute("src","Margot/margot1.jpg");
 }
 
 

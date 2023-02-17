@@ -328,52 +328,87 @@ p{
 }
 
 
-/*-----------Animation-----------*/
+/*-----------laAnimation-----------*/
 @keyframes laImage1{
-  0%   {top:15vw; left:1vw;}
-  100% {top:12vw; left:-2vw;}
+  0%   {top:45%; left:10%;}
+  100% {top:45%; left:-5%;}
 }
 
 @keyframes laImage2{
-  0%   {top:14vw; left:21vw;}
-  100% {top:17vw; left:24vw;}
+  0%   {top:44%; left:55%;}
+  100% {top:44%; left:70%;}
 }
 
 @keyframes laImage3{
-  0%   {top:11vw; left:9vw;}
-  100% {top:7vw; left:9vw;}
+  0%   {top:35%; left:30%;}
+  100% {top:20%; left:30%;}
 }
 
 @keyframes laImage4{
-  0%   {top:20vw; left:12vw;}
-  100% {top:23vw; left:12vw;}
+  0%   {top:60%; left:25%;}
+  100% {top:70%; left:25%;}
 }
 
 
 @keyframes laImage1-1{
-  0% {top:12vw; left:-2vw;}
-  100%   {top:15vw; left:1vw;}
+  0% {top:45%; left:-5%;}
+  100%   {top:45%; left:10%;}
 }
 
 @keyframes laImage2-1{
-  0% {top:17vw; left:24vw;}
-  100%   {top:14vw; left:21vw;}
+  0% {top:44%; left:70%;}
+  100%   {top:44%; left:55%;}
 }
 
 @keyframes laImage3-1{
-  0% {top:7vw; left:9vw;}
-  100%   {top:11vw; left:9vw;}
+  0% {top:20%; left:30%;}
+  100%   {top:35%; left:30%;}
 }
 
 @keyframes laImage4-1{
-  0% {top:23vw; left:12vw;}
-  100%   {top:20vw; left:12vw;}
+  0% {top:70%; left:25%;}
+  100%   {top:60%; left:25%;}
 }
 
-.laImage{
+.coverImage{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
+/*-----------mgAnimation-----------*/
+@keyframes mgImage1{
+  0%   {width:50%;right:45%;bottom:19.5%;}
+  100% {width:55%;right:60%;bottom:16.7%;}
+}
+
+@keyframes mgImage2{
+  0%   {width:50%;right:5%;bottom:19.5%;}
+  100% {width:55%;right:-10%;bottom:16.7%;}
+}
+
+@keyframes mgImage3{
+  0%   {width:60%;bottom:16%;right:20%;}
+  100% {width:70%;bottom:12%;right:15%;}
+}
+
+@keyframes mgImage1-1{
+  0%   {width:55%;right:60%;bottom:16.7%;}
+  100% {width:50%;right:45%;bottom:19.5%;}
+}
+
+@keyframes mgImage2-1{
+  0%   {width:55%;right:-10%;bottom:16.7%;}
+  100% {width:50%;right:5%;bottom:19.5%;}
+}
+
+@keyframes mgImage3-1{
+  0%   {width:70%;bottom:12%;right:15%;}
+  100% {width:60%;bottom:16%;right:20%;}
+}
+
+
+
+
 
 
