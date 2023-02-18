@@ -331,12 +331,12 @@ p{
 /*-----------laAnimation-----------*/
 @keyframes laImage1{
   0%   {top:45%; left:10%;}
-  100% {top:45%; left:-5%;}
+  100% {top:45%; left:-10%;}
 }
 
 @keyframes laImage2{
   0%   {top:44%; left:55%;}
-  100% {top:44%; left:70%;}
+  100% {top:44%; left:75%;}
 }
 
 @keyframes laImage3{
@@ -348,15 +348,18 @@ p{
   0%   {top:60%; left:25%;}
   100% {top:70%; left:25%;}
 }
-
+@keyframes laTitle{
+  0%   {top:8%;}
+  100% {top:-2%;}
+}
 
 @keyframes laImage1-1{
-  0% {top:45%; left:-5%;}
+  0% {top:45%; left:-10%;}
   100%   {top:45%; left:10%;}
 }
 
 @keyframes laImage2-1{
-  0% {top:44%; left:70%;}
+  0% {top:44%; left:75%;}
   100%   {top:44%; left:55%;}
 }
 
@@ -368,6 +371,11 @@ p{
 @keyframes laImage4-1{
   0% {top:70%; left:25%;}
   100%   {top:60%; left:25%;}
+}
+
+@keyframes laTitle-1{
+  0%   {top:-2%;}
+  100% {top:8%;}
 }
 
 .coverImage{
@@ -407,6 +415,46 @@ p{
   100% {width:60%;bottom:16%;right:20%;}
 }
 
+/*-----------fgAnimation-----------*/
+@keyframes fgIitle1{
+  0%   {top:8%; left:8%;}
+  100% {top:0%; left:0%;}
+}
+
+@keyframes fgIitle1-1{
+  0%   {top:0%; left:0%;}
+  100% {top:8%; left:8%;}
+}
+
+@keyframes fgIitle2{
+  0%   {bottom:8%; left:8%;}
+  100% {right:60%;bottom:16.7%;}
+}
+
+@keyframes fgIitle2-1{
+  0%   {right:45%;bottom:19.5%;}
+  100% {bottom:8%; left:8%;}
+}
+
+@keyframes fgModel1{
+  0%   {width:78%;bottom:20%; left:6%;}
+  100% {width:110%;bottom:0; left:-14%;}
+}
+
+@keyframes fgModel1-1{
+  0%   {width:110%;bottom:0; left:-14%;}
+  100% {width:78%;bottom:20%; left:6%;}
+}
+
+@keyframes fgModel2{
+  0%   {width:78%;top:25%; right:3%;}
+  100% {width:110%;top:5%; right:-17%;}
+}
+
+@keyframes fgModel2-1{
+  0%   {width:110%;top:5%; right:-17%;}
+  100% {width:78%;top:25%; right:3%;}
+}
 
 
 

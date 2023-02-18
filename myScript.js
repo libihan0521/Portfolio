@@ -59,6 +59,7 @@ function playlaAnimation(){
     document.getElementById("la02").style.animationName = "laImage2";
     document.getElementById("la03").style.animationName = "laImage3";
     document.getElementById("la04").style.animationName = "laImage4";
+    document.getElementById("laTitle").style.animationName = "laTitle";
 }
 
 function withdrawlaAnimation(){
@@ -66,6 +67,7 @@ function withdrawlaAnimation(){
     document.getElementById("la02").style.animationName = "laImage2-1";
     document.getElementById("la03").style.animationName = "laImage3-1";
     document.getElementById("la04").style.animationName = "laImage4-1";
+    document.getElementById("laTitle").style.animationName = "laTitle-1";
 }
 
 function playMgAnimation(){
@@ -86,5 +88,22 @@ function withdrawMgAnimation(){
     document.getElementById("mg03").setAttribute("src","Margot/margot1.jpg");
 }
 
+function playFgAnimation(){
+    document.getElementById("fgT1").style.animationName = "fgTitle1";
+    document.getElementById("fgT2").style.animationName = "fgTitle2";
+    document.getElementById("fgModel2").style.animationName = "fgModel2";
+    document.getElementById("fgModel2").setAttribute("src","FashionGame/CoverModel2-1.png");
+    document.getElementById("fgModel1").style.animationName = "fgModel1";
+    document.getElementById("fgModel1").setAttribute("src","FashionGame/CoverModel1-1.png");
+}
+
+function withdrawFgAnimation(){
+    document.getElementById("fgT1").style.animationName = "fgTitle1-1";
+    document.getElementById("fgT2").style.animationName = "fgTitle2-1";
+    document.getElementById("fgModel2").style.animationName = "fgModel2-1";
+    document.getElementById("fgModel2").setAttribute("src","FashionGame/CoverModel2.png");
+    document.getElementById("fgModel1").style.animationName = "fgModel1-1";
+    document.getElementById("fgModel1").setAttribute("src","FashionGame/CoverModel1.png");
+}
 
 
