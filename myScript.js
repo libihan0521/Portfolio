@@ -118,4 +118,12 @@ function withdrawTcAnimation(){
     document.getElementById("TcCover2").style.animationName = "TcCover2-1";
 }
 
+function p5cover(){
+    document.getElementById("p5Cover").setAttribute("src","image/P5Cover.gif");
+}
+
+function p5cover1(){
+    document.getElementById("p5Cover").setAttribute("src","image/P5Cover0.png");
+}
+
 
