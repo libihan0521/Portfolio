@@ -416,23 +416,23 @@ p{
 }
 
 /*-----------fgAnimation-----------*/
-@keyframes fgIitle1{
-  0%   {top:8%; left:8%;}
-  100% {top:0%; left:0%;}
+@keyframes fgTitle1{
+  0%   {top:8%;}
+  100% {top:-12%;}
 }
 
-@keyframes fgIitle1-1{
-  0%   {top:0%; left:0%;}
-  100% {top:8%; left:8%;}
+@keyframes fgTitle1-1{
+  0%   {top:-12%;}
+  100% {top:8%;}
 }
 
-@keyframes fgIitle2{
+@keyframes fgTitle2{
   0%   {bottom:8%; left:8%;}
-  100% {right:60%;bottom:16.7%;}
+  100% {bottom:-12%; left:-8%;}
 }
 
-@keyframes fgIitle2-1{
-  0%   {right:45%;bottom:19.5%;}
+@keyframes fgTitle2-1{
+  0%   {bottom:-12%; left:-8%;}
   100% {bottom:8%; left:8%;}
 }
 
@@ -456,7 +456,32 @@ p{
   100% {width:78%;top:25%; right:3%;}
 }
 
+@keyframes fgMiddle{
+  0%   {width:0.1%;opacity:0;bottom:30%; left:45%;}
+  100% {width:200%;opacity:1;bottom:5%; left:-45%;}
+}
+@keyframes fgMiddle-1{
+  0%   {width:200%;opacity:1;bottom:5%; left:-45%;}
+  100% {width:0.1%;opacity:0;bottom:30%; left:45%;}
+}
 
 
+/*-----------TcAnimation-----------*/
 
+@keyframes TcCover1{
+  0%   {left:56%;bottom:19%;width:26%;}
+  100% {left:71%;bottom:16.5%;width:28.5%;}
+}
+@keyframes TcCover1-1{
+  0%   {left:71%;bottom:16.5%;width:28.5%;}
+  100% {left:56%;bottom:19%;width:26%;}
+}
 
+@keyframes TcCover2{
+  0%   {left:16%;bottom:19%;width:26%;}
+  100% {left:1%;bottom:16.5%;width:28.5%;}
+}
+@keyframes TcCover2-1{
+  0%   {left:1%;bottom:16.5%;width:28.5%;}
+  100% {left:16%;bottom:19%;width:26%;}
+}

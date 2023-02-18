@@ -95,6 +95,7 @@ function playFgAnimation(){
     document.getElementById("fgModel2").setAttribute("src","FashionGame/CoverModel2-1.png");
     document.getElementById("fgModel1").style.animationName = "fgModel1";
     document.getElementById("fgModel1").setAttribute("src","FashionGame/CoverModel1-1.png");
+    document.getElementById("fgMiddle").style.animationName = "fgMiddle";
 }
 
 function withdrawFgAnimation(){
@@ -104,6 +105,17 @@ function withdrawFgAnimation(){
     document.getElementById("fgModel2").setAttribute("src","FashionGame/CoverModel2.png");
     document.getElementById("fgModel1").style.animationName = "fgModel1-1";
     document.getElementById("fgModel1").setAttribute("src","FashionGame/CoverModel1.png");
+    document.getElementById("fgMiddle").style.animationName = "fgMiddle-1";
+}
+
+function playTcAnimation(){
+    document.getElementById("TcCover1").style.animationName = "TcCover1";
+    document.getElementById("TcCover2").style.animationName = "TcCover2";
+}
+
+function withdrawTcAnimation(){
+    document.getElementById("TcCover1").style.animationName = "TcCover1-1";
+    document.getElementById("TcCover2").style.animationName = "TcCover2-1";
 }
 
 
