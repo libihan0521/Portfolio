@@ -75,14 +75,14 @@ p{
 /*--------------portfolio-------------------------*/
 .circleRegion {
   width:65vw;
-  height:240vw;
+  height:235vw;
   margin: auto;
 }
 
 @media screen and (max-width: 600px) {
   .circleRegion {
     width:90vw;
-    height:250vw;
+    height:240vw;
     margin: auto;
   }
 }
@@ -484,4 +484,70 @@ p{
 @keyframes TcCover2-1{
   0%   {left:1%;bottom:16.5%;width:28.5%;}
   100% {left:16%;bottom:19%;width:26%;}
+}
+
+
+/*-----------TcAnimation-----------*/
+@keyframes TBCoverPad{
+  0%   {bottom:12%; left:25%;width:69.5%;}
+  100% {bottom:2%; left:20%;width:90%;}
+}
+@keyframes TBCoverPad-1{
+  0%   {bottom:2%; left:16%;width:90%;}
+  100% {bottom:12%; left:25%;width:69.5%;}
+}
+
+@keyframes TBCoverPhone{
+  0%   {bottom:6%; right:4%;width:37.8%;}
+  100% {bottom:12%; right:-28%;width:48%;}
+}
+@keyframes TBCoverPhone-1{
+  0%   {bottom:12%; right:-28%;width:48%;}
+  100% {bottom:6%; right:4%;width:37.8%;}
+}
+
+@keyframes TBCoverWatch{
+  0%   {bottom:9%; left:18%;width:20.5%;}
+  100% {bottom:22%; left:-7%;width:26%;}
+}
+@keyframes TBCoverWatch-1{
+  0%   {bottom:22%; left:-7%;width:26%;}
+  100% {bottom:9%; left:18%;width:20.5%;}
+}
+
+@keyframes TBCoverTitle{
+  0%   {top:14%;}
+  100% {top:6%;}
+}
+@keyframes TBCoverTitle-1{
+  0%   {top:6%;}
+  100% {top:14%;}
+}
+
+/*-----------Mirror-----------*/
+@keyframes MirrorTitle{
+  0%   {top:12%;}
+  100% {top:2%;}
+}
+@keyframes MirrorTitle-1{
+  0%   {top:2%;}
+  100% {top:12%;}
+}
+
+@keyframes MirrorTitle1{
+  0%   {left:7%;}
+  100% {left:-1%;}
+}
+@keyframes MirrorTitle1-1{
+  0%   {left:-1%;}
+  100% {left:7%;}
+}
+
+@keyframes MirrorCoverGraphic{
+  0%   {width:42%;bottom:9%; left:38%;}
+  100% {width:56%;bottom:1%; left:44%;}
+}
+@keyframes MirrorCoverGraphic-1{
+  0%   {width:56%;bottom:1%; left:44%;}
+  100% {width:42%;bottom:9%; left:38%;}
 }

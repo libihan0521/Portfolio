@@ -126,4 +126,29 @@ function p5cover1(){
     document.getElementById("p5Cover").setAttribute("src","image/P5Cover0.png");
 }
 
+function playTBAnimation(){
+    document.getElementById("TBCoverPad").style.animationName = "TBCoverPad";
+    document.getElementById("TBCoverPhone").style.animationName = "TBCoverPhone";
+    document.getElementById("TBCoverWatch").style.animationName = "TBCoverWatch";
+    document.getElementById("TBCoverTitle").style.animationName = "TBCoverTitle";
+}
+
+function withdrawTBAnimation(){
+    document.getElementById("TBCoverPad").style.animationName = "TBCoverPad-1";
+    document.getElementById("TBCoverPhone").style.animationName = "TBCoverPhone-1";
+    document.getElementById("TBCoverWatch").style.animationName = "TBCoverWatch-1";
+    document.getElementById("TBCoverTitle").style.animationName = "TBCoverTitle-1";
+}
+
+function playMirrorAnimation(){
+    document.getElementById("MirrorTitle").style.animationName = "MirrorTitle";
+    document.getElementById("MirrorTitle1").style.animationName = "MirrorTitle1";
+    document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic";
+}
+
+function withdrawMirrorAnimation(){
+    document.getElementById("MirrorTitle").style.animationName = "MirrorTitle-1";
+    document.getElementById("MirrorTitle1").style.animationName = "MirrorTitle1-1";
+    document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic-1";
+}
 
