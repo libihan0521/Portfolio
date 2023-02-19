@@ -526,12 +526,12 @@ p{
 
 /*-----------Mirror-----------*/
 @keyframes MirrorTitle{
-  0%   {top:12%;}
-  100% {top:2%;}
+  0%   {left:28%;}
+  100% {left:8%;}
 }
 @keyframes MirrorTitle-1{
-  0%   {top:2%;}
-  100% {top:12%;}
+  0%   {left:8%;}
+  100% {left:28%;}
 }
 
 @keyframes MirrorTitle1{
