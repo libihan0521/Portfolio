@@ -551,3 +551,13 @@ p{
   0%   {width:56%;bottom:1%; left:44%;}
   100% {width:42%;bottom:9%; left:38%;}
 }
+
+/*-----------Folding Purifier-----------*/
+@keyframes fpGraphic{
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fpGraphic-1{
+  0%   {opacity:1;}
+  100% {opacity:0;}
+}

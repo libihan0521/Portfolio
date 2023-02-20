@@ -152,3 +152,10 @@ function withdrawMirrorAnimation(){
     document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic-1";
 }
 
+function playFpAnimation(){
+    document.getElementById("fpGraphic").style.animationName = "fpGraphic";
+}
+
+function withdrawFpAnimation(){
+    document.getElementById("fpGraphic").style.animationName = "fpGraphic-1";
+}
