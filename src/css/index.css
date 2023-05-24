@@ -484,38 +484,38 @@ p{
 
 
 /*-----------TcAnimation-----------*/
-@keyframes TBCoverPad{
+@keyframes BMCoverPad{
   0%   {bottom:12%; left:25%;width:69.5%;}
   100% {bottom:2%; left:20%;width:90%;}
 }
-@keyframes TBCoverPad-1{
+@keyframes BMCoverPad-1{
   0%   {bottom:2%; left:16%;width:90%;}
   100% {bottom:12%; left:25%;width:69.5%;}
 }
 
-@keyframes TBCoverPhone{
+@keyframes BMCoverPhone{
   0%   {bottom:6%; right:4%;width:37.8%;}
   100% {bottom:12%; right:-28%;width:48%;}
 }
-@keyframes TBCoverPhone-1{
+@keyframes BMCoverPhone-1{
   0%   {bottom:12%; right:-28%;width:48%;}
   100% {bottom:6%; right:4%;width:37.8%;}
 }
 
-@keyframes TBCoverWatch{
+@keyframes BMCoverWatch{
   0%   {bottom:9%; left:18%;width:20.5%;}
   100% {bottom:22%; left:-7%;width:26%;}
 }
-@keyframes TBCoverWatch-1{
+@keyframes BMCoverWatch-1{
   0%   {bottom:22%; left:-7%;width:26%;}
   100% {bottom:9%; left:18%;width:20.5%;}
 }
 
-@keyframes TBCoverTitle{
+@keyframes BMCoverTitle{
   0%   {top:14%;}
   100% {top:6%;}
 }
-@keyframes TBCoverTitle-1{
+@keyframes BMCoverTitle-1{
   0%   {top:6%;}
   100% {top:14%;}
 }

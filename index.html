@@ -62,11 +62,11 @@
       </div>
       <div  class="circleRegion" style="position: relative; top:2vw;">
 
-       <div style="width: 48%; height: auto; position: absolute; left: 2.8%;" onmouseover="playTBAnimation()" onmouseout="withdrawTBAnimation()">
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/TBCoverPad.png" id="TBCoverPad" style="width:69.5%; height:auto; position:absolute; bottom:12%; left:25%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/TBCoverPhone.png" id="TBCoverPhone" style="width:37.8%; height:auto; position:absolute; bottom:6%; right:4%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/TBCoverWatch.png" id="TBCoverWatch" style="width:20.5%; height:auto; position:absolute; bottom:9%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/TBCoverTitle.png" id="TBCoverTitle" style="width:70%; height:auto; position:absolute; top:14%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+       <div style="width: 48%; height: auto; position: absolute; left: 2.8%;" onmouseover="playBMAnimation()" onmouseout="withdrawBMAnimation()">
+        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPad.png" id="BMCoverPad" style="width:69.5%; height:auto; position:absolute; bottom:12%; left:25%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPhone.png" id="BMCoverPhone" style="width:37.8%; height:auto; position:absolute; bottom:6%; right:4%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverWatch.png" id="BMCoverWatch" style="width:20.5%; height:auto; position:absolute; bottom:9%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverTitle.png" id="BMCoverTitle" style="width:70%; height:auto; position:absolute; top:14%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
         <a href="src/html/bunnyMood.html"><img src="src/images/main/BunnyMoodCover.svg" style="width: 100%; height: auto;"></a>
        </div>
 
@@ -144,6 +144,214 @@
       </div>     
     </section>
     <!-- End Portfolio -->
+    <!-- ======= About Section ======= -->
+    <section id="About" onmouseover="aboutActive()" onmouseout="aboutInactive()" class="sectionBlock">
+      <div>
+       <h1 style="color: #589F4F;">ABOUT</h1>
+      </div>
+      <div class="aboutColumn">
+        <div class ="aboutText">
+          <p style="margin:0;"> I am Bihan Li (李碧涵). "bi-碧" means pure green, and "han-涵" means ocean-vast deep water.</p>
+          <img src="image/aboutGraphic.svg" style="width:100%;height:auto; margin:5%;">
+          <p>&nbsp</p>
+          <p>I learned Landscape Architecture in college. But then I found I am more interested in designing things combined with business, media, and technology instead of terrain, architecture, and plants. Therefore, I pursue an MFA degree in the Design and Technology program at Parsons.
+          </p>
+        </div>
+        <div class ="aboutText">
+          <p style="margin:0;">I stepped into various design disciplines during my graduate years. Then I found I like the UX design the most. Because UX designers are always encouraged to be generalists who embrace knowledge from various disciplines, designing user experience can lead me to look through others’ views and understand different cultures. I simply enjoy the bigger world refracted by the UX lens.  So I want to take UX design as my career choice.
+          </p>
+          <p>&nbsp</p>
+          <p>In my spare time, you can find me drawing manga, 
+            I think manga can also be considered a branch of the design discipline, 
+            characters, and plots are the subjects to be designed.
+          </p>
+       </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- ======= Skills Section ======= -->
+    <section id="Skills" onmouseover="skillsActive()" onmouseout="skillsInactive()" class="sectionBlock">
+      <div>
+        <div>
+          <h1 style="color: #4FADAC; margin: 0;">SKILLS</h1>
+          <!-- <h3 style="text-align: center; width:70%; height:auto; margin:24px auto 8px auto;">I am developing the following skills to achieve my career goal as a full-stack designer</h3> -->
+        </div>
+        <p class="skillTypeName" style="margin:40px auto 8px auto;">Prototype</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Physical models</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Unity</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Sketch</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+           </div> 
+        </div>
+        <p class="skillTypeName">Coding</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">HTML+CSS</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">JavaScript</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Unity C#</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">Unity Cg/HLSL</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">p5.js</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">C++</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">Python</p><div class="progressContainer"><div class="progressBar" style="width: 10%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Git</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+          </div>
+        </div>
+        <p class="skillTypeName">3D</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Cinema 4D</p><div class="progressContainer"><div class="progressBar" style="width: 30%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Marvelous Designer</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">zbrush</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Substance Painter</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Rhino</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">SketchUp</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Robolox studio</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+          </div>
+        </div>
+        <p class="skillTypeName">2D</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Adobe PhotoShop</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Adobe InDesign</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+          </div> 
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Adobe Illustrator</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+          </div> 
+        </div>
+        <p class="skillTypeName">Animation</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">After Effect</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+          </div> 
+        </div>
+        <p class="skillTypeName">Sound</p>
+        <div class="skillRow">
+          <div class="skillBlock">
+           <div class="skillContainer"><p class="skillName">ProTools</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+          </div> 
+        </div>
+        <p class="skillTypeName"></p>
+      </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="Resume" onmouseover="resumeActive()" onmouseout="resumeInactive()" class="sectionBlock">
+      <div class="mainTitle">
+        <h1 style="text-align: center; color: #3548F9; margin:0 0 28px 0;">RESUME</h1>
+      </div>
+      <div class="resumeSection">
+        <div class="resumeColumn">
+         <div class="leftborder">
+          <img src="image/resumeBorder1.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
+          <img src="image/resumeBorder2.svg" style="width:100%;height:auto; margin:45px 0 auto 0; padding:0;">
+         </div>
+         <div style="margin:0 60px 0 32px;">
+           <h3 class="resumeHead">EDUCATION</h3>
+           <h4 class="secondHead">Master of fine art </h4>
+           <p><span class="yearText">2020.8~2021.8 & 2022.8~2023.5</span><br>Parsons School of Design-Design and Technology </p>
+           <p><span class="yearText">2020.8~2021.6</span><br>Tsinghua University&nbsp-Exchange student</p>
+           <h4 class="secondHead">Bachelor of engineering </h4>
+           <p><span class="yearText">2014.9~2019.7</span><br>Xi'an University of Architecture and Technology-Landscape Architecture</p>
+           <p>&nbsp</p>
+           <h3 class="resumeHead">AWARDS</h3>
+           <p><span class="yearText">2021</span><br>Mobile Application Innovation Competition (Issued by Apple):<br>First prize in South China Division</p>
+           <p><span class="yearText">2020</span><br>URS China Interactive Public Art Installation Design Competition 2020:<br>Global Top 30</p>
+           <p>&nbsp</p>
+         </div>
+        </div>
+        <div class="resumeColumn">
+          <div class="leftborder">
+            <img src="image/resumeBorder3.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
+          </div>
+          <div style="margin:0 60px 0 32px;">
+            <h3 class="resumeHead">WORK EXPERIENCE</h3>
+            <h4 style="margin:32px 0 0 0; padding: 0;" class="secondHead"><span class="yearText">2023.2~Now</span><br>Roblox<span style="font-weight: normal;"> | Virtual Fashion designer</span></h4>
+            <ul class="resumeList">
+              <li>Create layered clothing products in DCC tools and Roblox studio</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2021.5~2022.7</span><br><a href="https://ottor.cn/">Ottor Game</a><span style="font-weight: normal;"> | Game Designer & 3D Artist</span></h4>
+            <ul class="resumeList">
+              <li>Lead a team of 4 to develop a sandbox game</li>
+              <li>Create 3D assets</li>
+              <li>Conduct market research</li>
+              <li>Write documents for the programmer </li>
+              <li>Polish the business plan for attracting investment</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2020.8~2020.12</span><br><a href="https://www.citydnatech.com">CityDNA</a><span style="font-weight: normal;"> | UX Intern</span></h4>
+            <ul class="resumeList">
+              <li>Design the features of the <a href="https://pinsurvey.citydnatech.com/">PinSurvey</a> mobile application and PinSurvey web servers platform.</li>
+              <li>Design the introduction website for PinSurvey.</li>
+              <li>Design the features of the PinMage mobile application.</li>
+              <li>Design the map marker features of the <a href="https://www.pinstreet.cn/">PinStreet</a>  mobile application.</li>
+              <li>Create content for the social media account of PinSurvey, using manga to introduce the functions of PinSurvey to the mass public.</li>
+            </ul>
+            <h4 class="secondHead"><span class="yearText">2019.1~2019.2</span><br><a href="https://www.racstudio.cn/rac/index/index.html">RAC studio</a><span style="font-weight: normal;"> | Media Operation</span></h4>
+            <ul class="resumeList">
+              <li>Write articles, and design graphic for the media account.</li>
+              <li>Arrange the space for off-line activities.</li>
+            </ul>
+          </div>
+         </div>
+      </div>
+    </section>
+    <!-- End Resume -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="Contact" onmouseover="contactActive()" onmouseout="contactInactive()" class="sectionBlock">
+      <div>
+        <div class="mainTitle">
+          <h1 style="text-align: center; color: #A375D2;">CONTACT</h1>
+        </div>
+        <div class="contactInfo" style="width:80%; margin:auto; text-align:left; padding-bottom:7vw;padding-left:6vw;">
+          <div class="contactItem">
+            <img class="contactIcon" src="image/contactLocationIcon.svg">
+            <h3>Location</h3>
+            <p>New Port, NJ 07310</p>
+          </div>         
+          <div class="contactItem">
+            <img class="contactIcon" src="image/contactEmailIcon.svg">
+            <h3>Email</h3>
+            <p>lib678@newschool.edu</p>
+          </div>
+          <div class="contactItem">
+            <img class="contactIcon"src="image/contactMessageIcon.svg">
+            <h3>Message</h3>
+            <p>+1 201-988-7964</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- ======= Footer Section ======= -->
+    <section style="background-color: #1C2122; padding: 30px; position: relative; bottom:0px; z-index: -1;" >
+      <div style="color: #F6F5E8;border:#F6F5E8 ; color: #F6F5E8; text-align:center;">
+       <h2>Bihan Design</h2>
+       <p>Thanks for your review. Have a good day!</p><br>
+       <p>&copy; Copyright<strong><span>2023 Bihan Li</span></strong> &nbsp All Rights Reserved </p>
+       <p>Designed and developed by Bihan Li</p>
+      </div>
+    </section>
+    <!-- End Footer -->
 
 
   </body>
