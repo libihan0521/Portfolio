@@ -34,47 +34,15 @@ document.addEventListener("mousemove", function(event) {
   }
 });
 
-function portfolioActive(){
-  document.getElementById("PortfolioIcon").style.width = "100%";
+//Nav-Icon animation
+function setActive(elementId) {
+  document.getElementById(elementId).style.width = "100%";
+}
+function setInactive(elementId) {
+  document.getElementById(elementId).style.width = "60px";
 }
 
-function portfolioInactive(){
-  document.getElementById("PortfolioIcon").style.width = "60px";
-}
-
-function aboutActive(){
-  document.getElementById("AboutIcon").style.width = "100%";
-}
-
-function aboutInactive(){
-  document.getElementById("AboutIcon").style.width = "60px";
-}
-
-function skillsActive(){
-  document.getElementById("SkillsIcon").style.width = "100%";
-}
-
-function skillsInactive(){
-  document.getElementById("SkillsIcon").style.width = "60px";
-}
-
-function resumeActive(){
-  document.getElementById("ResumeIcon").style.width = "100%";
-}
-
-function resumeInactive(){
-  document.getElementById("ResumeIcon").style.width = "60px";
-}
-
-function contactActive(){
-  document.getElementById("ContactIcon").style.width = "100%";
-}
-
-function contactInactive(){
-  document.getElementById("ContactIcon").style.width = "60px";
-}
-
-
+//Cover animation
 function playlaAnimation(){
   document.getElementById("la01").style.animationName = "laImage1";
   document.getElementById("la02").style.animationName = "laImage2";

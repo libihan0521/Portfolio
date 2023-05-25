@@ -33,19 +33,19 @@
             <li>
               <a id="HomeIcon" href="#Home" style="background:#CD5641; text-decoration-line: none;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Home</span></a>
             </li>
-            <li onmouseenter="portfolioActive()" onmouseleave="portfolioInactive()">
+            <li>
               <a id="PortfolioIcon" href="#Portfolio" style="background:#EBBD5B; text-decoration-line: none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg" style="width:27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Portfolio</span></a>
             </li>
-            <li onmouseenter="aboutActive()" onmouseleave="aboutInactive()">
+            <li>
               <a id="AboutIcon" href="#About"  style="background: #589F4F; text-decoration-line: none;"><img class="navIcon" src="src/images/main/AboutIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;About</span></a>
             </li>
-            <li onmouseenter="skillsActive()" onmouseleave="skillsInactive()">
+            <li>
               <a id="SkillsIcon" href="#Skills" style="background: #4FADAC; text-decoration-line: none;"><img class="navIcon" src="src/images/main/SkillIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Skills</span></a>
             </li>
-            <li onmouseenter="resumeActive()" onmouseleave="resumeInactive()">
+            <li>
               <a id="ResumeIcon" href="#Resume" style="background: #3548F9; text-decoration-line: none;"><img class="navIcon" src="src/images/main/ResumeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Resume</span></a>
             </li>
-            <li onmouseenter="contactActive()" onmouseleave="contactInactive()">
+            <li>
               <a id="ContactIcon" href="#Contact" style="background: #A375D2; text-decoration-line: none;"><img class="navIcon" src="src/images/main/ContactIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp;&nbsp;Contact</span></a>
             </li>
           </ul>
@@ -56,7 +56,7 @@
     <!-- End Hero -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="Portfolio" class="sectionBlock"  onmouseover="portfolioActive()" onmouseout="portfolioInactive()">
+    <section id="Portfolio" class="sectionBlock"  onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')">
       <div>
         <h1 style="color: #EBBD5B;">PORTFOLIO</h1>
       </div>
@@ -145,32 +145,30 @@
     </section>
     <!-- End Portfolio -->
     <!-- ======= About Section ======= -->
-    <section id="About" onmouseover="aboutActive()" onmouseout="aboutInactive()" class="sectionBlock">
+    <section id="About" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
       <div>
        <h1 style="color: #589F4F;">ABOUT</h1>
       </div>
       <div class="aboutColumn">
         <div class ="aboutText">
-          <p style="margin:0;"> I am Bihan Li (李碧涵). "bi-碧" means pure green, and "han-涵" means ocean-vast deep water.</p>
-          <img src="image/aboutGraphic.svg" style="width:100%;height:auto; margin:5%;">
+          <p style="margin:0;"> I am Bihan Li (李碧涵). "bi-碧" represents pure green, and "han-涵" signifies vast deep water like an ocean.</p>
+          <img src="src/images/main/aboutGraphic.svg" style="width:100%;height:auto; margin:5%;">
           <p>&nbsp</p>
-          <p>I learned Landscape Architecture in college. But then I found I am more interested in designing things combined with business, media, and technology instead of terrain, architecture, and plants. Therefore, I pursue an MFA degree in the Design and Technology program at Parsons.
+          <p>While studying Landscape Architecture in college, I discovered my passion for designing with elements of business, media, and technology rather than focusing solely on terrain, architecture, and plants. This realization led me to pursue an MFA degree in the Design and Technology program at Parsons.
           </p>
         </div>
         <div class ="aboutText">
-          <p style="margin:0;">I stepped into various design disciplines during my graduate years. Then I found I like the UX design the most. Because UX designers are always encouraged to be generalists who embrace knowledge from various disciplines, designing user experience can lead me to look through others’ views and understand different cultures. I simply enjoy the bigger world refracted by the UX lens.  So I want to take UX design as my career choice.
+          <p style="margin:0;"> During my graduate years, I delved into various design disciplines, ultimately discovering my affinity for UX design. I am drawn to UX design because it allows me to be a versatile designer, integrating knowledge from diverse fields. Designing user experiences enables me to see the world through different perspectives and understand various cultures. I find immense joy in exploring the vastness of the world through the lens of UX.
           </p>
           <p>&nbsp</p>
-          <p>In my spare time, you can find me drawing manga, 
-            I think manga can also be considered a branch of the design discipline, 
-            characters, and plots are the subjects to be designed.
+          <p>In my free time, you'll often find me drawing manga. I believe creating captivating manga and excellent UX designs both require creators to maintain a keen insight into life. This is why I enjoy doing these two things because they allow me to fully embrace and appreciate the nuances of everyday life.
           </p>
        </div>
       </div>
     </section>
     <!-- End About -->
     <!-- ======= Skills Section ======= -->
-    <section id="Skills" onmouseover="skillsActive()" onmouseout="skillsInactive()" class="sectionBlock">
+    <section id="Skills" onmouseover="setActive('SkillsIcon')" onmouseout="setInactive('SkillsIcon')" class="sectionBlock">
       <div>
         <div>
           <h1 style="color: #4FADAC; margin: 0;">SKILLS</h1>
@@ -213,11 +211,10 @@
           </div> 
           <div class="skillBlock">
            <div class="skillContainer"><p class="skillName">zbrush</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Substance Painter</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
            <div class="skillContainer"><p class="skillName">Rhino</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+           <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
           </div> 
           <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
            <div class="skillContainer"><p class="skillName">SketchUp</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
            <div class="skillContainer"><p class="skillName">Robolox studio</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
           </div>
@@ -254,16 +251,12 @@
     <!-- End Skills -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="Resume" onmouseover="resumeActive()" onmouseout="resumeInactive()" class="sectionBlock">
+    <section id="Resume" onmouseover="setActive('ResumeIcon')" onmouseout="setInactive('ResumeIcon')" class="sectionBlock">
       <div class="mainTitle">
         <h1 style="text-align: center; color: #3548F9; margin:0 0 28px 0;">RESUME</h1>
       </div>
       <div class="resumeSection">
         <div class="resumeColumn">
-         <div class="leftborder">
-          <img src="image/resumeBorder1.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
-          <img src="image/resumeBorder2.svg" style="width:100%;height:auto; margin:45px 0 auto 0; padding:0;">
-         </div>
          <div style="margin:0 60px 0 32px;">
            <h3 class="resumeHead">EDUCATION</h3>
            <h4 class="secondHead">Master of fine art </h4>
@@ -279,15 +272,8 @@
          </div>
         </div>
         <div class="resumeColumn">
-          <div class="leftborder">
-            <img src="image/resumeBorder3.svg" style="width:100%;height:auto; margin:26px 0 auto 0; padding:0;">
-          </div>
           <div style="margin:0 60px 0 32px;">
             <h3 class="resumeHead">WORK EXPERIENCE</h3>
-            <h4 style="margin:32px 0 0 0; padding: 0;" class="secondHead"><span class="yearText">2023.2~Now</span><br>Roblox<span style="font-weight: normal;"> | Virtual Fashion designer</span></h4>
-            <ul class="resumeList">
-              <li>Create layered clothing products in DCC tools and Roblox studio</li>
-            </ul>
             <h4 class="secondHead"><span class="yearText">2021.5~2022.7</span><br><a href="https://ottor.cn/">Ottor Game</a><span style="font-weight: normal;"> | Game Designer & 3D Artist</span></h4>
             <ul class="resumeList">
               <li>Lead a team of 4 to develop a sandbox game</li>
@@ -316,24 +302,24 @@
     <!-- End Resume -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="Contact" onmouseover="contactActive()" onmouseout="contactInactive()" class="sectionBlock">
+    <section id="Contact" onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" class="sectionBlock">
       <div>
         <div class="mainTitle">
           <h1 style="text-align: center; color: #A375D2;">CONTACT</h1>
         </div>
         <div class="contactInfo" style="width:80%; margin:auto; text-align:left; padding-bottom:7vw;padding-left:6vw;">
           <div class="contactItem">
-            <img class="contactIcon" src="image/contactLocationIcon.svg">
+            <img class="contactIcon" src="src/images/main/contactLocationIcon.svg">
             <h3>Location</h3>
             <p>New Port, NJ 07310</p>
           </div>         
           <div class="contactItem">
-            <img class="contactIcon" src="image/contactEmailIcon.svg">
+            <img class="contactIcon" src="src/images/main/contactEmailIcon.svg">
             <h3>Email</h3>
             <p>lib678@newschool.edu</p>
           </div>
           <div class="contactItem">
-            <img class="contactIcon"src="image/contactMessageIcon.svg">
+            <img class="contactIcon"src="src/images/main/contactMessageIcon.svg">
             <h3>Message</h3>
             <p>+1 201-988-7964</p>
           </div>
