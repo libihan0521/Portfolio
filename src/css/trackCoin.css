@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Abril Fatfac';
+    src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  }
+
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto-Regular';
     color: #1C2122;
     margin: 0;
   }
