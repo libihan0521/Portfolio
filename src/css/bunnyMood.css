@@ -1,0 +1,81 @@
+@font-face {
+ font-family: 'Jua-Regular';
+ src: url('../fonts/Jua-Regular.ttf') format('truetype');
+}
+@font-face {
+ font-family: 'Roboto-Regular';
+ src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+h3{
+ font-family: 'Jua-Regular';
+ font-size: 24px;
+ margin-bottom: 0;
+ margin-top: 1vw;
+}
+h2{
+ font-family: 'Jua-Regular';
+ font-size: 36px;
+ text-align: center;
+}
+
+p{
+ font-family: 'Roboto-Regular';
+ font-size: 16px;
+}
+
+.bannerImageTop{
+    animation-name:bannerImageTop;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes bannerImageTop {
+    0%   {top:-15vw;opacity:0;}
+    100% {top:0;opacity:1;}
+}
+
+.bannerImageLeft{
+    animation-name:bannerImageLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes bannerImageLeft {
+    0%   {left:-20vw;opacity:0;}
+    100% {left:0;opacity:1;}
+}
+
+.bannerImageRight{
+    animation-name:bannerImageRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes bannerImageRight {
+    0%   {right:-20vw;opacity:0;}
+    100% {right:0;opacity:1;}
+}
+
+.bannerInfo {
+    display: flex;
+    flex-direction: row;
+    height:8vw;
+  }
+
+  .bannerItem{
+    z-index: 20;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .bannerInfo {
+      display: flex;
+      flex-direction: column;
+      height:60vw;
+    }
+  }
+  
+  .bannerItem{
+    width:320px; 
+    height: 100px; 
+    margin: auto;
+  }
+  
