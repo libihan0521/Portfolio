@@ -17,9 +17,9 @@ h3{
 h2{
  font-family: 'Jua-Regular';
  font-size: 36px;
- text-align: center;
+ text-align: left;
  font-weight: 200;
- color:#E9C300;
+ color: #000;
 }
 
 p{
@@ -121,3 +121,9 @@ a:link {
     height:auto; 
     margin:8vw auto auto auto;
   }
+
+.SectionBlock{
+    width: 80%; 
+    height:auto; 
+    margin:auto;
+}
