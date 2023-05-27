@@ -63,7 +63,7 @@ p{
     height:8vw;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .bannerInfo {
       display: flex;
       flex-direction: column;
