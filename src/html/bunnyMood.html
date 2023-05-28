@@ -13,6 +13,7 @@
     <link href="" rel="apple-touch-icon">
     <!-- import stylesheet -->
     <link rel="stylesheet" href="../css/bunnyMood.css" />
+    <script src="../js/bunny.js"></script>
   </head>
 
   <body style="background-color: #FCF3CC;margin:0; padding:0;">
@@ -86,9 +87,34 @@
     <section id="MarkeResearch">
       <img class="Title" src="../images/BunnyMood/MarketResearchTitle.png">
       <div class="SectionBlock">
+        <p>In the current market, there exists a diverse range of emotion journal tools 
+          that can be classified into three types: physical products, digital applications, 
+          and the indirect type involving some social interactions.</p> 
         <h2>Physical Products</h2>
+        <ul>
+          <li><span class="bold">Card games</span> or <span class="bold">notepads</span> specifically designed to help children recognize and express their emotions.</li>
+          <li><span class="bold">Notebooks</span> featuring specially designed templates for recording daily emotions.</li>
+        </ul> 
+        <img src="../images/BunnyMood/MarketResearchPhysicalProducts.png" style="width:100%;">
         <h2>Digital Applications</h2>
-        <h2>Other solutions to track emotions</h2>
+        <p>There is a wide range of mobile apps available that enhance the experience of mood-tracking. 
+          These apps provide interactive features, enjoyable customization tools, and helpful alerts. 
+          In addition to the essential functions of mood logging and visualizing emotion data, 
+          these applications offer unique features that enrich user experience. 
+          Some apps even incorporate clinical intervention techniques such as Cognitive Behavioral Therapy (CBT), 
+          attention-shifting strategies, forward-looking strategies, positive self-talk (reframing), and more.</p>
+        <img src="../images/BunnyMood/MarketResearchDigitalAPP.png" style="width:100%;">
+        <h2>The indirect type involving some social interactions</h2> 
+        <div class="twoColumn">
+          <img class="twoColumChild" src="../images/BunnyMood/MarketResearchOther.png" style="padding:1vw;">
+          <div class="twoColumChild">
+            <ul>
+             <li>Engage with a supportive therapist who encourages you to express your emotions during each session.</li>
+             <li>Confide in a close friend, partner, or parent who creates a safe space for you to freely share your feelings.</li>
+             <li>Connect and share your emotions with others through social media platforms.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End MarketResearch -->
@@ -97,10 +123,55 @@
     <section id="UserResearch">
       <img class="Title" src="../images/BunnyMood/UserResearchTitle.png">
       <div class="SectionBlock">
-        <h2>Interview notes </h2>
+        <h2>Interview notes</h2>
+        <p>To gain valuable insights and generate ideas, 
+          I conducted semi-structured interviews with <span class="keynumber">19</span> individuals. 
+          Recognizing the benefits of increasing emotional awareness for everyone, 
+          I intentionally sought interviewees from diverse age groups and backgrounds, 
+          without narrowing down the target users at this stage. 
+          By primarily interviewing my acquaintances rather than strangers, 
+          I aimed to establish a personal connection between their personalities and their answers, 
+          enabling a more comprehensive analysis of the outcomes.<a href="https://docs.google.com/document/d/1fD02iOuAmX4CetwpeZobBKyaE-6gPJDluGeZQkqy3_Y/edit?usp=sharing"> (The interview outline)</a></p>
+        <div class="card-container">
+          <button class="buttonLeft" id="prevButton" onclick="clcickPrev()"></button>
+          <img id="cardImage" src="../images/BunnyMood/Interviewee1.png">
+          <button class="buttonRight" id="nextButton" onclick="clcickNext()"></button>
+        </div>
         <h2>Key findings from user interview</h2>
+        <img src="../images/BunnyMood/UserInterviewFinding.png" style="width:100%;">
         <h2>Reviews on Apple Store</h2>
+        <p>Utilizing reviews on the Apple Store provides an additional avenue for user research. 
+          In order to gather insights into users' perceptions regarding specific features and experiences, 
+          I conducted an analysis of their attitudes using a card-sorting panel based on these collected reviews.</p>
+        <img src="../images/BunnyMood/AppleStoreReview.png" style="width:100%;">
         <h2>Insights from user research</h2>
+        <p class="keyword">Which individuals are more inclined to be attracted to this product?</p>
+        <img src="../images/BunnyMood/UserInsight01.png" style="width:100%;">
+        <p class="keyword">Which groups might require some effort to win them over?</p>
+        <img src="../images/BunnyMood/UserInsight02.png" style="width:100%;">
+        <p class="keyword">Feedback delay is the top reason why users quit an emotion journal product.</p>
+        <p>The <span class="bold">primary positive feedback</span> received in emotion tracking is <span class="bold">when users revisit their old journals</span>, 
+          triggering nostalgic memories or discovering patterns within their emotions.</p>
+        <p>However, the time required to accumulate a sufficient number of journals to attain such positive 
+          feedback is often <span class="bold">lengthy</span>. Additionally, <span class="bold">the process of journaling itself can be draining</span> for 
+          many individuals. If they miss a week of recording, it often leads to a longer gap of a month, 
+          eventually resulting in abandonment. Thus, establishing the habit of consistent journaling 
+          becomes a significant challenge. <span class="bold">The primary reason users discontinue using an emotion journal 
+          product is due to the delay in receiving feedback.</span></p>
+        <img src="../images/BunnyMood/UserInsight03.png" style="width:100%;">
+        <p class="keyword">Factors that contribute to users' continued engagement:</p>
+        <ul>
+         <li><span class="bold">Elegant and visually appealing design:</span>
+          The interface is designed with a stylish and attractive aesthetic, captivating users with its visual appeal.</li>
+         <li><span class="bold">User-friendly logging features:</span> 
+          The logging features are designed to provide a comfortable and seamless experience, enabling users to record rich and meaningful content concisely and effortlessly.</li>
+         <li><span class="bold">Comprehensive statistics and analysis:</span>
+          The inclusion of in-depth statistics empowers users to gain insights and analyze patterns within their emotional data, facilitating a deeper understanding of their emotional well-being.</li>
+         <li><span class="bold">Engaging and supportive communities:</span>
+          The presence of active and supportive communities fosters a sense of belonging and encourages users to connect, share experiences, and receive valuable support from like-minded individuals.</li>
+        </ul>
+        <p class="keyword">Features that require careful design considerations:</p>
+        <img src="../images/BunnyMood/UserInsight04.png" style="width:100%;">
       </div>
     </section>
     <!-- End UserResearch -->
@@ -139,6 +210,7 @@
         <h2>Sitemap</h2>
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNgoFp6KBfEOt1yonug147m%2FBunny-Mood-Sitemap-by-Bihan%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DU6dEzN9ICcxcX6XD-1" allowfullscreen></iframe>
         <h2>UI kit</h2>
+        <img src="../images/BunnyMood/UI Kit.png" style="width:100%;">
         <h2>Final Interface design</h2>
       </div>
     </section>

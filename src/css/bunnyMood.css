@@ -6,6 +6,10 @@
  font-family: 'Roboto-Regular';
  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
+@font-face {
+ font-family: 'Roboto-Bold';
+ src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
 
 
 h3{
@@ -16,7 +20,7 @@ h3{
 }
 h2{
  font-family: 'Jua-Regular';
- font-size: 36px;
+ font-size: 32px;
  text-align: left;
  font-weight: 200;
  color: #000;
@@ -25,6 +29,29 @@ h2{
 p{
  font-family: 'Roboto-Regular';
  font-size: 18px;
+}
+
+.keyword{
+ font-family: 'Jua-Regular';
+ font-size: 40px;
+ text-align: left;
+ font-weight: 240;
+ color: #E9C300;
+}
+.keynumber{
+ font-family: 'Roboto-Bold';
+ font-size: 20px;
+ color: #C76360;
+}
+
+li{
+ font-family: 'Roboto-Regular';
+ font-size: 18px;   
+ padding:0.5vw;
+}
+.bold{
+ font-family: 'Roboto-Bold';
+ font-size: 18px; 
 }
 
 .bannerImageTop{
@@ -127,3 +154,38 @@ a:link {
     height:auto; 
     margin:auto;
 }
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-container img {
+    width: 80%;
+    height: auto;
+    margin:auto;
+  }
+  
+  .buttonLeft {
+    width: 40px; 
+    height: 40px;
+    background-image: url("../images/BunnyMood/buttonLeft.png"); 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer;
+    background-color:transparent;
+    display:none;
+  }
+
+  .buttonRight {
+    width: 40px; 
+    height: 40px;
+    background-image: url("../images/BunnyMood/buttonRight.png"); 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer;
+    background-color:transparent;
+  }
+  
+  
