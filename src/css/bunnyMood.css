@@ -28,7 +28,7 @@ h2{
 
 p{
  font-family: 'Roboto-Regular';
- font-size: 18px;
+ font-size: 20px;
 }
 
 .keyword{
@@ -40,18 +40,18 @@ p{
 }
 .keynumber{
  font-family: 'Roboto-Bold';
- font-size: 20px;
+ font-size: 22px;
  color: #C76360;
 }
 
 li{
  font-family: 'Roboto-Regular';
- font-size: 18px;   
+ font-size: 20px;   
  padding:0.5vw;
 }
 .bold{
  font-family: 'Roboto-Bold';
- font-size: 18px; 
+ font-size: 20px; 
 }
 
 .bannerImageTop{
