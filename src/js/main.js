@@ -117,15 +117,15 @@ function p5cover1(){
 
 function playBMAnimation(){
   document.getElementById("BMCoverPad").style.animationName = "BMCoverPad";
-  document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone";
-  document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch";
+  // document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone";
+  // document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch";
   document.getElementById("BMCoverTitle").style.animationName = "BMCoverTitle";
 }
 
 function withdrawBMAnimation(){
   document.getElementById("BMCoverPad").style.animationName = "BMCoverPad-1";
-  document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone-1";
-  document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch-1";
+  // document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone-1";
+  // document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch-1";
   document.getElementById("BMCoverTitle").style.animationName = "BMCoverTitle-1";
 }
 
