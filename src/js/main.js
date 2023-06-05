@@ -160,3 +160,39 @@ function withdrawRlAnimation(){
   document.getElementById("GoldenFeather").style.animationName = "GoldenFeather-1";
   document.getElementById("RlTitle").style.animationName = "RlTitle-1";
 }
+
+function playInsAnimation(){
+  document.getElementById("Egg").style.animationName = "Egg";
+  document.getElementById("cloud").style.animationName = "cloud";
+}
+
+function withdrawInsAnimation(){
+  document.getElementById("Egg").style.animationName = "Egg-1";
+  document.getElementById("cloud").style.animationName = "cloud-1";
+}
+
+function playPaintingsAnimation(){
+  document.getElementById("PCover1").style.animationName = "PCover1";
+  document.getElementById("PCover2").style.animationName = "PCover2";
+  document.getElementById("PCover3").style.animationName = "PCover3";
+  document.getElementById("PCover4").style.animationName = "PCover4";
+  document.getElementById("PCover5").style.animationName = "PCover5";
+  document.getElementById("PCover6").style.animationName = "PCover6";
+}
+
+function withdrawPaintingsAnimation(){
+  document.getElementById("PCover1").style.animationName = "PCover1-1";
+  document.getElementById("PCover2").style.animationName = "PCover2-1";
+  document.getElementById("PCover3").style.animationName = "PCover3-1";
+  document.getElementById("PCover4").style.animationName = "PCover4-1";
+  document.getElementById("PCover5").style.animationName = "PCover5-1";
+  document.getElementById("PCover6").style.animationName = "PCover6-1";
+}
+
+function playGDAnimation(){
+  document.getElementById("unityCover").style.animationName = "unityCover";
+}
+
+function withdrawGDAnimation(){
+  document.getElementById("unityCover").style.animationName = "unityCover-1";
+}
