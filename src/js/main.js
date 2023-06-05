@@ -148,3 +148,15 @@ function playFpAnimation(){
 function withdrawFpAnimation(){
   document.getElementById("fpGraphic").style.animationName = "fpGraphic-1";
 }
+
+function playRlAnimation(){
+  document.getElementById("WaterDress").style.animationName = "WaterDress";
+  document.getElementById("GoldenFeather").style.animationName = "GoldenFeather";
+  document.getElementById("RlTitle").style.animationName = "RlTitle";
+}
+
+function withdrawRlAnimation(){
+  document.getElementById("WaterDress").style.animationName = "WaterDress-1";
+  document.getElementById("GoldenFeather").style.animationName = "GoldenFeather-1";
+  document.getElementById("RlTitle").style.animationName = "RlTitle-1";
+}

@@ -487,7 +487,7 @@ p{
 }
 
 
-/*-----------TcAnimation-----------*/
+/*-----------BMAnimation-----------*/
 @keyframes BMCoverPad{
   0%   {bottom:12%; left:25%;width:69.5%;}
   100% {bottom:2%; left:20%;width:90%;}
@@ -560,4 +560,32 @@ p{
 @keyframes fpGraphic-1{
   0%   {opacity:1;}
   100% {opacity:0;}
+}
+
+/*-----------Roblox-----------*/
+@keyframes WaterDress{
+  0%   {bottom:5%; right:12%;width:32.5%;}
+  100% {bottom:-5%; right:0%;width:45.5%;}
+}
+@keyframes WaterDress-1{
+  0%   {bottom:-5%; right:0%;width:45.5%;}
+  100% {bottom:5%; right:12%;width:32.5%;}
+}
+
+@keyframes GoldenFeather{
+  0%   {bottom:5%; left:12%;width:36%;}
+  100% {bottom:-5%; left:0%;width:50%;}
+}
+@keyframes GoldenFeather-1{
+  0%   {bottom:-5%; left:0%;width:50%;}
+  100% {bottom:5%; left:12%;width:36%;}
+}
+
+@keyframes RlTitle{
+  0%   {top:10%;}
+  100% {top:2%;}
+}
+@keyframes RlTitle-1{
+  0%   {top:2%;}
+  100% {top:10%;}
 }
