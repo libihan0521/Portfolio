@@ -564,21 +564,21 @@ p{
 
 /*-----------Roblox-----------*/
 @keyframes WaterDress{
-  0%   {bottom:5%; right:12%;width:32.5%;}
+  0%   {bottom:5%; right:15%;width:32.5%;}
   100% {bottom:-5%; right:0%;width:45.5%;}
 }
 @keyframes WaterDress-1{
   0%   {bottom:-5%; right:0%;width:45.5%;}
-  100% {bottom:5%; right:12%;width:32.5%;}
+  100% {bottom:5%; right:15%;width:32.5%;}
 }
 
 @keyframes GoldenFeather{
-  0%   {bottom:5%; left:12%;width:36%;}
-  100% {bottom:-5%; left:0%;width:50%;}
+  0%   {bottom:5%; left:15%;width:32%;}
+  100% {bottom:-5%; left:0%;width:45%;}
 }
 @keyframes GoldenFeather-1{
-  0%   {bottom:-5%; left:0%;width:50%;}
-  100% {bottom:5%; left:12%;width:36%;}
+  0%   {bottom:-5%; left:0%;width:45%;}
+  100% {bottom:5%; left:15%;width:32%;}
 }
 
 @keyframes RlTitle{
