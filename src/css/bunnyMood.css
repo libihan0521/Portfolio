@@ -3,17 +3,17 @@
  src: url('../fonts/Jua-Regular.ttf') format('truetype');
 }
 @font-face {
- font-family: 'Roboto-Regular';
- src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+ font-family: 'Comfortaa-SemiBold';
+ src: url('../fonts/Comfortaa-SemiBold.ttf') format('truetype');
 }
 @font-face {
- font-family: 'Roboto-Bold';
- src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+ font-family: 'Comfortaa-Bold';
+ src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
 }
 
 
 h3{
- font-family: 'Roboto-Regular';
+ font-family: 'Jua-Regular';
  font-size: 24px;
  text-align: left;
  margin-bottom: 0;
@@ -25,11 +25,13 @@ h2{
  text-align: left;
  font-weight: 200;
  color: #000;
+ padding-top:56px;
 }
 
 p{
- font-family: 'Roboto-Regular';
- font-size: 20px;
+ font-family: 'Comfortaa-SemiBold';
+ font-size: 18px;
+ line-height:1.5;
 }
 
 .keyword{
@@ -40,19 +42,20 @@ p{
  color: #E9C300;
 }
 .keynumber{
- font-family: 'Roboto-Bold';
+ font-family: 'Comfortaa-Bold';
  font-size: 22px;
  color: #C76360;
 }
 
 li{
- font-family: 'Roboto-Regular';
- font-size: 20px;   
+ font-family: 'Comfortaa-SemiBold';
+ font-size: 18px; 
+ line-height:1.5;  
  padding:0.5vw;
 }
 .bold{
- font-family: 'Roboto-Bold';
- font-size: 20px; 
+ font-family: 'Jua-Regular';
+ font-size: 24px; 
 }
 
 .bannerImageTop{
@@ -147,7 +150,7 @@ a:link {
   .Title{
     width: 100%; 
     height:auto; 
-    margin:8vw auto auto auto;
+    margin:16vw auto auto auto;
   }
 
 .SectionBlock{
