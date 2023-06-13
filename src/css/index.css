@@ -10,6 +10,10 @@
   font-family: 'Roboto-Medium';
   src: url('../fonts/Roboto-Medium.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'AbrilFatface-Regular';
+  src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype');
+}
 
 /*--------------general-------------------------*/
 body {
@@ -30,7 +34,7 @@ a:hover {
   }
 
 h1{
-  font-family: 'Anton';
+  font-family: 'AbrilFatface-Regular';
   font-size: 60px;
   text-align: center;
 }
@@ -60,8 +64,9 @@ h4{
 }
 
 p{
-  font-family: 'Roboto-Regular';
-  font-size: 17px;
+  font-family: 'AbrilFatface-Regular';
+  font-size: 18px;
+  line-height:1.2;
 }
 
 
@@ -174,7 +179,7 @@ p{
 }
 
 .skillName{
-  font-family: 'Comfortaa';
+  font-family: 'Roboto-Regular';
   font-size: 13px;
   color: #1C2122;
   font-weight: bolder;
@@ -187,7 +192,7 @@ p{
 }
 
 .skillTypeName{
-  font-family: 'Anton';
+  font-family: 'AbrilFatface-Regular';
   font-size: 24px;
   color:#DBEBEA;
   text-align: left;
@@ -252,12 +257,12 @@ p{
 
 /*-----------About-----------*/
 .aboutText{
-  width:50%;
+  width:100%;
   padding:0 8px 0 8px;
-  margin: 0 48px 0 48px;
-  border-left: #589F4F;
+  margin: 0 24px 0 24px;
+  /* border-left: #589F4F;
   border-width: 6px;
-  border-left-style:dotted;
+  border-left-style:dotted; */
 }
 .aboutColumn{
   display: flex;
@@ -284,6 +289,7 @@ p{
   color: #3548F9;
   margin: 24px auto 0 0;
   padding:0;
+  font-family: 'AbrilFatface-Regular';
 }
 .resumeColumn{
   position:relative;
@@ -294,7 +300,7 @@ p{
 }
 
 .yearText{
-  font-family: 'Roboto';
+  font-family: 'Roboto-Regular';
   font-size: 14px;
   font-weight:bold;
   margin:24px auto 0px 0;
