@@ -39,6 +39,7 @@ p{
  font-size: 40px;
  text-align: left;
  font-weight: 240;
+ padding:1vw 0 0 0;
  color: #E9C300;
 }
 .keynumber{
@@ -51,7 +52,8 @@ li{
  font-family: 'Comfortaa-SemiBold';
  font-size: 18px; 
  line-height:1.5;  
- padding:0.5vw;
+ padding:0 0 0.5vw 0;
+ margin:0;
 }
 .bold{
  font-family: 'Jua-Regular';
@@ -150,7 +152,7 @@ a:link {
   .Title{
     width: 100%; 
     height:auto; 
-    margin:16vw auto auto auto;
+    margin:12vw auto auto auto;
   }
 
 .SectionBlock{
@@ -192,4 +194,8 @@ a:link {
     background-color:transparent;
   }
   
-  
+  .verticalCenter{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
