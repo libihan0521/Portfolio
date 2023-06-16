@@ -199,3 +199,14 @@ a:link {
     align-items:center;
     justify-content:center;
 }
+
+.gallery {
+  column-gap: 2vw; 
+  column-count: 3; 
+}
+
+.gallery img {
+  width: 100%; 
+  margin-bottom: 1vw; 
+}
+
