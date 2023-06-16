@@ -48,10 +48,10 @@ h2{
 
 h3{
   font-family: 'Abril Fatface';
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 590;
   letter-spacing: 1.5px;
-  color:#112970;
+  color:#000000;
 }
 
 h4{
@@ -64,9 +64,9 @@ h4{
 
 p{
   font-family: 'Montserrat';
-  font-size: 16px;
-  color:#112970;
-  letter-spacing: 0.4px;
+  font-size: 18px;
+  color:#000000;
+  letter-spacing: 1.5;
 }
 
 ul{
