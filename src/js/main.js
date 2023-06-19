@@ -196,3 +196,74 @@ function playGDAnimation(){
 function withdrawGDAnimation(){
   document.getElementById("unityCover").style.animationName = "unityCover-1";
 }
+
+/*-----------Filter Function-----------*/
+  // 筛选作品链接的函数
+  function filterProjects(category) {
+    var projectLinks = document.getElementsByClassName('project-link');
+    var region=document.getElementById('project-links');
+    var gameDemo=document.getElementById('gameDemo');
+    var fashionGame=document.getElementById('fashionGame');
+    var p5jsWorks=document.getElementById('p5jsWorks');
+    var margot=document.getElementById('margot');
+    var roblox=document.getElementById('roblox');
+    var Installation=document.getElementById('Installation');
+    var Paintings=document.getElementById('Paintings');
+    var foldingPurifier=document.getElementById('foldingPurifier');
+    var Landscape=document.getElementById('Landscape');
+    
+    // 如果选中的按钮是"All"，显示所有作品链接
+    if (category === 'all') {
+      region.style.height = "235vw";
+      gameDemo.style.top="62vw";
+      fashionGame.style.top="78vw";
+      p5jsWorks.style.top="134vw";
+      roblox.style.top="105vw";
+      margot.style.top="115vw";
+      Installation.style.top="152vw";
+      Paintings.style.top="172vw";
+      foldingPurifier.style.top="183vw";
+      Landscape.style.top="203vw";
+      for (var i = 0; i < projectLinks.length; i++) {
+        projectLinks[i].style.display = 'block';
+      }
+    } else {
+      if(category === 'ux-ui'){
+        region.style.height = "70vw";
+      }
+      if(category === 'game-design'){
+        region.style.height = "90vw";
+        gameDemo.style.top="18vw";
+        fashionGame.style.top="38vw";
+        p5jsWorks.style.top="72vw";
+      }
+      if(category === 'other'){
+        region.style.height = "114vw";
+        roblox.style.top="4vw";
+        margot.style.top="4vw";
+        Installation.style.top="32vw";
+        Paintings.style.top="48vw";
+        foldingPurifier.style.top="64vw";
+        Landscape.style.top="80vw";
+      }
+      // 根据选中的类别显示对应的作品链接，隐藏其他类别的作品链接
+      for (var i = 0; i < projectLinks.length; i++) {
+        var link = projectLinks[i];
+        if (link.classList.contains(category)) {
+          link.style.display = 'block';
+        } else {
+          link.style.display = 'none';
+        }
+      }  
+    } 
+  }
+
+  function toggleActive(button) {
+    const buttons = document.querySelectorAll('.filter-button');
+    // 移除其他按钮的 active 类
+    buttons.forEach((_, index) => {
+        buttons[index].classList.remove('active');
+    });
+    // 切换当前按钮的 active 类
+    button.classList.toggle('active');
+  }
