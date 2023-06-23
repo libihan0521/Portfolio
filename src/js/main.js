@@ -3,7 +3,6 @@ function showPortrait() {
   document.getElementById("clearPortrait").style.visibility = "visible";
   document.getElementById("title").src = "src/images/main/titleBlur.png";
   document.getElementById("titleBG").style.visibility = "hidden";
-  console.log("mouse");
 }
 function closePortrait() {
   document.getElementById("clearPortrait").style.visibility = "hidden";

@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  }
+  
+  
+h1{
+    font-family: 'Roboto-Bold';
+    font-size: 40px;
+    text-align: left;
+  }
+h2{
+    font-family: 'Roboto-Bold';
+    font-size: 28px;
+    text-align: left;
+  }
+h3{
+    font-family: 'Roboto-Bold';
+    font-size: 22px;
+    color:#A375D2;
+    padding-top:2vw;
+}
+h4{
+    font-family: 'Roboto-Bold';
+    font-size: 18px;
+}
+p{
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  line-height:1.5;
+}
+li{
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  line-height:1.5;
+}
+
+.special{
+  font-family: 'Montserrat-Bold';
+  font-size: 32px;
+  color:#A375D2;
+}
+.bold{
+  font-family: 'Montserrat-Bold';
+}
+.small{
+  text-align: center;
+  font-size: 12px;
+  color:#848484;
+}
+
+.sectionBlock{
+    border-style:solid;
+    background-color: #FFFFFF; 
+    padding:0;
+    margin:0;
+    padding-bottom:2.5vw;
+}
+
+.twoColumn {
+  display: flex;
+  flex-direction: row;
+}
+.twoColumChild{
+  width:50%;
+} 
+
+@media screen and (max-width: 600px) {
+  .twoColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .twoColumChild{
+      width:100%;
+  } 
+}
+
+.bold{
+  font-family: 'Montserrat-Bold';
+}
+
+/* Banner animation */
+@keyframes showblur{
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes closeblur{
+  0%   {opacity:1;}
+  100% {opacity:0;}
+}
+
+.gallery {
+  column-gap: 6px; 
+  column-count: 2; 
+}
+
+.gallery img {
+  width: 100%; 
+  margin-bottom: 3px; 
+}
+
+.verticalCenter{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.threeColumn {
+  display: flex;
+  flex-direction: row;
+}
+.threeColumChild{
+  width:33%;
+} 
+
+@media screen and (max-width: 600px) {
+  .threeColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeColumChild{
+      width:100%;
+  } 
+}
+
+.fourColumn {
+  display: flex;
+  flex-direction: row;
+}
+.fourColumChild{
+  background-color:#FAEBEF;
+  width:25%;
+} 
+
+@media screen and (max-width: 600px) {
+  .fourColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  .fourColumChild{
+      width:100%;
+  } 
+}

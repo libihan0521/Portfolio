@@ -11,30 +11,280 @@
     <title>Dr.Mirror</title>
     <link href="../images/main/Favicons.png" rel="icon">
     <link href="" rel="apple-touch-icon">
-    <link rel="stylesheet" href="../css/project.css" />
+    <link rel="stylesheet" href="../css/mirror.css" />
+    <script src="../js/mirror.js"></script>
   </head>
 
   <body>
-    <div style="margin:0; padding:0;" id="Hero">
-     <p>&nbsp</p>
-     <h1 style="color:#A375D2;">Dr.Mirror</h1>
+    <!-- Nav -->
+    <div style="width: 200px; position:fixed; top:14vw; left:-1vw;">
+      <nav id="navbar" class="nav-menu" style="z-index: 20;">
+        <ul style="list-style: none;">
+          <li>
+            <a href="../../index.html#Portfolio" style="text-decoration-line: none; font-size:8px;"><img src="../images/main/PortfolioIcon.svg" style="width:30%;"></a>
+          </li>
+          <li>
+            <a href="#Overview" style="text-decoration-line: none; font-size:8px;">Overview</a>
+          </li>
+          <li>
+            <a href="#Initial Research" style="text-decoration-line: none; font-size:8px;">Initial Research</a>
+          </li>
+          <li>
+            <a href="#Literature Research" style="text-decoration-line: none; font-size:8px;">Literature Research</a>
+          </li>
+          <li>
+            <a href="#Interview" style="text-decoration-line: none; font-size:8px;">Interview</a>
+          </li>
+          <li>
+            <a href="#Problem Statement" style="text-decoration-line: none; font-size:8px;">Problem Statement</a>
+          </li>
+          <li>
+            <a href="#Ideation" style="text-decoration-line: none; font-size:8px;">Ideation</a>
+          </li>
+          <li>
+            <a href="#Hardware Schematic" style="text-decoration-line: none; font-size:8px;">Hardware Schematic</a>
+          </li>
+          <li>
+            <a href="#Final Design" style="text-decoration-line: none; font-size:8px;">Final Design
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div style="width: 90%; height: auto; margin:auto;">
-      <img src="../images/Mirror/1.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/2.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/3.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/4.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/5.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/6.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/7.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/8.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/9.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/10.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/11.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/12.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/13.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/14.jpg" style="width: 100%; height: auto; ">
-      <img src="../images/Mirror/15.jpg" style="width: 100%; height: auto; ">
+    <!--End Nav -->
+    <!-- Banner -->
+    <!-- Banner section -->
+    <section style="position: fixed; top: 0; left: 0; width: 100%; height: 100px; background-color: #f0f0f0; z-index: -100;" onmouseover="closeBlur()" onmouseleave="showBlur()">
+        <img src="../images/Mirror/mainpageBanner.png" style="width:100%; position: fixed; top:0px;">
+        <img id="blur" src="../images/Mirror/mainpageBannerBlur.png" style="width:100%; position: fixed; top:0px;opacity:0; animation-duration:1s; animation-fill-mode: forwards;">
+      </div>
+    </section>
+
+    <!-- Content -->
+    <!-- Overview -->
+    <div id="Overview" class="sectionBlock" style="margin:45vw 0 0 0;" >
+     <div style="width:80%;height:auto; margin:auto;">
+       <h1>Overview</h1>
+       <div class="twoColumn">
+         <div class="twoColumChild">
+          <p>Body Dysmorphic Disorder (BDD) is a mental health condition characterized by a persistent and excessive preoccupation with one's appearance. Individuals with BDD have an intense and often irrational belief that there is a defect or flaw in their physical appearance.</p>
+          <p>Individuals with BDD often engage in compulsive mirror gazing, worsening their condition and wasting valuable time. Dr. Mirror has the potential to prevent these harmful behaviors and contribute to the improvement of the illness.</p> 
+        </div>
+         <div class="twoColumChild">
+          <div style="margin:0 auto 0 3vw;">
+            <img src="../images/Mirror/targetUser.png" style=" width:100%; margin:2vw auto;float:left;">
+          </div>
+          <p>&nbsp</p>
+          <div style="margin:0 auto 0 3vw;">
+            <img src="../images/Mirror/designGoal.png" style=" width:100%; margin:0 auto;float:left;">
+          </div>
+        </div>
+       </div>
+     </div>
     </div>
+    <!-- End Overview -->
+
+    <!-- Initial Research -->
+    <div id="Initial Research" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Initial Research</h1>
+        <p>
+          Documentaries and websites have provided us with a foundational understanding of Body Dysmorphic Disorder (BDD).</p>
+        <div class="twoColumn">
+          <div class="twoColumChild gallery">
+            <a href="https://www.bbc.co.uk/programmes/p067bnvw"><img src="../images/Mirror/website1.jpg"></a>
+            <a href="https://bdd.iocdf.org/"><img src="../images/Mirror/website2.jpg"></a>
+            <a href="https://www.marieclaire.co.uk/reports/you-are-not-alone-how-this-new-video-is-highlighting-body-dysmorphia-83231"><img src="../images/Mirror/website3.png"></a>
+            <a href="https://bddfoundation.org/"><img src="../images/Mirror/website4.jpeg"></a>
+            <a href="https://www.itv.com/thismorning/articles/life-with-body-dysmorphic-disorder"><img src="../images/Mirror/website5.png"></a>
+            <a href="https://www.bustle.com/articles/90659-body-dysmorphic-disorder-patients-discuss-their-feelings-about-mirrors-showing-what-its-like-to-live-with"><img src="../images/Mirror/website6.png"></a>
+          </div>
+          <div class="twoColumChild">
+           <img src="../images/Mirror/cardSorting.jpg" style="width:115%;">
+          </div>
+        </div>
+        <h2>Key Notes</h2>
+        <p class="special">1. BDD, a prevalent disorder, remains largely overlooked. </p>
+        <ul>
+          <li>Body dysmorphic disorder affects 1 in 50 individuals worldwide. </li>
+          <li>Mental health professionals frequently fail to diagnose and treat BDD, contributing to its hidden nature. </li>
+          <li>Merely 5% of those with BDD receive treatment from mental health services.</li>
+        </ul>
+        <p class="special">2. BDD patients amplify their perceived physical flaws. </p>
+        <ul>
+          <li>They invest considerable time in hiding what they believe to be defects, utilizing heavy makeup or resorting to cosmetic surgery, despite limited relief from distress.</li>
+          <li>BDD patients experience anxiety in social settings and often avoid them, overly concerned about others' perception and judgment.</li>
+          <li>They engage in excessive dieting and exercise.</li>
+        </ul>
+        <div class="twoColumn">
+          <div class="twoColumChild" style="padding:1vw;">
+            <img src="../images/Mirror/documentary1.jpeg" style="width:100%; padding:1vw;">
+            <figcaption class="small">Self-Portrait of a BDD patient</figcaption>
+          </div>
+          <div class="twoColumChild" style="padding:1vw;">
+           <img src="../images/Mirror/documentary2.jpeg" style="width:100%; padding:1vw;">
+           <figcaption class="small">The real appearance of her</figcaption>
+          </div>
+        </div>
+        <p class="special">3. Mirrors play a very important role in BDD patients' life. </p>
+        <ul>
+          <li>BDD patients exhibit both prolonged periods in front of mirrors and deliberate avoidance of mirrors.</li>
+          <li> In general, mirrors are described by BDD patients as controlling, imprisoning, and disempowering forces that exert a crippling and paralyzing effect on their lives.</li>
+        </ul>
+        <img src="../images/Mirror/amplify perceived flaws.png" style="width:100%; padding:1vw;">
+        <figcaption class="small">The documentary "Ugly Me: My Life with Body Dysmorphic Disorder" captures the profound impact that mirrors have on the emotional response of BDD patients.</figcaption>
+      </div>
+    </div>
+    <!-- End Initial Research -->
+
+    <!-- Literature Research -->
+    <div id="Literature Research" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Literature Research</h1>
+        <p>Our literature research focused on understanding the underlying causes and scientific treatments for Body Dysmorphic Disorder (BDD).</p>
+        <h2>BDD Pathological Model</h2>
+        <h3>These elements intertwine and form the vicious cycle of BDD.</h3>
+        <img src="../images/Mirror/literatureresearch.png" style="width:100%;">
+        <h3>Mirror: The catalyst for perpetuating the destructive cycle of BDD.</h3>
+        <p>After discovering the significant association between BDD patients and mirrors during the initial research, we then investigate the role of mirrors in the pathology of BDD.</p>
+        <img src="../images/Mirror/mirrorCircle.png" style="width:100%;">
+        <h3>Research on effective and efficient treatments</h3>
+        <p>The therapy options for patients with Body Dysmorphic Disorder are still being explored, but three treatments have been proven effective: cognitive-behavioral therapy, supportive psychotherapy, and antidepressant medications.</p>
+        <div style="background-color: #FAEBEF; width:100%; display: grid; place-items: center; border-top:2vw; border-bottom:2vw; border-color:#FAEBEF; border-style:solid;">
+         <img src="../images/Mirror/ProsCons.png" style="width:90%;">   
+        </div>  
+        <h3>Mirrors also serve as a therapeutic tool in Mirror Exposure Therapy</h3> 
+        <p>Cognitive-Behavioral Therapy includes "Mirror Exposure Therapy" where the mirror is used as a therapeutic tool. This therapy typically consists of three procedures.</p>
+        <div style="display: grid; place-items: center;">
+         <img src="../images/Mirror/mirrorTherapy.png" style="width:90%;">
+        </div>
+      </div>
+    </div>
+    <!-- End Literature Researchh -->
+
+    <!-- Interview -->
+    <div id="Interview" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Interview</h1>
+        <p>The research findings sparked our keen interest in mirrors, leading us to choose them as a focal point for developing our design.</p>
+        <div class="twoColumn">
+          <div class="twoColumChild">
+            <img src="../images/Mirror/facebookGroup.jpeg" style="width:100%;padding-top:1vw;">
+          </div>
+          <div class="twoColumChild verticalCenter" style="padding:2vw;">
+            <div>
+             <h3 style="padding-top: 0; margin-top: 0;">User Interview</h3>
+             <p>To gain a deeper insight into the difficulties experienced by BDD patients when using mirrors, we gathered feedback and evaluations specifically focused on mirrors from the BDD Facebook group.</p>
+             <p style="background-color:#F9EFC5; padding:1vw;"><span class="bold" style="color:#E9C432;">Insight 1</span><br>People with BDD often have a compulsion to constantly check themselves in the mirror, unable to resist the urge.</p>
+             <p style="background-color:#F9EFC5; padding:1vw;"><span class="bold" style="color:#E9C432;">Insight 2</span><br>Individuals with BDD would unconsciously stare at the mirror for a long time</p>
+             <p style="background-color:#F9EFC5; padding:1vw;"><span class="bold" style="color:#E9C432;">Insight 3</span><br>Mirrors and lighting affect moods differently.</p>
+            </div>
+          </div>
+        </div>
+        <h3>Expert Interview: Guiding BDD patients towards healthy mirror use</h3>
+        <p>We contacted two professional psychologists specializing in BDD research through the social media platform "Zhihu," which serves as a gathering place for domain experts to share their insights. The valuable information we obtained from them has guided our design decisions.</p>
+        <div class="twoColumn">
+          <div class="twoColumChild" style="padding-right:2vw;">
+            <div>
+              <p><span class="bold">Under the influence of physiological factors</span>, individuals with body dysmorphic disorder have difficulties perceiving or processing general information about their image. They can only perceive the detail they think as a defect and always scan the detail carefully in the mirror for a long time and in extremely close physical proximity.</p>
+            </div>
+          </div>
+          <div class="twoColumChild">
+            <img src="../images/Mirror/expert1.png" style="width:100%;padding-top:1vw;">
+          </div>
+        </div>
+        <p class="bold">How to guide patients in using mirrors during clinical treatment:</p>
+        <div class="threeColumn" style="background-color:#F9EFC5;">
+          <div class="threeColumChild">
+            <p class="bold" style="text-align: center; color:#E9C432;">When to use</p>
+            <ul>
+              <li>Exclusive for an agreed purpose</li>
+              <li>Avoid using a mirror when feeling depressed</li>
+              <li>For a limited duration only</li>
+            </ul>
+          </div>
+          <div class="threeColumChild">
+            <p class="bold" style="text-align: center; color:#E9C432;">How to use</p>
+            <ul>
+              <li>At a distance from the mirror</li>
+              <li>Shift your focus to the image rather than your emotions</li>
+              <li>Direct your attention to the entire image rather than specific areas</li>
+            </ul>
+          </div>
+          <div class="threeColumChild">
+            <p class="bold" style="text-align: center; color:#E9C432;">Choose right mirror</p>
+            <ul>
+              <li>Choose mirrors that are sufficiently large to display the majority of your body</li>
+              <li>Experiment with different mirrors and lighting conditions instead of relying on a single setup</li>
+              <li>Avoid using magnifying mirrors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Interview -->
+
+    <!-- Problem -->
+    <div id="Problem Statement" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Problem Statement: BDD patients struggle to regulate mirror-gazing behaviors.</h1>
+        <h3>Persona: Liane, a person with Body Dysmorphic Disorder (BDD)</h3>
+        <img src="../images/Mirror/persona.png" style="width:100%;">
+        <h3>How Liane use the mirror</h3>
+        <img src="../images/Mirror/useMirror.png" style="width:100%;">
+        <h3>Pain Points</h3>
+        <div class="fourColumn">
+          <div class="fourColumChild" style="margin-right:1.5vw;">
+            <p style="padding:0 1vw;">I feel awful looking closely at my eyes in the mirror.</p>
+          </div>
+          <div class="fourColumChild" style="margin-right:1.5vw;">
+            <p style="padding:0 1vw;">Looking at the mirror in poor lighting always makes me feel awful.</p>
+          </div>
+          <div class="fourColumChild" style="margin-right:1.5vw;">
+            <p style="padding:0 1vw;">Whenever I catch a glimpse of a mirror, I become captivated and find myself unable to look away.</p>
+          </div>
+          <div class="fourColumChild">
+            <p style="padding:0 1vw;">I spend an hour daily on my makeup routine, or else I feel reluctant to go out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Problem -->
+
+    <!-- Ideation -->
+    <div id="Ideation" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Ideation</h1>
+        <h3>IDEATION: Transforming the mirror's role</h3>
+        <img src="../images/Mirror/ideationCircle.png" style="width:100%;">
+        <h3>Lofi Interface</h3>
+        <img src="../images/Mirror/lofi.png" style="width:100%;">
+      </div>
+    </div>
+    <!-- End Ideation -->
+
+    <!-- Hardware schematic diagram -->
+    <div id="Hardware Schematic" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Hardware Schematic Diagram</h1>
+        <img src="../images/Mirror/hardware.png" style="width:100%;">
+      </div>
+    </div>
+    <!-- End Hardware schematic diagram -->
+
+    <!-- Final Design -->
+    <div id="Final Design" class="sectionBlock" style="margin:4vw 0 0 0;">
+      <div style="width:80%;height:auto; margin:auto;">
+        <h1>Final Design</h1>
+        <img src="../images/Mirror/13.jpg" style="width:100%;">
+        <img src="../images/Mirror/14.jpg" style="width:100%;">
+        <img src="../images/Mirror/15.jpg" style="width:100%;">
+      </div>
+    </div>
+    <!-- End Final Design -->
+     
+
+    
+
   </body>
 </html>
