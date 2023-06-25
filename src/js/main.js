@@ -35,7 +35,7 @@ document.addEventListener("mousemove", function(event) {
 
 //Nav-Icon animation
 function setActive(elementId) {
-  document.getElementById(elementId).style.width = "100%";
+  document.getElementById(elementId).style.width = "160px";
 }
 function setInactive(elementId) {
   document.getElementById(elementId).style.width = "60px";

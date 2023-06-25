@@ -18,37 +18,23 @@
     
   </head>
 
-  <body style="background-color: #F6F5E8;">
+  <body style="background-color: #F6F5E8; position: relative;">
     <!-- ======= Hero Section ======= -->
-    <section id="Home" style="margin:0; padding:0;">
-      <div style="width: 100%; height: 46vw; background-image: url('src/images/main/banner.png'); background-repeat: no-repeat;background-size: 100%; position: relative; top:0px;"> 
+    <section id="Home" style="margin:0; padding:0; border-bottom: solid 4px;">
+      <div style="width:100%; height:46vw; background-image:url('src/images/main/banner.png'); background-repeat:no-repeat; background-size:100%; position:relative; top:0px;"> 
           <img id="titleBG" src="src/images/main/titleBG.gif" style="width: 65%; position: absolute; left:22%; top:6vw;">
           <img id="title"  src="src/images/main/title.png" style="width: 45%; position:absolute; left:36%; top:18vw;">   
           <img id="clearPortrait" src="src/images/main/clearPortrait.gif" style="width: 100%; position: absolute; left:0%; top:0; visibility: hidden;">
       </div>
       <!-- Nav -->
-      <div style="width: 165px; position:fixed; top:10vw; left:1vw;">
-        <nav id="navbar" class="nav-menu" style="z-index: 20;">
-          <ul>
-            <li>
-              <a id="HomeIcon" href="#Home" style="background:#CD5641; text-decoration-line: none;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp &nbsp Home</span></a>
-            </li>
-            <li onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')">
-              <a id="PortfolioIcon" href="#Portfolio" style="background:#EBBD5B; text-decoration-line: none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg" style="width:27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp &nbsp Portfolio</span></a>
-            </li>
-            <li onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')">
-              <a id="AboutIcon" href="#About"  style="background: #589F4F; text-decoration-line: none;"><img class="navIcon" src="src/images/main/AboutIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp &nbsp About</span></a>
-            </li>
-            <li onmouseover="setActive('SkillsIcon')" onmouseout="setInactive('SkillsIcon')">
-              <a id="SkillsIcon" href="#Skills" style="background: #4FADAC; text-decoration-line: none;"><img class="navIcon" src="src/images/main/SkillIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp &nbsp Skills</span></a>
-            </li>
-            <li onmouseover="setActive('ResumeIcon')" onmouseout="setInactive('ResumeIcon')">
-              <a id="ResumeIcon" href="#Resume" style="background: #3548F9; text-decoration-line: none;"><img class="navIcon" src="src/images/main/ResumeIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;"><span>&nbsp &nbsp Resume</span></a>
-            </li>
-            <li onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')">
-              <a id="ContactIcon" href="#Contact" style="background: #A375D2; text-decoration-line: none;"><img class="navIcon" src="src/images/main/ContactIcon.svg" style="width: 27px; height: auto; position:relative; left:-0.15vw;" onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')"><span>&nbsp &nbsp Contact</span></a>
-            </li>
-          </ul>
+      <a href="#Home" style="z-index:20; width:48px; height:48px; position:fixed; top:42px; left:32px; padding:0;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width:100%;"></a>
+      <div style="z-index:20; width:500px; height:88px; flex-shrink:0; position:fixed; right:32px; top:24px; border-style:solid; background-color:#F6F5E8; display:flex; flex-direction:row; border-radius:200px;">
+        <nav id="navbar" class="nav-menu" style="margin:auto;">
+         <a onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')" id="PortfolioIcon" href="#Portfolio" style="background:#C05643; text-decoration-line:none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg"><span>&nbsp &nbsp Works</span></a>
+         <a onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" id="PlayIcon" href="#Play" style="background:#EBBD5B; text-decoration-line:none;"><img class="navIcon" src="src/images/main/playIcon.svg"><span>&nbsp &nbsp &nbspStack&nbsp</span></a>
+         <a onmouseover="setActive('SkillsIcon')" onmouseout="setInactive('SkillsIcon')" id="SkillsIcon" href="#Skills" style="background:#424EFB; text-decoration-line:none;"><img class="navIcon" src="src/images/main/SkillIcon.svg"><span>&nbsp &nbsp &nbspSkills&nbsp&nbsp</span></a>
+         <a onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" id="AboutIcon" href="#About"  style="background:#589F4F; text-decoration-line:none;"><img class="navIcon" src="src/images/main/AboutIcon.svg"><span>&nbsp &nbsp &nbspAbout</span></a>
+         <a onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" id="ContactIcon" href="#Contact"  style="background:#9E77D3; text-decoration-line:none;"><img class="navIcon" src="src/images/main/ContactIcon.svg"><span>&nbsp &nbsp Contact</span></a>
         </nav>
       </div>
       <!-- End Nav -->
@@ -57,10 +43,6 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="Portfolio" class="sectionBlock"  onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')">
-      <div>
-        <h1 style="color: #EBBD5B;">Portfolio</h1>
-      </div>
-
       <div id="filter-buttons" style="width:50%; margin:auto; text-align:center; padding-bottom:0;padding-left:0vw;">
           <button class="filter-button active" data-category="all" onclick="filterProjects('all'); toggleActive(this);" >All</button>     
           <button class="filter-button" data-category="ux-ui" onclick="filterProjects('ux-ui'); toggleActive(this);">UX/UI</button>
@@ -165,6 +147,16 @@
       </div>     
     </section>
     <!-- End Portfolio -->
+
+    <!-- ======= About Section ======= -->
+    <section id="Play" onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" class="sectionBlock">
+      <div>
+       <h1 style="color: #589F4F;">Play</h1>
+      </div>
+    </section>
+    <!-- End About -->
+
+
     <!-- ======= About Section ======= -->
     <section id="About" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
       <div>
@@ -269,56 +261,6 @@
       </div>
     </section>
     <!-- End Skills -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="Resume" onmouseover="setActive('ResumeIcon')" onmouseout="setInactive('ResumeIcon')" class="sectionBlock">
-      <div class="mainTitle">
-        <h1 style="text-align: center; color: #3548F9; margin:0 0 28px 0;">Resume</h1>
-      </div>
-      <div class="resumeSection">
-        <div class="resumeColumn">
-         <div style="margin:0 60px 0 32px;">
-           <h3 class="resumeHead">Education</h3>
-           <h4 class="secondHead">Master of fine art </h4>
-           <p><span class="yearText">2020.8~2021.8 & 2022.8~2023.5</span><br>Parsons School of Design<br>Design and Technology </p>
-           <p><span class="yearText">2020.8~2021.6</span><br>Tsinghua University&nbsp-Exchange student</p>
-           <h4 class="secondHead">Bachelor of engineering </h4>
-           <p><span class="yearText">2014.9~2019.7</span><br>Xi'an University of Architecture and Technology<br>Landscape Architecture</p>
-           <p>&nbsp</p>
-           <h3 class="resumeHead">Awards & Exhibition</h3>
-           <p><span class="yearText">2021</span><br><a href="https://www.apple.com.cn/newsroom/2021/05/mobile-app-innovation-contest-sparks-passion-for-coding-among-thousands-of-chinese-students/">Mobile Application Innovation Competition (Issued by Apple)</a>:<br>First prize in South China Division</p>
-           <p><span class="yearText">2020</span><br><a href="https://www.shejijingsai.com/2020/01/358055.html">URS China Interactive Public Art Installation Design Competition 2020</a>:<br>Global Top 30</p>
-           <p><span class="yearText">2023</span><br><a href="https://amtmovingimagefetival2023.webflow.io/">2023 AMT Moving Image Festival</a><br>
-            <a href="https://www.theverge.com/23734209/parsons-roblox-design-class-metaverse-fashion">Roblox*Parsons Collb virtual fashion show</a>
-          </p>
-           <p>&nbsp</p>
-         </div>
-        </div>
-        <div class="resumeColumn">
-          <div style="margin:0 60px 0 32px;">
-            <h3 class="resumeHead">Work experience</h3>
-            <h4 class="secondHead"><span class="yearText">2021.5~2022.7</span><br><a href="https://ottor.cn/">Ottor Game</a><span style="font-weight: normal;"> | Game Designer & 3D Artist</span></h4>
-            <ul class="resumeList" style="margin:0; padding:0 0 0 1vw;">
-              <li><p>Led a 4-person team in a 3D puzzle game development, overseeing the design process from concept to implementation, creating low-poly 3D assets, UX experience, and the storyline.</p></li>
-              <li><p>Designed UX flow for the casual game "Sweating Soybean," ensuring intuitive gameplay and engaging user interactions.</p></li>
-              <li><p>Collaborated with programmers to document clear instructions and technical specifications for game mechanics.</p></li>
-            </ul>
-            <h4 class="secondHead"><span class="yearText">2020.8~2020.12</span><br><a href="https://www.citydnatech.com">CityDNA</a><span style="font-weight: normal;"> | UX Intern</span></h4>
-            <ul class="resumeList" style="margin:0; padding:0 0 0 1vw;">
-              <li><p>Design the UX flow of the <a href="https://pinsurvey.citydnatech.com/">PinSurvey</a> mobile application in Sketch, PinSurvey web servers platform, and the introduction website for PinSurvey.</p>
-              </li>
-              <li><p>Design the features of the PinMage mobile application.</p></li>
-              <li><p>Design the map marker features of the <a href="https://www.pinstreet.cn/">PinStreet</a>  mobile application.</p></li>
-            </ul>
-            <h4 class="secondHead"><span class="yearText">2019.1~2019.2</span><br><a href="https://www.racstudio.cn/rac/index/index.html">RAC studio</a><span style="font-weight: normal;"> | Media Operation</span></h4>
-            <ul class="resumeList" style="margin:0; padding:0 0 0 1vw;">
-              <li><p>Write articles, and design graphic for the media account. My creations have achieved 250% more views compared to the previously most-viewed article.</p></li>
-            </ul>
-          </div>
-         </div>
-      </div>
-    </section>
-    <!-- End Resume -->
 
     <!-- ======= Contact Section ======= -->
     <section id="Contact" onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" class="sectionBlock">
