@@ -93,7 +93,7 @@ p{
 /*--------------portfolio-------------------------*/
 .circleRegion {
   width:65vw;
-  height:235vw;
+  height:168vw;
   margin: auto;
 }
 
@@ -103,6 +103,25 @@ p{
     height:240vw;
     margin: auto;
   }
+}
+
+.projectBlock{
+  width:100vw; 
+  height:40vw;
+  background-color:#F6F5E8;
+  border-bottom:solid 4px;
+}
+
+.filterNav{
+  background:#000; 
+  position:sticky; 
+  top:0; 
+  z-index:100; 
+  height:120px; 
+  margin:0; 
+  padding-top:34px; 
+  padding-left:200px; 
+  border-top:solid 3px;
 }
 
 
@@ -159,6 +178,8 @@ p{
   height: auto; 
   left:-1%;;
 }
+
+
 
 /*-----------# Skills-----------*/
 .progressContainer {
@@ -669,32 +690,152 @@ p{
 }
 
 /*-----------Filter Function-----------*/
-.filter-button.active{
+.filter-button-red.active{
   font-family:'Comfortaa-Regular';
   border-radius: 50px;
-  border: #EBBD5B;
+  border: #C05643;
   border-style: solid;
   margin: 8px;
   padding:8px 16px;
-  background-color:#ffff;
-  color:#EBBD5B;
+  background-color:#C05643;
+  color:#F6F5E8;
 }
-button:hover{
+.filter-button-red:hover{
   font-family:'Comfortaa-Regular';
   border-radius: 50px;
-  border: #EBBD5B;
+  border: #C05643;
   border-style: solid;
   margin: 8px;
   padding:8px 16px;
-  background-color:#ffff;
-  color:#EBBD5B;
+  background-color:#F6F5E8;
+  color:#C05643;
 }
-button{
+.filter-button-red{
   font-family:'Comfortaa-Regular';
   border-radius: 50px;
   border-style: none;
   margin: 8px;
   padding:8px 16px;
-  background-color:#ffff;
-  color:#EBBD5B;
+  background-color:#F6F5E8;
+  color:#C05643;
+}
+
+.filter-button-yellow.active{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #E3BC59;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#E3BC59;
+  color:#F6F5E8;
+}
+.filter-button-yellow:hover{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #E3BC59;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#E3BC59;
+}
+.filter-button-yellow{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border-style: none;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#E3BC59;
+}
+
+.filter-button-green.active{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #589F4F;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#589F4F;
+  color:#F6F5E8;
+}
+.filter-button-green:hover{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #589F4F;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#589F4F;
+}
+.filter-button-green{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border-style: none;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#589F4F;
+}
+
+.filter-button-blue.active{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #424EFB;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#424EFB;
+  color:#F6F5E8;
+}
+.filter-button-blue:hover{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #424EFB;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#424EFB;
+}
+.filter-button-blue{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border-style: none;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#424EFB;
+}
+
+.filter-button-purple.active{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #9E77D3;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#9E77D3;
+  color:#F6F5E8;
+}
+.filter-button-purple:hover{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border: #9E77D3;
+  border-style: solid;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#9E77D3;
+}
+.filter-button-purple{
+  font-family:'Comfortaa-Regular';
+  border-radius: 50px;
+  border-style: none;
+  margin: 8px;
+  padding:8px 16px;
+  background-color:#F6F5E8;
+  color:#9E77D3;
 }

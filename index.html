@@ -18,256 +18,263 @@
     
   </head>
 
-  <body style="background-color: #F6F5E8; position: relative;">
+  <body style="position: relative;">
+
     <!-- ======= Hero Section ======= -->
-    <section id="Home" style="margin:0; padding:0; border-bottom: solid 4px;">
-      <div style="width:100%; height:46vw; background-image:url('src/images/main/banner.png'); background-repeat:no-repeat; background-size:100%; position:relative; top:0px;"> 
+    <section id="Home" style="margin:0; padding:0;">
+      <div style="width:100%; height:46vw; background-image:url('src/images/main/banner.png'); background-repeat:no-repeat; background-size:100%; position:fixed; top:0px;"> 
           <img id="titleBG" src="src/images/main/titleBG.gif" style="width: 65%; position: absolute; left:22%; top:6vw;">
           <img id="title"  src="src/images/main/title.png" style="width: 45%; position:absolute; left:36%; top:18vw;">   
           <img id="clearPortrait" src="src/images/main/clearPortrait.gif" style="width: 100%; position: absolute; left:0%; top:0; visibility: hidden;">
       </div>
       <!-- Nav -->
-      <a href="#Home" style="z-index:20; width:48px; height:48px; position:fixed; top:42px; left:32px; padding:0;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width:100%;"></a>
-      <div style="z-index:20; width:500px; height:88px; flex-shrink:0; position:fixed; right:32px; top:24px; border-style:solid; background-color:#F6F5E8; display:flex; flex-direction:row; border-radius:200px;">
+      <a href="#Home" style="z-index:150; width:48px; height:48px; position:fixed; top:40px; left:24px; padding:0;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width:100%;"></a>
+      <div style="z-index:150; width:424px; height:88px; flex-shrink:0; position:fixed; right:32px; top:16px; border:solid 4px; background-color:#F6F5E8; display:flex; flex-direction:row; border-radius:200px;">
         <nav id="navbar" class="nav-menu" style="margin:auto;">
          <a onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')" id="PortfolioIcon" href="#Portfolio" style="background:#C05643; text-decoration-line:none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg"><span>&nbsp &nbsp Works</span></a>
-         <a onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" id="PlayIcon" href="#Play" style="background:#EBBD5B; text-decoration-line:none;"><img class="navIcon" src="src/images/main/playIcon.svg"><span>&nbsp &nbsp &nbspStack&nbsp</span></a>
-         <a onmouseover="setActive('SkillsIcon')" onmouseout="setInactive('SkillsIcon')" id="SkillsIcon" href="#Skills" style="background:#424EFB; text-decoration-line:none;"><img class="navIcon" src="src/images/main/SkillIcon.svg"><span>&nbsp &nbsp &nbspSkills&nbsp&nbsp</span></a>
+         <a onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" id="PlayIcon" href="#Play" style="background:#EBBD5B; text-decoration-line:none;"><img class="navIcon" src="src/images/main/playIcon.svg"><span>&nbsp &nbsp &nbsp &nbsp&nbspPlay&nbsp&nbsp&nbsp</span></a>
          <a onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" id="AboutIcon" href="#About"  style="background:#589F4F; text-decoration-line:none;"><img class="navIcon" src="src/images/main/AboutIcon.svg"><span>&nbsp &nbsp &nbspAbout</span></a>
-         <a onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" id="ContactIcon" href="#Contact"  style="background:#9E77D3; text-decoration-line:none;"><img class="navIcon" src="src/images/main/ContactIcon.svg"><span>&nbsp &nbsp Contact</span></a>
+         <a onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" id="ContactIcon" href="#Contact"  style="background:#424EFB; text-decoration-line:none;"><img class="navIcon" src="src/images/main/ContactIcon.svg"><span>&nbsp &nbsp Contact</span></a>
         </nav>
       </div>
       <!-- End Nav -->
     </section>
     <!-- End Hero -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="Portfolio" class="sectionBlock"  onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')">
-      <div id="filter-buttons" style="width:50%; margin:auto; text-align:center; padding-bottom:0;padding-left:0vw;">
-          <button class="filter-button active" data-category="all" onclick="filterProjects('all'); toggleActive(this);" >All</button>     
-          <button class="filter-button" data-category="ux-ui" onclick="filterProjects('ux-ui'); toggleActive(this);">UX/UI</button>
-          <button class="filter-button" data-category="game-design" onclick="filterProjects('game-design'); toggleActive(this);">Game</button>
-          <button class="filter-button" data-category="other" onclick="filterProjects('other'); toggleActive(this);">Other</button>
-      </div>
+    
+    <section  style="position: absolute; top:45vw; background-color:#F6F5E8;">
+      <!-- ======= Work Section ======= -->
+      <section id="Portfolio" onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')"> 
 
-      <div id="project-links" class="circleRegion" style="position: relative; top:2vw; animation-duration:1s; animation-fill-mode: forwards;">
-
-       <div id="bunnyMood" class="project-link game-design ux-ui" style="width: 48%; height: auto; position: absolute; left: 2.8%;" onmouseover="playBMAnimation()" onmouseout="withdrawBMAnimation()">
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPad.png" id="BMCoverPad" style="width:69.5%; height:auto; position:absolute; bottom:12%; left:25%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <!-- <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPhone.png" id="BMCoverPhone" style="width:37.8%; height:auto; position:absolute; bottom:6%; right:4%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverWatch.png" id="BMCoverWatch" style="width:20.5%; height:auto; position:absolute; bottom:9%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a> -->
-        <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverTitle.png" id="BMCoverTitle" style="width:70%; height:auto; position:absolute; top:14%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/bunnyMood.html"><img src="src/images/main/BunnyMoodCover.svg" style="width: 100%; height: auto;"></a>
+       <div class="projectBlock filterNav" id="filter-buttons">
+           <button class="filter-button-red active" data-category="all">All</button>     
+           <button class="filter-button-red" data-category="ux-ui">UX/UI</button>
+           <button class="filter-button-red" data-category="game-design">Game</button>
+           <button class="filter-button-red" data-category="other">Academic</button>
+           <button class="filter-button-red" data-category="other">Professional</button>
        </div>
 
-       <div id="trackCoin" class="project-link ux-ui" style="width: 48%; height: auto; position: absolute; right: 2.8%; top: 22vw;" onmouseover="playTcAnimation()" onmouseout="withdrawTcAnimation()">
-         <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover1.png" id="TcCover1" style="width:26%; height:auto; position:absolute; bottom:19%; left:56%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-         <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover2.png" id="TcCover2" style="width:26%; height:auto; position:absolute; bottom:19%; left:16%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-         <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover3.png" id="TcCover3" style="width:28.5%; height:auto; position:absolute; bottom:16.5%; left:36%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-         <a href="src/html/trackCoin.html"><img src="src/images/main/TrackCoinCover.svg" style="width: 100%; height: auto; "></a>
+       <div class="projectBlock">
+         <div id="bunnyMood" class="project-link game-design ux-ui" style="width: 30%; height: auto; position: absolute;" onmouseover="playBMAnimation()" onmouseout="withdrawBMAnimation()">
+           <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPad.png" id="BMCoverPad" style="width:69.5%; height:auto; position:absolute; bottom:12%; left:25%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <!-- <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPhone.png" id="BMCoverPhone" style="width:37.8%; height:auto; position:absolute; bottom:6%; right:4%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverWatch.png" id="BMCoverWatch" style="width:20.5%; height:auto; position:absolute; bottom:9%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a> -->
+           <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverTitle.png" id="BMCoverTitle" style="width:70%; height:auto; position:absolute; top:14%; left:18%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/bunnyMood.html"><img src="src/images/main/BunnyMoodCover.svg" style="width: 100%; height: auto;"></a>
+         </div>
+       </div> 
+    
+       <div class="projectBlock">
+         <div id="trackCoin" class="project-link ux-ui" style="width: 30%; height: auto; position: absolute; right: 2.8%;" onmouseover="playTcAnimation()" onmouseout="withdrawTcAnimation()">
+           <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover1.png" id="TcCover1" style="width:26%; height:auto; position:absolute; bottom:19%; left:56%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover2.png" id="TcCover2" style="width:26%; height:auto; position:absolute; bottom:19%; left:16%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/trackCoin.html"><img src="src/images/TrackCoin/tcCover3.png" id="TcCover3" style="width:28.5%; height:auto; position:absolute; bottom:16.5%; left:36%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/trackCoin.html"><img src="src/images/main/TrackCoinCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+       </div>
+      
+       <div class="projectBlock">
+         <div id="drMirror" class="project-link ux-ui" style="width: 30%; height: auto; position: absolute; left: 7.7%;" onmouseover="playMirrorAnimation()" onmouseout="withdrawMirrorAnimation()">
+           <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorTitle.svg" id="MirrorTitle" style="width: 45%; height:auto; position:absolute; top:12%; left:28%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorTitle1.svg" id="MirrorTitle1" style="width:34%; height:auto; position:absolute; bottom:42%; left:7%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorCoverGraphic.png" id="MirrorCoverGraphic" style="width:42%; height:auto; position:absolute; bottom:9%; left:38%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/drMirror.html"><img src="src/images/main/MirrorCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
        </div>
 
-       <div id="drMirror" class="project-link ux-ui" style="width: 38.4%; height: auto; position: absolute; left: 7.7%; top: 45vw;" onmouseover="playMirrorAnimation()" onmouseout="withdrawMirrorAnimation()">
-        <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorTitle.svg" id="MirrorTitle" style="width: 45%; height:auto; position:absolute; top:12%; left:28%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorTitle1.svg" id="MirrorTitle1" style="width:34%; height:auto; position:absolute; bottom:42%; left:7%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorCoverGraphic.png" id="MirrorCoverGraphic" style="width:42%; height:auto; position:absolute; bottom:9%; left:38%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/drMirror.html"><img src="src/images/main/MirrorCover.svg" style="width: 100%; height: auto; "></a>
+       <div class="projectBlock">
+         <div id="fashionGame" class="project-link game-design" style="width: 30%; height: auto; position: absolute; left: 17.7%;" onmouseover="playFgAnimation()" onmouseout="withdrawFgAnimation()">
+           <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverTitle1.svg" id="fgT1" style="width:56.7%; height:auto; position:absolute; top:8%; left:8%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverTitle2.svg" id="fgT2" style="width:67%; height:auto; position:absolute; bottom:8%; left:8%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverModel2.png" id="fgModel2" style="width:78%;height:auto;position:absolute; top:25%; right:3%;animation-duration: 1s;animation-fill-mode: forwards;"></a> 
+           <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverMiddle.gif" id="fgMiddle" style="opacity:0; width:200%;height:auto;position:absolute; bottom:5%; left:-45%;animation-duration: 1s;animation-fill-mode: forwards;"></a>
+           <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverModel1.png" id="fgModel1" style="width:78%;height:auto;position:absolute; bottom:20%; left:6%;animation-duration: 1s;animation-fill-mode: forwards;"></a>
+           <a href="src/html/fashionGame.html"><img src="src/images/main/FashionGameCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
        </div>
+      </section>
+      <!-- End Work -->
 
-       <div id="gameDemo" class="project-link game-design" style="width: 30%; height: auto; position: absolute; right: 5.6%; top: 62vw;"  onmouseover="playGDAnimation()" onmouseout="withdrawGDAnimation()">
-        <a href="src/html/gameDemo.html"><img src="src/images/main/unityCover.png" id="unityCover" style="width:90%; height:auto; position:absolute; bottom:26%; left:6%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/gameDemo.html"><img src="src/images/main/gameDemoCover.svg" style="width: 100%; height: auto; "></a>
-       </div>
-
-       <div id="fashionGame" class="project-link game-design" style="width: 48%; height: auto; position: absolute; left: 17.7%; top: 78vw;" onmouseover="playFgAnimation()" onmouseout="withdrawFgAnimation()">
-         <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverTitle1.svg" id="fgT1" style="width:56.7%; height:auto; position:absolute; top:8%; left:8%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-         <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverTitle2.svg" id="fgT2" style="width:67%; height:auto; position:absolute; bottom:8%; left:8%; animation-duration:1s; animation-fill-mode: forwards;"></a>
-         <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverModel2.png" id="fgModel2" style="width:78%;height:auto;position:absolute; top:25%; right:3%;animation-duration: 1s;animation-fill-mode: forwards;"></a> 
-         <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverMiddle.gif" id="fgMiddle" style="opacity:0; width:200%;height:auto;position:absolute; bottom:5%; left:-45%;animation-duration: 1s;animation-fill-mode: forwards;"></a>
-         <a href="src/html/fashionGame.html"><img src="src/images/FashionGame/CoverModel1.png" id="fgModel1" style="width:78%;height:auto;position:absolute; bottom:20%; left:6%;animation-duration: 1s;animation-fill-mode: forwards;"></a>
-         <a href="src/html/fashionGame.html"><img src="src/images/main/FashionGameCover.svg" style="width: 100%; height: auto; "></a>
-       </div>
-
-       <div id="roblox" class="project-link other" style="width: 38.4%; height: auto; position: absolute; right: 4.2%; top: 105vw;" onmouseover="playRlAnimation()" onmouseout="withdrawRlAnimation()">
-        <a href="src/html/roblox.html"><img src="src/images/main/RobloxCover.svg" style="width: 100%; height: auto; "></a>
-        <a href="src/html/roblox.html"><img src="src/images/main/RobloxTitle.png" id="RlTitle" style="width:100%; height:auto; position:absolute; top:10%; left:0;animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/roblox.html"><img src="src/images/Roblox/GoldenFeather.jpg" id="GoldenFeather" style="width:32.5%;height:auto;position:absolute; bottom:5%; left:15%;animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/roblox.html"><img src="src/images/Roblox/WaterDress.jpg" id="WaterDress" style="width:32.5%;height:auto;position:absolute; bottom:5%; right:15%;animation-duration:1s; animation-fill-mode: forwards;"></a>
-       </div>
-
-       <div id="margot" class="project-link other" style="width: 38.4%; height: auto; position: absolute; left: 0; top: 115vw;" onmouseover="playMgAnimation()" onmouseout="withdrawMgAnimation()">
-        <a href="src/html/margot.html"><img src="src/images/Margot/margot2.jpg" id="mg01" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:45%;"></a>
-        <a href="src/html/margot.html"><img src="src/images/Margot/margot3.jpg" id="mg02" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:5%;"></a>
-        <a href="src/html/margot.html"><img src="src/images/Margot/margot1.jpg" id="mg03" class="coverImage" style="width:60%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:16%; right:20%;"></a>
-        <a href="src/html/margot.html"><img src="src/images/main/MargotCover.svg" style="width: 100%; height: auto; "></a>
-       </div>
-
-       <div id="p5jsWorks" class="project-link game-design" style="width: 30%; height: auto; position: absolute; left: 40%; top: 134vw;">
-        <a href="src/html/p1.html"><img src="src/images/main/p5jsWorksCover.svg" style="width: 100%; height: auto; "></a>
-        <a href="src/html/p1.html"><img onmouseover="p5cover()" onmouseout=" p5cover1()" src="src/images/main/P5Cover0.png" id="p5Cover" style="width:60%;height:auto; position:absolute; bottom:16%; left:20%;"></a>
-       </div>
-
-       <div id="Installation" class="project-link other" style="width: 38.4%; height: auto; position: absolute; left: 12%; top: 152vw;"onmouseover="playInsAnimation()" onmouseout="withdrawInsAnimation()">
-        <img src="src/images/Installation/Egg.png" id="Egg"style="width:100%;height:auto;position:absolute; bottom:5%; left:-60%;opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
-        <img src="src/images/Installation/cloud.png" id="cloud" style="width:75%;height:auto;position:absolute; bottom:10%; right:-50%; opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
-        <a href="src/html/Cocoon.html"><img src="src/images/Installation/cocoon.png" style="width:100%;height:auto;position:absolute; bottom:5%; right:-10%;"></a>
-        <a href="src/html/Cocoon.html"><img src="src/images/main/InstallationsCover.svg" style="width: 100%; height: auto; "></a>
-       </div>
-
-       <div id="Paintings" class="project-link other" style="width: 30%; height: auto; position: absolute; right: 14%; top: 172vw;" onmouseover="playPaintingsAnimation()" onmouseout="withdrawPaintingsAnimation()">
-        <a href="src/html/paintingsColor.html"><img src="src/images/main/Paintings.svg" style="width: 100%; height: auto; "></a>
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover1.png" id="PCover1" style="width:35%;height:auto;position:absolute; bottom:36%; left:14%;animation-duration:1s; animation-fill-mode: forwards;"></a>
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover2.png" id="PCover2" style="width:35%;height:auto;position:absolute; bottom:36%; left:34%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover3.png" id="PCover3" style="width:35%;height:auto;position:absolute; bottom:36%; left:54%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover4.png" id="PCover4" style="width:35%;height:auto;position:absolute; bottom:6%; left:14%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover5.png" id="PCover5" style="width:35%;height:auto;position:absolute; bottom:6%; left:34%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
-        <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover6.png" id="PCover6" style="width:35%;height:auto;position:absolute; bottom:6%; left:54%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
-       </div>
-
-       <div id="foldingPurifier" class="project-link other" style="width: 30%; height: auto; position: absolute; left: 12%; top: 183vw;" onmouseover="playFpAnimation()" onmouseout="withdrawFpAnimation()">
-        <a href="src/html/foldingPurifier.html"><img src="src/images/main/FoldingPurifierCover.png" style="width: 100%; height: auto; "></a>
-        <a href="src/html/foldingPurifier.html"><img id="fpGraphic" src="src/images/FoldingPurifier/CoverGraphic.png"
-          style="width:45%;height:auto; position:absolute; opacity:0; top:3%; right:7%;animation-duration: 0.5s;animation-fill-mode: forwards;"></a>
-       </div>
-
-       <div id="Landscape" class="project-link other" style="width: 48%; height: auto; position: absolute; right: 15%; top: 203vw;" onmouseover="playlaAnimation()" onmouseout="withdrawlaAnimation()"> 
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="laTitle" src="src/images/main/LAtitle.svg"
-          style="width:87%;height:auto; position:absolute; top:8%; right:0;animation-duration: 1s;animation-fill-mode: forwards;"></a>
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la01" src="src/images/Landscape/Landscape01.jpg" class="coverImage" 
-          style="width:50%;height:auto; position:absolute; top:45%; left:10%;"></a>
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la02" src="src/images/Landscape/Landscape02.jpg" class="coverImage" 
-          style="width:35%;height:auto; position:absolute; top:44%; left:55%;"></a>
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la03" src="src/images/Landscape/Landscape03.jpg" class="coverImage" 
-          style="width:40%;height:auto; position:absolute; top:35%; left:30%;"></a>
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la04" src="src/images/Landscape/Landscape04.jpg" class="coverImage" 
-          style="width:50%;height:auto; position:absolute; top:60%; left:25%;"></a>
-        <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img src="src/images/main/LandscapeCover.svg" style="width: 100%; height: auto; "></a>
-       </div>
+      <!-- ======= Play Section ======= -->
+      <section id="Play" class="sectionBlock" style="border-bottom:solid 3px;" onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')">
        
-      </div>     
-    </section>
-    <!-- End Portfolio -->
+       <div class="projectBlock filterNav" id="filter-buttons">
+          <button class="filter-button-yellow active" data-category="all">All</button>     
+          <button class="filter-button-yellow" data-category="ux-ui">Sound</button>
+          <button class="filter-button-yellow" data-category="game-design">Animation</button>
+          <button class="filter-button-yellow" data-category="other">Code</button>
+          <button class="filter-button-yellow" data-category="other">Art</button>
+       </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="Play" onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" class="sectionBlock">
-      <div>
-       <h1 style="color: #589F4F;">Play</h1>
-      </div>
-    </section>
-    <!-- End About -->
+       <div id="project-links" class="circleRegion" style="position:relative; animation-duration:1s; animation-fill-mode:forwards;">
+         <div id="gameDemo" class="project-link game-design" style="width:30%; height:auto; position:absolute; right:5.6%; top:16vw;"  onmouseover="playGDAnimation()" onmouseout="withdrawGDAnimation()">
+           <a href="src/html/gameDemo.html"><img src="src/images/main/unityCover.png" id="unityCover" style="width:90%; height:auto; position:absolute; bottom:26%; left:6%; animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/gameDemo.html"><img src="src/images/main/gameDemoCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
 
+         <div id="roblox" class="project-link other" style="width:38.4%; height:auto; position:absolute; right:12%; top:48vw;" onmouseover="playRlAnimation()" onmouseout="withdrawRlAnimation()">
+           <a href="src/html/roblox.html"><img src="src/images/main/RobloxCover.svg" style="width:100%; height:auto; "></a>
+           <a href="src/html/roblox.html"><img src="src/images/main/RobloxTitle.png" id="RlTitle" style="width:100%; height:auto; position:absolute; top:10%; left:0;animation-duration:1s; animation-fill-mode:forwards;"></a>
+           <a href="src/html/roblox.html"><img src="src/images/Roblox/GoldenFeather.jpg" id="GoldenFeather" style="width:32.5%; height:auto;position:absolute; bottom:5%; left:15%; animation-duration:1s; animation-fill-mode:forwards;"></a>
+           <a href="src/html/roblox.html"><img src="src/images/Roblox/WaterDress.jpg" id="WaterDress" style="width:32.5%; height:auto; position:absolute; bottom:5%; right:15%; animation-duration:1s; animation-fill-mode:forwards;"></a>
+         </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="About" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
-      <div>
-       <h1 style="color: #589F4F;">About</h1>
-      </div>
-      <div class="aboutColumn">
-        <div class="aboutText">
-          <img src="src/images/main/aboutImage.jpg" style="width:110%;height:auto; margin:auto;">
-          <a href="https://www.instagram.com/bihan_alive/"><img src="src/images/main/insIcon.svg" style="width:20%;height:auto; margin:auto; position:relative; bottom:4vw; left:224.5px;"></a>
-          <a href="https://www.linkedin.com/in/BihanDesign/"><img src="src/images/main/LinkedinIcon.svg" style="width:20%;height:auto; margin:auto;position:relative; bottom:4vw; right:-225px;"></a>
+         <div id="margot" class="project-link other" style="width:38.4%; height:auto; position:absolute; left:0; top:0;" onmouseover="playMgAnimation()" onmouseout="withdrawMgAnimation()">
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot2.jpg" id="mg01" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:45%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot3.jpg" id="mg02" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:5%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot1.jpg" id="mg03" class="coverImage" style="width:60%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:16%; right:20%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/main/MargotCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+
+         <div id="p5jsWorks" class="project-link game-design" style="width:30%; height:auto; position:absolute; left: 16%; top: 32vw;">
+           <a href="src/html/p1.html"><img src="src/images/main/p5jsWorksCover.svg" style="width: 100%; height: auto; "></a>
+           <a href="src/html/p1.html"><img onmouseover="p5cover()" onmouseout=" p5cover1()" src="src/images/main/P5Cover0.png" id="p5Cover" style="width:60%;height:auto; position:absolute; bottom:16%; left:20%;"></a>
+         </div>
+
+         <div id="Installation" class="project-link other" style="width:38.4%; height:auto; position:absolute; left:0;  top:60vw;"onmouseover="playInsAnimation()" onmouseout="withdrawInsAnimation()">
+           <img src="src/images/Installation/Egg.png" id="Egg"style="width:100%;height:auto;position:absolute; bottom:5%; left:-60%;opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
+           <img src="src/images/Installation/cloud.png" id="cloud" style="width:75%;height:auto;position:absolute; bottom:10%; right:-50%; opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
+           <a href="src/html/Cocoon.html"><img src="src/images/Installation/cocoon.png" style="width:100%;height:auto;position:absolute; bottom:5%; right:-10%;"></a>
+           <a href="src/html/Cocoon.html"><img src="src/images/main/InstallationsCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+
+         <div id="Paintings" class="project-link other" style="width:30%; height:auto; position:absolute; right:28%; top:84vw;" onmouseover="playPaintingsAnimation()" onmouseout="withdrawPaintingsAnimation()">
+           <a href="src/html/paintingsColor.html"><img src="src/images/main/Paintings.svg" style="width:100%; height:auto; "></a>
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover1.png" id="PCover1" style="width:35%;height:auto;position:absolute; bottom:36%; left:14%;animation-duration:1s; animation-fill-mode: forwards;"></a>
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover2.png" id="PCover2" style="width:35%;height:auto;position:absolute; bottom:36%; left:34%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover3.png" id="PCover3" style="width:35%;height:auto;position:absolute; bottom:36%; left:54%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover4.png" id="PCover4" style="width:35%;height:auto;position:absolute; bottom:6%; left:14%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover5.png" id="PCover5" style="width:35%;height:auto;position:absolute; bottom:6%; left:34%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
+           <a href="src/html/paintingsColor.html"><img src="src/images/Paintings/Cover6.png" id="PCover6" style="width:35%;height:auto;position:absolute; bottom:6%; left:54%;animation-duration:1s; animation-fill-mode: forwards;"></a> 
+         </div>
+
+         <div id="foldingPurifier" class="project-link other" style="width:30%; height:auto; position:absolute; left:12%; top:104vw;" onmouseover="playFpAnimation()" onmouseout="withdrawFpAnimation()">
+           <a href="src/html/foldingPurifier.html"><img src="src/images/main/FoldingPurifierCover.png" style="width: 100%; height: auto; "></a>
+           <a href="src/html/foldingPurifier.html"><img id="fpGraphic" src="src/images/FoldingPurifier/CoverGraphic.png"
+            style="width:45%;height:auto; position:absolute; opacity:0; top:3%; right:7%;animation-duration: 0.5s;animation-fill-mode: forwards;"></a>
+         </div>
+
+         <div id="Landscape" class="project-link other" style="width:48%; height:auto; position:absolute; right:12%; top:124vw;" onmouseover="playlaAnimation()" onmouseout="withdrawlaAnimation()"> 
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="laTitle" src="src/images/main/LAtitle.svg"
+            style="width:87%;height:auto; position:absolute; top:8%; right:0;animation-duration: 1s;animation-fill-mode: forwards;"></a>
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la01" src="src/images/Landscape/Landscape01.jpg" class="coverImage" 
+            style="width:50%;height:auto; position:absolute; top:45%; left:10%;"></a>
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la02" src="src/images/Landscape/Landscape02.jpg" class="coverImage" 
+            style="width:35%;height:auto; position:absolute; top:44%; left:55%;"></a>
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la03" src="src/images/Landscape/Landscape03.jpg" class="coverImage" 
+            style="width:40%;height:auto; position:absolute; top:35%; left:30%;"></a>
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img id="la04" src="src/images/Landscape/Landscape04.jpg" class="coverImage" 
+            style="width:50%;height:auto; position:absolute; top:60%; left:25%;"></a>
+           <a href="https://drive.google.com/file/d/12ai826--lL1cDfA1ikl_7yIhKu7RX36G/view"><img src="src/images/main/LandscapeCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+       </div>     
+     </section>
+     <!-- End Portfolio -->
+
+     <!-- ======= About Section ======= -->
+     <section id="About" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
+        <div class="projectBlock filterNav" id="filter-buttons">
+          <button class="filter-button-green active" data-category="all">About Bihan</button>     
+          <button class="filter-button-green" data-category="ux-ui">Resume</button>
+          <button class="filter-button-green" data-category="game-design">Skills</button>
         </div>
-        <div class="aboutText">
-          <h3 style="margin:0; font-size:1.2vw;"> I am Bihan Li (李碧涵). "bi-碧" represents pure green, and "han-涵" signifies vast deep water like an ocean.</h3>
-          <img src="src/images/main/aboutGraphic.svg" style="width:80%;height:auto; margin:auto;">
-          <p style="font-size:1.2vw;">
-            I'm a landscape architect-turned-product designer with a background in designing for games and B2G. I specialize in creating digital experiences that resonate with users worldwide. I typically view design as an integral component of the entire business or service.</br></br>
-            I possess a diverse range of skills, including 2D graphics, 3D modeling, coding, sound design, animation, and physical modeling. I thrive in collaborative environments where I can push boundaries alongside like-minded individuals. </br></br>
-          </p>    
-        </div>
-      </div>
-    </section>
-    <!-- End About -->
-    <!-- ======= Skills Section ======= -->
-    <section id="Skills" onmouseover="setActive('SkillsIcon')" onmouseout="setInactive('SkillsIcon')" class="sectionBlock">
-      <div>
+        <div class="aboutColumn">
+          <div class="aboutText">
+            <img src="src/images/main/aboutImage.jpg" style="width:110%;height:auto; margin:auto;">
+            <a href="https://www.instagram.com/bihan_alive/"><img src="src/images/main/insIcon.svg" style="width:20%;height:auto; margin:auto; position:relative; bottom:4vw; left:224.5px;"></a>
+            <a href="https://www.linkedin.com/in/BihanDesign/"><img src="src/images/main/LinkedinIcon.svg" style="width:20%;height:auto; margin:auto;position:relative; bottom:4vw; right:-225px;"></a>
+          </div>
+          <div class="aboutText">
+            <h3 style="margin:0; font-size:1.2vw;"> I am Bihan Li (李碧涵). "bi-碧" represents pure green, and "han-涵" signifies vast deep water like an ocean.</h3>
+            <img src="src/images/main/aboutGraphic.svg" style="width:80%;height:auto; margin:auto;">
+            <p style="font-size:1.2vw;">
+              I'm a landscape architect-turned-product designer with a background in designing for games and B2G. I specialize in creating digital experiences that resonate with users worldwide. I typically view design as an integral component of the entire business or service.</br></br>
+              I possess a diverse range of skills, including 2D graphics, 3D modeling, coding, sound design, animation, and physical modeling. I thrive in collaborative environments where I can push boundaries alongside like-minded individuals. </br></br>
+            </p>    
+          </div>
+       </div>
+       <section>
         <div>
-          <h1 style="color: #4FADAC; margin: 0;">Skills</h1>
-          <!-- <h3 style="text-align: center; width:70%; height:auto; margin:24px auto 8px auto;">I am developing the following skills to achieve my career goal as a full-stack designer</h3> -->
-        </div>
-        <h3 class="skillTypeName" style="margin:40px auto 8px auto;">Prototype</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-            <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Physical models</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Unity</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-            <div class="skillContainer"><p class="skillName">Sketch</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+          <h3 class="skillTypeName" style="margin:40px auto 8px auto;">Prototype</h3>
+          <div class="skillRow">
+           <div class="skillBlock">
+             <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Physical models</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Unity</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
            </div> 
-        </div>
-        <h3 class="skillTypeName">Coding</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">HTML+CSS</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">JavaScript</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Unity C#</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">Unity Cg/HLSL</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">p5.js</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">C++</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">Python</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Git</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
-          </div>
-        </div>
-        <h3 class="skillTypeName">3D</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-            <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Cinema 4D</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Marvelous Designer</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">zbrush</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Rhino</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">SketchUp</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Robolox studio</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
-          </div>
-        </div>
-        <h3 class="skillTypeName">2D</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-            <div class="skillContainer"><p class="skillName">Adobe PhotoShop</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Adobe InDesign</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
-          </div> 
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-           <div class="skillContainer"><p class="skillName">Adobe Illustrator</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
-          </div> 
-        </div>
-        <h3 class="skillTypeName">Animation</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-            <div class="skillContainer"><p class="skillName">After Effect</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           <div class="skillBlock">
+             <div class="skillContainer"><p class="skillName">Sketch</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+            </div> 
+         </div>
+         <h3 class="skillTypeName">Coding</h3>
+         <div class="skillRow">
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">HTML+CSS</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">JavaScript</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Unity C#</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           </div> 
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Unity Cg/HLSL</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">p5.js</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">C++</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           </div> 
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">Python</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Git</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+           </div>
+         </div>
+         <h3 class="skillTypeName">3D</h3>
+         <div class="skillRow">
+           <div class="skillBlock">
+             <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Cinema 4D</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Marvelous Designer</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+           </div> 
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">zbrush</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Rhino</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
+           </div> 
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">SketchUp</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+            <div class="skillContainer"><p class="skillName">Robolox studio</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           </div>
+         </div>
+         <h3 class="skillTypeName">2D</h3>
+         <div class="skillRow">
+           <div class="skillBlock">
+             <div class="skillContainer"><p class="skillName">Adobe PhotoShop</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Adobe InDesign</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+           </div> 
+           <div class="skillBlock">
             <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
-            <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
-          </div> 
-        </div>
-        <h3 class="skillTypeName">Sound</h3>
-        <div class="skillRow">
-          <div class="skillBlock">
-           <div class="skillContainer"><p class="skillName">ProTools</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
-          </div> 
-        </div>
-        <p class="skillTypeName"></p>
-      </div>
-    </section>
-    <!-- End Skills -->
+            <div class="skillContainer"><p class="skillName">Adobe Illustrator</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+           </div> 
+         </div>
+         <h3 class="skillTypeName">Animation</h3>
+         <div class="skillRow">
+           <div class="skillBlock">
+             <div class="skillContainer"><p class="skillName">After Effect</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+             <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           </div> 
+         </div>
+         <h3 class="skillTypeName">Sound</h3>
+         <div class="skillRow">
+           <div class="skillBlock">
+            <div class="skillContainer"><p class="skillName">ProTools</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+           </div> 
+         </div>
+         <p class="skillTypeName"></p>
+       </div>
+     </section>
+     </section>
+     <!-- End About -->
 
     <!-- ======= Contact Section ======= -->
     <section id="Contact" onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" class="sectionBlock">
       <div>
-        <div class="mainTitle">
-          <h1 style="text-align: center; color: #A375D2;">Contact</h1>
-        </div>
         <div class="contactInfo" style="width:80%; margin:auto; text-align:left; padding-bottom:7vw;padding-left:6vw;">
           <div class="contactItem">
             <img class="contactIcon" src="src/images/main/contactLocationIcon.svg">
@@ -290,7 +297,7 @@
     <!-- End Contact -->
 
     <!-- ======= Footer Section ======= -->
-    <section style="background-color: #1C2122; padding: 30px; position: relative; bottom:0px; z-index: -1;" >
+    <section style="background-color: #1C2122; padding: 30px; position: relative; bottom:0px; z-index:150;" >
       <div style="color: #F6F5E8;border:#F6F5E8 ; color: #F6F5E8; text-align:center;">
        <h3>Bihan Design</h3>
        <p>Thanks for your review. Have a good day!</p><br>
@@ -299,7 +306,7 @@
       </div>
     </section>
     <!-- End Footer -->
-
+  </section>
 
   </body>
 </html>
