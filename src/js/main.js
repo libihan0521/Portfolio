@@ -77,8 +77,6 @@ function withdrawMgAnimation(){
 }
 
 function playFgAnimation(){
-  document.getElementById("fgT1").style.animationName = "fgTitle1";
-  document.getElementById("fgT2").style.animationName = "fgTitle2";
   document.getElementById("fgModel2").style.animationName = "fgModel2";
   document.getElementById("fgModel2").setAttribute("src","src/images/FashionGame/CoverModel2-1.png");
   document.getElementById("fgModel1").style.animationName = "fgModel1";
@@ -87,8 +85,6 @@ function playFgAnimation(){
 }
 
 function withdrawFgAnimation(){
-  document.getElementById("fgT1").style.animationName = "fgTitle1-1";
-  document.getElementById("fgT2").style.animationName = "fgTitle2-1";
   document.getElementById("fgModel2").style.animationName = "fgModel2-1";
   document.getElementById("fgModel2").setAttribute("src","src/images/FashionGame/CoverModel2.png");
   document.getElementById("fgModel1").style.animationName = "fgModel1-1";
@@ -116,27 +112,21 @@ function p5cover1(){
 
 function playBMAnimation(){
   document.getElementById("BMCoverPad").style.animationName = "BMCoverPad";
-  // document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone";
-  // document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch";
-  document.getElementById("BMCoverTitle").style.animationName = "BMCoverTitle";
+  document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone";
+  document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch";
 }
 
 function withdrawBMAnimation(){
   document.getElementById("BMCoverPad").style.animationName = "BMCoverPad-1";
-  // document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone-1";
-  // document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch-1";
-  document.getElementById("BMCoverTitle").style.animationName = "BMCoverTitle-1";
+  document.getElementById("BMCoverPhone").style.animationName = "BMCoverPhone-1";
+  document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch-1";
 }
 
 function playMirrorAnimation(){
-  document.getElementById("MirrorTitle").style.animationName = "MirrorTitle";
-  document.getElementById("MirrorTitle1").style.animationName = "MirrorTitle1";
   document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic";
 }
 
 function withdrawMirrorAnimation(){
-  document.getElementById("MirrorTitle").style.animationName = "MirrorTitle-1";
-  document.getElementById("MirrorTitle1").style.animationName = "MirrorTitle1-1";
   document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic-1";
 }
 
@@ -198,14 +188,61 @@ function withdrawGDAnimation(){
 
 /*-----------Filter Function-----------*/
   // 筛选作品链接的函数
-  function filterProjects(category) {
-    var projectLinks = document.getElementsByClassName('project-link');
-    var region=document.getElementById('project-links');
-    var gameDemo=document.getElementById('gameDemo');
+  function filterProjectsRed(category) {
+    var projectLinks = document.getElementsByClassName('project-link-red');
+    var bunnyMood=document.getElementById('bunnyMood');
+    var trackCoin=document.getElementById('trackCoin');
+    var cityDNA=document.getElementById('cityDNA');
     var fashionGame=document.getElementById('fashionGame');
-    var p5jsWorks=document.getElementById('p5jsWorks');
-    var margot=document.getElementById('margot');
+    var drMirror=document.getElementById('drMirror');
+    
+    // 如果选中的按钮是"All"，显示所有作品链接
+    if (category === 'all') {
+      for (var i = 0; i < projectLinks.length; i++) {
+        projectLinks[i].style.display = 'block';
+      }
+    } else {
+      if(category === 'uxui'){
+        drMirror.style.display='block';
+        trackCoin.style.display='block';
+        fashionGame.style.display='none';
+        bunnyMood.style.display='block';
+        cityDNA.style.display='block';
+        scrollToTop(0.9);
+      }
+      if(category === 'gamedesign'){
+        drMirror.style.display='none';
+        trackCoin.style.display='none';
+        fashionGame.style.display='block';
+        bunnyMood.style.display='block';
+        cityDNA.style.display='none';
+        scrollToTop(0.9);
+      }
+      if(category === 'academic'){
+        drMirror.style.display='block';
+        trackCoin.style.display='block';
+        fashionGame.style.display='block';
+        bunnyMood.style.display='block';
+        cityDNA.style.display='none';
+        scrollToTop(0.9);
+      }
+      if(category === 'professional'){
+        drMirror.style.display='none';
+        trackCoin.style.display='none';
+        fashionGame.style.display='none';
+        bunnyMood.style.display='none';
+        cityDNA.style.display='block';
+        scrollToTop(0.9);
+      }
+    } 
+  }
+
+  function filterProjectsYellow(category) {
+    var projectLinks = document.getElementsByClassName('project-link-yellow');
+    var gameDemo=document.getElementById('gameDemo');
     var roblox=document.getElementById('roblox');
+    var margot=document.getElementById('margot');
+    var p5jsWorks=document.getElementById('p5jsWorks');
     var Installation=document.getElementById('Installation');
     var Paintings=document.getElementById('Paintings');
     var foldingPurifier=document.getElementById('foldingPurifier');
@@ -213,52 +250,64 @@ function withdrawGDAnimation(){
     
     // 如果选中的按钮是"All"，显示所有作品链接
     if (category === 'all') {
-      region.style.height = "235vw";
-      gameDemo.style.top="62vw";
-      fashionGame.style.top="78vw";
-      p5jsWorks.style.top="134vw";
-      roblox.style.top="105vw";
-      margot.style.top="115vw";
-      Installation.style.top="152vw";
-      Paintings.style.top="172vw";
-      foldingPurifier.style.top="183vw";
-      Landscape.style.top="203vw";
       for (var i = 0; i < projectLinks.length; i++) {
-        projectLinks[i].style.display = 'block';
+        projectLinks[i].style.opacity='100%';
       }
     } else {
-      if(category === 'ux-ui'){
-        region.style.height = "70vw";
+      if(category === 'animation'){
+        gameDemo.style.opacity='20%';
+        roblox.style.opacity='20%';
+        margot.style.opacity='100%';
+        p5jsWorks.style.opacity='20%';
+        Installation.style.opacity='20%';
+        Paintings.style.opacity='20%';
+        foldingPurifier.style.opacity='20%';
+        Landscape.style.opacity='20%';
       }
-      if(category === 'game-design'){
-        region.style.height = "90vw";
-        gameDemo.style.top="18vw";
-        fashionGame.style.top="38vw";
-        p5jsWorks.style.top="72vw";
+      if(category === 'code'){
+        gameDemo.style.opacity='100%';
+        roblox.style.opacity='20%';
+        margot.style.opacity='20%';
+        p5jsWorks.style.opacity='100%';
+        Installation.style.opacity='20%';
+        Paintings.style.opacity='20%';
+        foldingPurifier.style.opacity='20%';
+        Landscape.style.opacity='20%';
       }
-      if(category === 'other'){
-        region.style.height = "114vw";
-        roblox.style.top="4vw";
-        margot.style.top="4vw";
-        Installation.style.top="32vw";
-        Paintings.style.top="48vw";
-        foldingPurifier.style.top="64vw";
-        Landscape.style.top="80vw";
+      if(category === 'art'){
+        gameDemo.style.opacity='20%';
+        roblox.style.opacity='100%';
+        margot.style.opacity='100%';
+        p5jsWorks.style.opacity='20%';
+        Installation.style.opacity='20%';
+        Paintings.style.opacity='100%';
+        foldingPurifier.style.opacity='20%';
+        Landscape.style.opacity='20%';
       }
-      // 根据选中的类别显示对应的作品链接，隐藏其他类别的作品链接
-      for (var i = 0; i < projectLinks.length; i++) {
-        var link = projectLinks[i];
-        if (link.classList.contains(category)) {
-          link.style.display = 'block';
-        } else {
-          link.style.display = 'none';
-        }
-      }  
+      if(category === 'physical'){
+        gameDemo.style.opacity='20%';
+        roblox.style.opacity='20%';
+        margot.style.opacity='20%';
+        p5jsWorks.style.opacity='20%';
+        Installation.style.opacity='100%';
+        Paintings.style.opacity='20%';
+        foldingPurifier.style.opacity='100%';
+        Landscape.style.opacity='100%';
+      }
     } 
   }
 
-  function toggleActive(button) {
-    const buttons = document.querySelectorAll('.filter-button');
+  function scrollToTop(n) {
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = Math.floor(viewportHeight * n);
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  function toggleActive(button,color) {
+    const buttons = document.querySelectorAll('.filter-button-'+color);
     // 移除其他按钮的 active 类
     buttons.forEach((_, index) => {
         buttons[index].classList.remove('active');
@@ -266,3 +315,26 @@ function withdrawGDAnimation(){
     // 切换当前按钮的 active 类
     button.classList.toggle('active');
   }
+
+
+
+  window.addEventListener('scroll', function() {
+    var filterNavs = document.getElementsByClassName('filterNav');
+
+    for (var i = 0; i < filterNavs.length; i++) {
+      var filterNav = filterNavs[i];
+      var filterText = filterNav.querySelector('.filterText');
+      var filterTag = filterNav.querySelector('.filterTag');
+      var distanceFromTop = filterNav.getBoundingClientRect().top;
+
+      if (distanceFromTop <= 0) {
+        filterText.style.display = 'none';
+        filterTag.style.display = 'block';
+        filterNav.style.backgroundColor = 'black';
+      } else {
+        filterText.style.display = 'block';
+        filterTag.style.display = 'none';
+        filterNav.style.backgroundColor = '#F6F5E8';
+      }
+    }
+  });
