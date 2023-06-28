@@ -564,6 +564,27 @@ p{
   100% {width:42%;bottom:16%; left:28%;}
 }
 
+/*-----------CityDNA-----------*/
+
+@keyframes CityCover1{
+  0%   {width:60%;top:31%; right:22%;}
+  100% {width:80%;top:8%; right:12%;}
+}
+@keyframes CityCover1-1{
+  0%   {width:80%;top:8%; right:12%;}
+  100% {width:60%;top:31%; right:22%;}
+}
+
+@keyframes CityCover2{
+  0%   {width:66%;top:36%; left:16%;}
+  100% {width:90%;top:30%; left:4%;}
+}
+@keyframes CityCover2-1{
+  0%   {width:90%;top:30%; left:4%;}
+  100% {width:66%;top:36%; left:16%;}
+}
+
+
 /*-----------Folding Purifier-----------*/
 @keyframes fpGraphic{
   0%   {opacity:0;}

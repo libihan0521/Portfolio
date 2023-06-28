@@ -122,6 +122,16 @@ function withdrawBMAnimation(){
   document.getElementById("BMCoverWatch").style.animationName = "BMCoverWatch-1";
 }
 
+function playCityAnimation(){
+  document.getElementById("CityCover1").style.animationName = "CityCover1";
+  document.getElementById("CityCover2").style.animationName = "CityCover2";
+}
+
+function withdrawCityAnimation(){
+  document.getElementById("CityCover1").style.animationName = "CityCover1-1";
+  document.getElementById("CityCover2").style.animationName = "CityCover2-1";
+}
+
 function playMirrorAnimation(){
   document.getElementById("MirrorCoverGraphic").style.animationName = "MirrorCoverGraphic";
 }
