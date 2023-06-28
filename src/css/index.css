@@ -31,8 +31,12 @@
 /*--------------general-------------------------*/
 body {
     color: #1C2122;
+    background-color:#F6F5E8;
     margin: 0;
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
   }
 
 a {
@@ -48,14 +52,8 @@ a:hover {
 
 h1{
   font-family: 'AbrilFatface-Regular';
-  font-size: 60px;
+  font-size:3.2vw; 
   text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
 }
 
 h2{
@@ -89,16 +87,14 @@ p{
 
 /*--------------section-------------------------*/
 .sectionBlock {
-  margin:160px auto 0 auto;
+  margin:10vw auto 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .sectionBlock {
-    margin:120px auto 0 auto;
+    margin:8vw auto 0 auto;
   }
 }
-
-
 
 
 /*-----------work-----------*/
@@ -106,7 +102,12 @@ p{
   width:100vw; 
   height:48vw;
   background-color:#F6F5E8;
-  border-bottom:solid 4px;
+  border-bottom:solid 0.3vw;
+}
+@media screen and (max-width: 800px) {
+  .projectBlock {
+    height:130vw;
+  }
 }
 
 .resumeHead{
@@ -122,8 +123,13 @@ p{
 .projectTitle{
   font-family: 'Inter-Bold';
   font-size: 48px;
-  margin:0 0 8px 0;
+  margin:0 0 0.5vw 0;
   line-height: 1;
+}
+@media screen and (max-width: 800px) {
+  .projectTitle{
+    font-size:24px; 
+  }
 }
 
 .singleType{
@@ -133,17 +139,17 @@ p{
   color:#C8C8C8;
   border-radius: 12px;
   font-family: 'Inter-Regular';
-  margin: 2px;
+  margin: 0.13vw;
 }
 .projectDescription{
   font-family:'Inter-Regular';
   font-size:16px;
-  padding:4px;
+  padding:0.26vw;
   margin:0;
 }
 
 .secondHead{
-  margin: 38px auto 0 0;
+  margin: 2.5px auto 0 0;
   padding:0;
 }
 
@@ -181,16 +187,13 @@ p{
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .circleRegion {
     width:90vw;
-    height:240vw;
+    height:174vw;
     margin: auto;
   }
 }
-
-
-
 
 /*-------------- Navigation Menu-------------------------*/
 .nav-menu {
@@ -208,22 +211,21 @@ p{
 .nav-menu a,
 .nav-menu a:focus {
   align-items: center;
-  padding: 10px 18px;
-  margin: auto 8px;
+  padding: 0.65vw 1.2vw;
+  margin: auto 0.4vw;
   transition: 0.3s;
   font-family: 'Inter-Bold';
-  font-size: 20px;
-  border-radius: 50px;
-  height: 60px;
-  width: 60px;
+  font-size: 1.3vw;
+  border-radius: 3vw;
+  height: 3.8vw;
+  width: 3.8vw;
   overflow:hidden;
   flex-shrink:0;
 }
 
 .nav-menu a span{
-  padding-left:24px;
+  padding-left:1.6vw;
   color: #1C2122;
-  padding-bottom:26px;
 }
 .nav-menu a:focus span {
   color: #1C2122;
@@ -237,13 +239,13 @@ p{
 }
 
 .nav-menu a:hover{
-  width: 160px;
+  width: 11vw;
 }
 
 .navIcon{
-  width: 27px; 
+  width: 1.8vw; 
   height: auto; 
-  left:-1%;;
+  margin-left: -0.1vw;
 }
 
 
@@ -270,12 +272,12 @@ p{
   font-size: 13px;
   color: #1C2122;
   font-weight: bolder;
-  margin-bottom: 8px;
+  margin-bottom: 0.53vw;
 }
 
 .skillContainer{
-  padding: 6px;;
-  margin: 0 24PX 24px 40px;
+  padding: 0.4vw;
+  margin: 0 1.6vw 1.6vw 2.6vw;
 }
 
 .skillTypeName{
@@ -283,7 +285,7 @@ p{
   text-align: left;
   width:90%;
   padding-left:8vw;
-  margin:32px auto 8px auto;
+  margin:2.1vw auto 0.53vw auto;
 }
 
 .skillBlock{
@@ -294,7 +296,7 @@ p{
   height:auto; 
   margin:auto;
   padding:0;
-  margin:0 48px 0 0;
+  margin:0 3.2vw 0 0;
 }
 
 .skillRow{
@@ -304,7 +306,7 @@ p{
   padding:0;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .skillBlock{
     flex-direction: column;
   }
@@ -321,7 +323,7 @@ p{
   flex-direction: row;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .contactInfo {
     display: flex;
     flex-direction: column;
@@ -343,8 +345,8 @@ p{
 /*-----------About-----------*/
 .aboutText{
   width:100%;
-  padding:0 8px 0 8px;
-  margin: 0 24px 0 24px;
+  padding:0 0.5vw 0 0.5vw;
+  margin: 0 0 0 1.5vw;
 }
 .aboutColumn{
   display: flex;
@@ -362,7 +364,7 @@ p{
   }
   .aboutText{
     width:80%;
-    margin: 40px auto 0 auto;
+    margin: 2.5vw auto 0 auto;
   }
 }
 
@@ -668,183 +670,127 @@ p{
 /*-----------Filter Function-----------*/
 .filter-button-red.active{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #C05643;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#C05643;
   color:#F6F5E8;
 }
 .filter-button-red:hover{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #C05643;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#C05643;
 }
 .filter-button-red{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border-style: none;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#C05643;
 }
 
 .filter-button-yellow.active{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #E3BC59;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#E3BC59;
   color:#F6F5E8;
 }
 .filter-button-yellow:hover{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #E3BC59;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#E3BC59;
 }
 .filter-button-yellow{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border-style: none;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#E3BC59;
 }
 
 .filter-button-green.active{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #589F4F;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#589F4F;
   color:#F6F5E8;
 }
 .filter-button-green:hover{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
   border: #589F4F;
   border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#589F4F;
 }
 .filter-button-green{
   font-family:'Comfortaa-Regular';
-  border-radius: 50px;
+  border-radius: 3.3vw;
+  font-size:0.2vw;
   border-style: none;
-  margin: 8px;
-  padding:8px 16px;
+  margin: 0.5vw;
+  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#589F4F;
 }
 
-.filter-button-blue.active{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border: #424EFB;
-  border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#424EFB;
-  color:#F6F5E8;
-}
-.filter-button-blue:hover{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border: #424EFB;
-  border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#F6F5E8;
-  color:#424EFB;
-}
-.filter-button-blue{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border-style: none;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#F6F5E8;
-  color:#424EFB;
-}
-
-.filter-button-purple.active{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border: #9E77D3;
-  border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#9E77D3;
-  color:#F6F5E8;
-}
-.filter-button-purple:hover{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border: #9E77D3;
-  border-style: solid;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#F6F5E8;
-  color:#9E77D3;
-}
-.filter-button-purple{
-  font-family:'Comfortaa-Regular';
-  border-radius: 50px;
-  border-style: none;
-  margin: 8px;
-  padding:8px 16px;
-  background-color:#F6F5E8;
-  color:#9E77D3;
-}
 
 .filterTag{
   display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left:13.3vw; 
 }
 
 .filterText{ 
   position:relative;
-  left:-6vw; 
   top:0;
-  margin:-1vw;
+  margin:0;
   padding:0;
 }
 
 .filterh1{
   margin:0; 
   padding:0; 
-  font-size:3.2vw; 
+  text-align:center;
 }
+
 
 .filterNav{
   background:#F6F5E8; 
   position:sticky; 
   top:0; 
   z-index:100; 
-  height:120px; 
+  height:7vw; 
   margin:0;
-  margin-bottom:8vw; 
-  padding-top:34px; 
-  padding-left:200px; 
-  border-top:solid 4px;
-  border-bottom:solid 4px;
-  overflow-y: scroll;
+  padding-top:1vw; 
+  border-top:solid 0.3vw black;
+  border-bottom:solid 0.3vw black;
+  margin-bottom:6vw; 
 }

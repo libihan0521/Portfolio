@@ -35,10 +35,10 @@ document.addEventListener("mousemove", function(event) {
 
 //Nav-Icon animation
 function setActive(elementId) {
-  document.getElementById(elementId).style.width = "160px";
+  document.getElementById(elementId).style.width = "11vw";
 }
 function setInactive(elementId) {
-  document.getElementById(elementId).style.width = "60px";
+  document.getElementById(elementId).style.width = "3.8vw";
 }
 
 //Cover animation
