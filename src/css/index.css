@@ -39,6 +39,22 @@ body {
     max-width: 100%;
   }
 
+  /* 修改滚动条的颜色 */
+::-webkit-scrollbar {
+  display:none;
+}
+
+/* 修改滚动条上的滑块的样式 */
+::-webkit-scrollbar-thumb {
+  display:none;
+}
+
+/* 修改滚动条上的滑轨的样式 */
+::-webkit-scrollbar-track {
+  display:none;
+}
+
+
 a {
     color: #0563bb;
     text-decoration: none;
@@ -794,3 +810,4 @@ p{
   border-bottom:solid 0.3vw black;
   margin-bottom:6vw; 
 }
+
