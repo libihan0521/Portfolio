@@ -348,3 +348,8 @@ function withdrawGDAnimation(){
       }
     }
   });
+
+  function scrollToSection(mySection) {
+    var section = document.getElementById(mySection); // 获取要跳转到的元素
+    section.scrollIntoView({ behavior: 'smooth' }); // 平滑滚动到元素位置
+  }
