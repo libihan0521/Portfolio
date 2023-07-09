@@ -706,7 +706,7 @@ p{
 }
 
 /*-----------Filter Function-----------*/
-.filter-button-blue.active{
+.filter-button.active{
   font-family:'Comfortaa-Regular';
   border-radius: 3.3vw;
   border: #000000;
@@ -716,47 +716,17 @@ p{
   background-color:#000000;
   color:#F6F5E8;
 }
-.filter-button-blue:hover{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  border: #3548F9;
-  border-style: solid;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
-  background-color:#F6F5E8;
-  color:#000000;
-}
-.filter-button-blue{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  border-style: none;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
-  background-color:#F6F5E8;
-  color:#000000;
-}
-
-.filter-button-yellow.active{
+.filter-button:hover{
   font-family:'Comfortaa-Regular';
   border-radius: 3.3vw;
   border: #000000;
   border-style: solid;
   margin: 0.5vw;
   padding:0.5vw 1vw;
-  background-color:#000000;
-  color:#F6F5E8;
-}
-.filter-button-yellow:hover{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  border: #D28F00;
-  border-style: solid;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
   background-color:#F6F5E8;
   color:#000000;
 }
-.filter-button-yellow{
+.filter-button{
   font-family:'Comfortaa-Regular';
   border-radius: 3.3vw;
   border-style: none;
@@ -765,38 +735,6 @@ p{
   background-color:#F6F5E8;
   color:#000000;
 }
-
-.filter-button-green.active{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  border: #000000;
-  border-style: solid;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
-  background-color:#000000;
-  color:#F6F5E8;
-}
-.filter-button-green:hover{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  border: #589F4F;
-  border-style: solid;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
-  background-color:#F6F5E8;
-  color:#000000;
-}
-.filter-button-green{
-  font-family:'Comfortaa-Regular';
-  border-radius: 3.3vw;
-  font-size:0.2vw;
-  border-style: none;
-  margin: 0.5vw;
-  padding:0.5vw 1vw;
-  background-color:#F6F5E8;
-  color:#000000;
-}
-
 
 .filterTag{
   display: none;

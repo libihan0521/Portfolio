@@ -218,7 +218,7 @@ function withdrawGDAnimation(){
         fashionGame.style.display='none';
         bunnyMood.style.display='block';
         cityDNA.style.display='block';
-        scrollToTop(0.9);
+        scrollToTop(1);
       }
       if(category === 'gamedesign'){
         drMirror.style.display='none';
@@ -226,7 +226,7 @@ function withdrawGDAnimation(){
         fashionGame.style.display='block';
         bunnyMood.style.display='block';
         cityDNA.style.display='none';
-        scrollToTop(0.9);
+        scrollToTop(1);
       }
       if(category === 'academic'){
         drMirror.style.display='block';
@@ -234,7 +234,7 @@ function withdrawGDAnimation(){
         fashionGame.style.display='block';
         bunnyMood.style.display='block';
         cityDNA.style.display='none';
-        scrollToTop(0.9);
+        scrollToTop(1);
       }
       if(category === 'professional'){
         drMirror.style.display='none';
@@ -242,7 +242,7 @@ function withdrawGDAnimation(){
         fashionGame.style.display='none';
         bunnyMood.style.display='none';
         cityDNA.style.display='block';
-        scrollToTop(0.9);
+        scrollToTop(1);
       }
     } 
   }
@@ -317,8 +317,9 @@ function withdrawGDAnimation(){
     });
   }
 
-  function toggleActive(button,color) {
-    const buttons = document.querySelectorAll('.filter-button-'+color);
+  function toggleActive(button) {
+    const parentDiv = button.parentNode; // 获取父级 div
+    const buttons = parentDiv.querySelectorAll('.filter-button');
     // 移除其他按钮的 active 类
     buttons.forEach((_, index) => {
         buttons[index].classList.remove('active');
