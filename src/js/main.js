@@ -198,8 +198,8 @@ function withdrawGDAnimation(){
 
 /*-----------Filter Function-----------*/
   // 筛选作品链接的函数
-  function filterProjectsRed(category) {
-    var projectLinks = document.getElementsByClassName('project-link-red');
+  function filterProjectsBlue(category) {
+    var projectLinks = document.getElementsByClassName('project-link-blue');
     var bunnyMood=document.getElementById('bunnyMood');
     var trackCoin=document.getElementById('trackCoin');
     var cityDNA=document.getElementById('cityDNA');
@@ -257,6 +257,7 @@ function withdrawGDAnimation(){
     var Paintings=document.getElementById('Paintings');
     var foldingPurifier=document.getElementById('foldingPurifier');
     var Landscape=document.getElementById('Landscape');
+    var op='40%';
     
     // 如果选中的按钮是"All"，显示所有作品链接
     if (category === 'all') {
@@ -265,42 +266,42 @@ function withdrawGDAnimation(){
       }
     } else {
       if(category === 'animation'){
-        gameDemo.style.opacity='20%';
-        roblox.style.opacity='20%';
+        gameDemo.style.opacity=op;
+        roblox.style.opacity=op;
         margot.style.opacity='100%';
-        p5jsWorks.style.opacity='20%';
-        Installation.style.opacity='20%';
-        Paintings.style.opacity='20%';
-        foldingPurifier.style.opacity='20%';
-        Landscape.style.opacity='20%';
+        p5jsWorks.style.opacity=op;
+        Installation.style.opacity=op;
+        Paintings.style.opacity=op;
+        foldingPurifier.style.opacity=op;
+        Landscape.style.opacity=op;
       }
       if(category === 'code'){
         gameDemo.style.opacity='100%';
-        roblox.style.opacity='20%';
-        margot.style.opacity='20%';
+        roblox.style.opacity=op;
+        margot.style.opacity=op;
         p5jsWorks.style.opacity='100%';
-        Installation.style.opacity='20%';
-        Paintings.style.opacity='20%';
-        foldingPurifier.style.opacity='20%';
-        Landscape.style.opacity='20%';
+        Installation.style.opacity=op;
+        Paintings.style.opacity=op;
+        foldingPurifier.style.opacity=op;
+        Landscape.style.opacity=op;
       }
       if(category === 'art'){
-        gameDemo.style.opacity='20%';
+        gameDemo.style.opacity=op;
         roblox.style.opacity='100%';
         margot.style.opacity='100%';
-        p5jsWorks.style.opacity='20%';
-        Installation.style.opacity='20%';
+        p5jsWorks.style.opacity=op;
+        Installation.style.opacity=op;
         Paintings.style.opacity='100%';
-        foldingPurifier.style.opacity='20%';
-        Landscape.style.opacity='20%';
+        foldingPurifier.style.opacity=op;
+        Landscape.style.opacity=op;
       }
       if(category === 'physical'){
-        gameDemo.style.opacity='20%';
-        roblox.style.opacity='20%';
-        margot.style.opacity='20%';
-        p5jsWorks.style.opacity='20%';
+        gameDemo.style.opacity=op;
+        roblox.style.opacity=op;
+        margot.style.opacity=op;
+        p5jsWorks.style.opacity=op;
         Installation.style.opacity='100%';
-        Paintings.style.opacity='20%';
+        Paintings.style.opacity=op;
         foldingPurifier.style.opacity='100%';
         Landscape.style.opacity='100%';
       }
@@ -340,11 +341,15 @@ function withdrawGDAnimation(){
       if (distanceFromTop <= 0) {
         filterText.style.display = 'none';
         filterTag.style.display = 'block';
-        filterNav.style.backgroundColor = 'black';
+        if(i==0){
+          filterNav.style.height = '7vw';
+        }
       } else {
         filterText.style.display = 'block';
         filterTag.style.display = 'none';
-        filterNav.style.backgroundColor = '#F6F5E8';
+        if(i==0){
+          filterNav.style.height = '12vw';
+        }
       }
     }
   });

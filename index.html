@@ -34,18 +34,18 @@
     <!-- ======= Hero Section ======= -->
     <section id="Home" style="margin:0; padding:0;">
       <div style="width:100%; height:46vw; background-image:url('src/images/main/banner.png'); background-repeat:no-repeat; background-size:100%; position:fixed; top:0px;"> 
-          <img id="titleBG" src="src/images/main/titleBG.gif" style="width: 65%; position: absolute; left:22%; top:5.6vw;">
-          <img id="title"  src="src/images/main/title.png" style="width: 48%; position: absolute; left:30%; top:21vw;">   
+          <img id="titleBG" src="src/images/main/titleBG.gif" style="width: 65%; position: absolute; left:20%; top:5.6vw;">
+          <img id="title"  src="src/images/main/title.png" style="width: 48%; position: absolute; left:28%; top:21vw;">   
           <img id="clearPortrait" src="src/images/main/clearPortrait.gif" style="width: 100%; position: absolute; left:0%; top:0; visibility: hidden;">
       </div>
       <!-- Nav -->
       <a href="#Home" style="z-index:150; width:3vw; height:3vw; position:fixed; top:2vw; left:3vw; padding:0;"><img class="navIcon" src="src/images/main/HomeIcon.svg" style="width:100%;"></a>
-      <div style="padding:0; z-index:150; width:26.5vw; height:5vw; flex-shrink:0; position:fixed; right:3vw; top:1vw; border:solid 0.3vw; background-color:#F6F5E8; display:flex; flex-direction:row; border-radius:200px;">
+      <div style="padding:0; z-index:150; width:26.5vw; height:5vw; flex-shrink:0; position:fixed; right:3vw; top:1vw; border:solid 0.3vw; background-color:#F6F5E8 ; display:flex; flex-direction:row; border-radius:200px;">
         <nav id="navbar" class="nav-menu" style="margin:auto;">
-         <a onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')" id="PortfolioIcon" href="#Portfolio" style="background:#C05643; text-decoration-line:none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg"><span>Works</span></a>
+         <a onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')" id="PortfolioIcon" href="#Portfolio" style="background:#C0D3FA; text-decoration-line:none;"><img class="navIcon" src="src/images/main/PortfolioIcon.svg"><span>Works</span></a>
          <a onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')" id="PlayIcon" href="#Play" style="background:#EBBD5B; text-decoration-line:none;"><img class="navIcon" src="src/images/main/playIcon.svg"><span>Play</span></a>
-         <a onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" id="AboutIcon" href="#About"  style="background:#589F4F; text-decoration-line:none;"><img class="navIcon" src="src/images/main/AboutIcon.svg"><span>About</span></a>
-         <a onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" id="ContactIcon" href="#Contact"  style="background:#424EFB; text-decoration-line:none;"><img class="navIcon" src="src/images/main/ContactIcon.svg"><span>Contact</span></a>
+         <a onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" id="AboutIcon" href="#About"  style="background:#D6E86A; text-decoration-line:none;"><img class="navIcon" src="src/images/main/AboutIcon.svg"><span>About</span></a>
+         <a onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" id="ContactIcon" href="#Contact"  style="background:#F8CAB9; text-decoration-line:none;"><img class="navIcon" src="src/images/main/ContactIcon.svg"><span>Contact</span></a>
         </nav>
       </div>
       <!-- End Nav -->
@@ -53,24 +53,24 @@
     <!-- End Hero -->
 
     
-    <section  style="position:absolute; top:44vw; background-color:#F6F5E8;">
+    <section  style="position:absolute; top:44vw; background-color:#000000;">
       <!-- ======= Work Section ======= -->
       <section id="Portfolio" onmouseover="setActive('PortfolioIcon')" onmouseout="setInactive('PortfolioIcon')"> 
 
-       <div style="margin-bottom:1vw;" class="filterNav" id="filter-buttons-work">
+       <div style="margin-bottom:1vw; background-color:#C0D3FA; height:12vw;" class="filterNav" id="filter-buttons-work">
          <div class="filterText">
-           <h1 class="filterh1" style="color:#C05643;">I craft captivating and user-friendly experiences.</h1>
+           <p class="filterh1" style="color:#000000;">My works go beyond decoration:<br>Uniting business insight, empathy, and problem-solving skills.</p>
          </div>
          <div class="filterTag">
-           <button class="filter-button-red active" data-category="all" onclick="filterProjectsRed('all'); toggleActive(this,'red');">All</button>     
-           <button class="filter-button-red" data-category="uxui" onclick="filterProjectsRed('uxui'); toggleActive(this,'red');">UX/UI</button>
-           <button class="filter-button-red" data-category="gamedesign" onclick="filterProjectsRed('gamedesign'); toggleActive(this,'red');">Game</button>
-           <button class="filter-button-red" data-category="academic" onclick="filterProjectsRed('academic'); toggleActive(this,'red');">Academic</button>
-           <button class="filter-button-red" data-category="professional" onclick="filterProjectsRed('professional'); toggleActive(this,'red');">Professional</button>
+           <button class="filter-button-blue active" data-category="all" onclick="filterProjectsBlue('all'); toggleActive(this,'blue');">All</button>     
+           <button class="filter-button-blue" data-category="uxui" onclick="filterProjectsBlue('uxui'); toggleActive(this,'blue');">UX/UI</button>
+           <button class="filter-button-blue" data-category="gamedesign" onclick="filterProjectsBlue('gamedesign'); toggleActive(this,'blue');">Game</button>
+           <button class="filter-button-blue" data-category="academic" onclick="filterProjectsBlue('academic'); toggleActive(this,'blue');">Academic</button>
+           <button class="filter-button-blue" data-category="professional" onclick="filterProjectsBlue('professional'); toggleActive(this,'blue');">Professional</button>
          </div>
        </div>
 
-       <div id="bunnyMood" class="projectBlock  project-link-red">
+       <div id="bunnyMood" class="projectBlock  project-link-blue">
          <div class="twoColumn">
            <div class="childColumn" onmouseover="playBMAnimation()" onmouseout="withdrawBMAnimation()">
              <a href="src/html/bunnyMood.html"><img src="src/images/BunnyMood/BMCoverPad.png" id="BMCoverPad" style="width:69.5%; height:auto; position:absolute; bottom:22%; left:25%; animation-duration:1s; animation-fill-mode: forwards;"></a>
@@ -92,7 +92,7 @@
          </div>
        </div> 
 
-       <div id="trackCoin" class="projectBlock project-link-red">
+       <div id="trackCoin" class="projectBlock project-link-blue">
          <div class="twoColumn">
            <div class="childColumn TextContainer">
               <div>
@@ -114,7 +114,7 @@
          </div>
        </div>
 
-       <div id="cityDNA" class="projectBlock  project-link-red">
+       <div id="cityDNA" class="projectBlock  project-link-blue">
          <div class="twoColumn">
            <div class="project-link-red childColumn" onmouseover="playCityAnimation()" onmouseout="withdrawCityAnimation()">
              <a href="src/html/comingSoon.html"><img src="src/images/main/CityDNACover2.png" id="CityCover2" style="width:66%;height:auto; position:absolute; top:36%; left:16%; animation-duration:1s; animation-fill-mode: forwards;"></a>         
@@ -134,7 +134,7 @@
          </div>
        </div> 
 
-       <div id="fashionGame"  class="projectBlock  project-link-red">
+       <div id="fashionGame"  class="projectBlock  project-link-blue">
           <div class="twoColumn">
             <div class="childColumn TextContainer">
               <div>
@@ -155,7 +155,7 @@
          </div>
        </div>
  
-       <div id="drMirror" class="projectBlock  project-link-red">
+       <div id="drMirror" class="projectBlock  project-link-blue">
          <div class="twoColumn">
            <div id="bunnyMood" class="project-link-red childColumn" onmouseover="playMirrorAnimation()" onmouseout="withdrawMirrorAnimation()">
              <a href="src/html/drMirror.html"><img src="src/images/Mirror/MirrorCoverGraphic.png" id="MirrorCoverGraphic" style="width:42%; height:auto; position:absolute; bottom:16%; left:28%; animation-duration:1s; animation-fill-mode: forwards;"></a>
@@ -180,9 +180,9 @@
       <!-- ======= Play Section ======= -->
       <section id="Play" class="sectionBlock" style="margin-top:-0.2vw;" onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')">
        
-       <div class="filterNav" id="filter-buttons-play" style="border-top-width:0.25vw;">
+       <div class="filterNav" id="filter-buttons-play" style="border-top-width:0.25vw; background-color:#EBBD5B;">
           <div class="filterText">
-            <h1 class="filterh1" style="color:#EBBD5B;">Besides work, I enjoy exploring various creative mediums.</h1>
+            <h1 class="filterh1" style="color:#000000;">I enjoy exploring various creative mediums in my free time.</h1>
           </div>
           <div class="filterTag">
            <button class="filter-button-yellow active" data-category="all" onclick="filterProjectsYellow('all'); toggleActive(this,'yellow');">All</button>     
@@ -262,9 +262,9 @@
      <!-- ======= About Section ======= -->
      <section id="About" style="margin-top:0;" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
 
-        <div class="filterNav" id="filter-buttons-about">
+        <div class="filterNav" id="filter-buttons-about" style="background-color:#D6E86A;">
           <div class="filterText">
-            <h1 class="filterh1" style="color:#589F4F;">What to know more about me?</h1>
+            <h1 class="filterh1">What to know more about me?</h1>
           </div>
           <div class="filterTag">
             <button class="filter-button-green active" onclick="scrollToSection('AboutBihan'); toggleActive(this,'green');">About Bihan</button>     
@@ -276,16 +276,16 @@
         <div id="AboutBihan"class="aboutColumn">
           <div class="aboutText">
             <img src="src/images/main/aboutImage.jpg" style="width:100%;height:auto; margin:0; padding:0;">
-            <a href="https://www.instagram.com/bihan_alive/"><img src="src/images/main/insIcon.svg" style="width:20%;height:auto; margin:auto; position:relative; bottom:4vw; left:15vw;"></a>
-            <a href="https://www.linkedin.com/in/BihanDesign/"><img src="src/images/main/LinkedinIcon.svg" style="width:20%;height:auto; margin:auto;position:relative; bottom:4vw; right:-15vw;"></a>
+            <a href="https://www.instagram.com/bihan_alive/"><img src="src/images/main/insIcon.svg" style="width:16%;height:auto; margin:auto; position:relative; bottom:4vw; left:15vw;"></a>
+            <a href="https://www.linkedin.com/in/BihanDesign/"><img src="src/images/main/LinkedinIcon.svg" style="width:16%;height:auto; margin:auto;position:relative; bottom:4vw; right:-16vw;"></a>
           </div>
           <div class="aboutText">
             <h3 style="text-align:left; margin:0;"> My name is Bihan Li (李碧涵). "bi-碧" represents pure green, and "han-涵" signifies ocean-deep water.</h3>
             <img src="src/images/main/aboutGraphic.svg" style="width:80%;height:auto; margin:auto;">
             <p style="font-size:1.2vw;">
-              As a digital experiences designer, I find great joy in my profession. It provides me with a unique lens to perceive the world on a broader scale, as it encourages me to learn from various disciplines and embrace different perspectives. </br></br>
-              I believe that design is an indispensable element of any business, going beyond mere decoration and encompassing a strong business perspective.</br></br>
-              During my leisure time,  I enjoy playing video games and drawing manga.
+              As a designer, I enjoy learning from different disciplines and embracing diverse perspectives. I felt design adds depth to my existence by providing a unique lens that refracts the world in a magnified way.</br></br>
+              I believe design goes beyond decoration and involves a strong business perspective, humanistic care, and effective problem-solving. It fosters connections between users and products, creates engaging experiences, and drives positive outcomes.</br></br>
+              In my spare time, I love exploring creative technologies and creating manga art.
             </p>    
           </div>
        </div>
@@ -369,18 +369,18 @@
          </div>
        </section>
        <p>&nbsp</p>
-       <a id="Resume" href="src/html/BihanLiResume.pdf" download style="color:black;" target="_blank"><h3 id="Resume" style="text-align:left; width:90%; padding-left:8vw; margin:32px auto 8px auto;"> Download my resume↗</h3></a>        
+       <a id="Resume" href="src/html/BihanLiResume.pdf" download style="color:black;" target="_blank" aria-label="Download my resume - Opens in a new tab"><h3 id="Resume" style="text-align:left; width:90%; padding-left:8vw; margin:32px auto 8px auto;"> Download my resume↗</h3></a>        
      </section>
      <!-- End About -->
 
     <!-- ======= Contact Section ======= -->
     <section id="Contact" onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" class="sectionBlock">
-      <div class="filterNav" id="filter-buttons-about">
+      <div class="filterNav" id="filter-buttons-about" style="background-color:#F8CAB9;">
         <div class="filterText">
-          <h1 class="filterh1" style="color:#424EFB;">Let's connect!</h1>
+          <h1 class="filterh1">Let's connect!</h1>
         </div>
         <div class="filterTag">
-          <h1 class="filterh1" style="color:#424EFB; text-align:left;">I prefer communicating via email</h1>
+          <h1 class="filterh1" style="text-align:left;">But please do not call me.</h1>
         </div>
       </div>
       <div>
