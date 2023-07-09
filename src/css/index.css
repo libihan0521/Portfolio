@@ -833,5 +833,6 @@ p{
   border-top:solid 0.3vw;
   border-bottom:solid 0.3vw;
   margin-bottom:6vw; 
+  transition: height 0.5s ease;
 }
 
