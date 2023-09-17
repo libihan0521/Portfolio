@@ -10,37 +10,57 @@
  font-family: 'Comfortaa-Bold';
  src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
 }
-
-
-h3{
- font-family: 'Jua-Regular';
- font-size: 24px;
- text-align: left;
- margin-bottom: 0;
- color: #E9C300;
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('../fonts/Inter-Bold.ttf') format('truetype');
 }
-h2{
- font-family: 'Jua-Regular';
- font-size: 32px;
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+h1{
+ font-family: 'Inter-Bold';
+ font-size: 40px;
  text-align: left;
  font-weight: 200;
  color: #000;
- padding-top:56px;
+ padding-top:12vw;
+}
+
+h3{
+ font-family: 'Inter-Bold';
+ font-size: 22px;
+ text-align: left;
+ margin-bottom: 0;
+ margin-top: 4vw;
+ color: #996600;
+}
+h2{
+ font-family: 'Inter-Bold';
+ font-size: 28px;
+ text-align: left;
+ font-weight: 200;
+ color: #000;
+ padding-top:8vw;
 }
 
 p{
- font-family: 'Comfortaa-SemiBold';
+ font-family: 'Inter-Regular';
  font-size: 18px;
  line-height:1.5;
 }
+.titleFront{
+  color: #FFDA1C;
+}
 
 .keyword{
- font-family: 'Jua-Regular';
+ font-family: 'Inter-Bold';
  font-size: 40px;
  text-align: left;
  font-weight: 240;
  padding:1vw 0 0 0;
- color: #E9C300;
+ color: #FFDA1C;
 }
 .keynumber{
  font-family: 'Comfortaa-Bold';
@@ -49,7 +69,7 @@ p{
 }
 
 li{
- font-family: 'Comfortaa-SemiBold';
+ font-family: 'Inter-Regular';
  font-size: 18px; 
  line-height:1.5;  
  padding:0 0 0.5vw 0;
@@ -60,9 +80,30 @@ li{
   line-height:0.6;  
 }
 .bold{
- font-family: 'Jua-Regular';
- font-size: 24px; 
+ font-family: 'Inter-Bold';
+ font-size: 18px; 
+ background: linear-gradient(transparent 75%, #FFDA1C 25%);
 }
+
+.boldless{
+  font-family: 'Inter-Bold';
+  font-size: 18px; 
+ }
+
+.bad{
+  font-size:32px; 
+  color:#D34449;
+  font-family: 'Inter-Bold';
+  line-height:0.85;
+}
+
+.good {
+  font-size:32px; 
+  color:#658135;
+  font-family: 'Inter-Bold';
+  line-height:0.85;
+}
+
 
 .bannerImageTop{
     animation-name:bannerImageTop;
@@ -92,27 +133,6 @@ li{
 @keyframes bannerImageRight {
     0%   {right:-20vw;opacity:0;}
     100% {right:0;opacity:1;}
-}
-
-.bannerInfo {
-    display: flex;
-    flex-direction: row;
-    height:8vw;
-}
-
-@media screen and (max-width: 800px) {
-    .bannerInfo {
-      display: flex;
-      flex-direction: column;
-      height:60vw;
-    }
-}
-  
-.bannerItem{
-    width:320px; 
-    height: 100px; 
-    margin: auto;
-    z-index: 20;
 }
 
 .twoColumn {
@@ -160,9 +180,14 @@ a:link {
   }
 
 .SectionBlock{
-    width: 80%; 
+    width: 60%; 
     height:auto; 
     margin:auto;
+}
+
+.focusSection{
+  background-color: #FCF3CC; 
+  margin:12vw 0 0 0;
 }
 
 .card-container {
