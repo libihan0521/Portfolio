@@ -1,37 +1,28 @@
 @font-face {
-  font-family: 'Comfortaa-Regular';
-  src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+  font-family: 'Raleway-Light';
+  src: url('../fonts/Raleway-Light.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'Comfortaa-Bold';
-  src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url('../fonts/Roboto-LightItalic.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto-Regular';
   src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Roboto-Medium';
-  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'AbrilFatface-Regular';
-  src: url('../fonts/AbrilFatface-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter-Bold';
-  src: url('../fonts/Inter-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter-Regular';
-  src: url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-family: 'Times-Roman';
+  src: url('../fonts/OPTITimes-Roman.otf') format('truetype');
 }
 
 /*--------------general-------------------------*/
 body {
     color: #1C2122;
-    background-color:#F6F5E8 ;
+    background-color:#FFFFFF ;
     margin: 0;
     overflow-x: hidden;
     position: relative;
@@ -213,7 +204,18 @@ p{
   }
 }
 
-/*-------------- Navigation Menu-------------------------*/
+/*-------------- Header -------------------------*/
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+.home-icon {
+  font-size: 24px;
+}
+
 .nav-menu {
   padding: 0;
   display: flex;
@@ -224,48 +226,25 @@ p{
   margin: 0;
   display: flex;
   flex-direction: row;
-}
-
-.nav-menu a,
-.nav-menu a:focus {
   align-items: center;
-  padding: 0.65vw 1.2vw;
-  margin: auto 0.4vw;
   transition: 0.3s;
-  font-family: 'Inter-Bold';
-  font-size: 1.3vw;
-  border-radius: 3vw;
-  height: 3.8vw;
-  width: 3.8vw;
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
   overflow:hidden;
   flex-shrink:0;
+  text-decoration: none;
 }
 
-.nav-menu a span{
-  padding-left:1.6vw;
-  color: #1C2122;
+.nav-menu a{
+  color: #999999;
+  margin: 2vw;
 }
-.nav-menu a:focus span {
-  color: #1C2122;
-
+.nav-menu a:focus {
+  color: #1A1A1A;
 }
-
-.nav-menu a:hover span,
-.nav-menu .active span,
-.nav-menu .active:focus span{ 
-  color: #ffffff;
-}
-
 .nav-menu a:hover{
-  width: 11vw;
+  color: #1A1A1A;
 }
-
-.navIcon{
-  width: 1.8vw; 
-  height: auto; 
-  margin-left: -0.1vw;
-}
-
 
 
 /*-----------# Skills-----------*/
