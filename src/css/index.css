@@ -21,12 +21,11 @@
 
 /*--------------general-------------------------*/
 body {
-    color: #1C2122;
-    background-color:#FFFFFF ;
+    color: #1A1A1A;
     margin: 0;
     overflow-x: hidden;
     position: relative;
-    width: 100%;
+    width: 100vw;
     max-width: 100%;
   }
 
@@ -45,51 +44,36 @@ body {
   display:none;
 }
 
-
-a {
-    color: #0563bb;
-    text-decoration: none;
-    text-decoration-line: underline;
-  }
-  
-a:hover {
-    color: #067ded;
-    text-decoration: none;
-  }
-
 h1{
-  font-family: 'AbrilFatface-Regular';
-  font-size:3.2vw; 
-  text-align: center;
+  font-family: 'Raleway-Light';
+  font-size: 72px;
+  font-weight: 500;
+  margin:10px 0;
+  padding:0;
+}
+.bold-title {
+  font-family: 'Raleway-SemiBold';
+  font-size: 72px;
 }
 
 h2{
-  font-family: 'Comfortaa-Bold';
+  font-family: 'Roboto-Regular';
   font-size: 32px;
-  font-weight: bold;
-
 }
 
 h3{
-  font-family: 'AbrilFatface-Regular';
-  font-size: 24px;
-  font-weight: bold;
-  font-weight: 400;
+  font-family: 'Roboto-LightItalic';
+  font-size: 32px;
+  font-weight: 550;
+  margin:10px 0;
+  padding:0;
 }
 
 h4{
-  font-family: 'Comfortaa-Bold';
-  font-size: 19px;
-  font-weight: bold;
 }
 
 p{
-  font-family: 'Comfortaa-Regular';
-  font-size: 18px;
-  line-height:1.4;
-  font-weight: 500;
 }
-
 
 * {
   box-sizing: border-box;
@@ -205,45 +189,44 @@ p{
 }
 
 /*-------------- Header -------------------------*/
-.header {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
-  padding: 10px 20px; 
-}
-
-.home-icon {
-  font-size: 24px;
-}
 
 .nav-menu {
   padding: 0;
   display: flex;
-  flex-direction: row;
-}
-
-.nav-menu * {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
+  flex-direction:row;
   align-items: center;
-  transition: 0.3s;
   font-family: 'Roboto-Regular';
   font-size: 18px;
-  overflow:hidden;
-  flex-shrink:0;
   text-decoration: none;
 }
 
 .nav-menu a{
   color: #999999;
-  margin: 2vw;
+  margin-left: 48px;
+  cursor: pointer;
 }
 .nav-menu a:focus {
   color: #1A1A1A;
 }
 .nav-menu a:hover{
   color: #1A1A1A;
+}
+.menu-icon {
+  display: none;
+  font-size: 32px; 
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu{
+      display: none; /* 隐藏导航菜单 */
+  }
+  .menu-icon{
+      display: block; /* 显示汉堡图标 */
+      position:fixed; 
+      right: 40px;
+      top:0px
+  }
 }
 
 
