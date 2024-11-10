@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="Bihan Li，UX design，game design，design portfolio">
+    <meta name="description" content="Bihan Li design portfolio">
+    <meta name="author" content="Bihan Li">
+    <title>Bihan Design</title>
+
+    <link href="src/images/main/Favicon.svg" rel="icon">
+    <link href="" rel="apple-touch-icon"> 
+
+    <link rel="stylesheet" href="src/css/index.css" />
+
+    <script src="src/js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWB0H84EDW"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-PWB0H84EDW');
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <div id="Nav" style="width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; padding:10px 60px; left:0; right:0; top:1vw; z-index: 1000;" >
+      <div style="width:112px; ">
+        <a href="#Hero"><img src="src/images/main/HomeIcon.svg"></a>
+      </div>
+      <nav class="nav-menu">
+        <a>GARDEN</a>
+        <a>SEEDS</a>
+        <a>ROOTS</a>
+      </nav>
+      <div class="menu-icon"> <a href="#Hero"><img src="src/images/main/MenuIcon.svg"></a></div> 
+    </div>
+    <!-- End Nav -->
+
+    <!-- Hero Section -->
+    <section id="Hero">
+      <div style="width:100%; padding:60px 0px 0px 0px; display:flex; flex-direction:column; align-items:center;"> 
+        <h1 style="width:100%;">A <span class="bold-title">designer</span> and <span class="bold-title">director</span><br>behind <span class="bold-title">multi-million dollar business!</span></h1>
+        <h3 style="width:100%;" >Currently @FLY E-BIKE</h3>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Garden Section -->
+    <section id="Garden">
+      <div class="garden" >
+        <div class="video-container">
+          <video autoplay loop muted playsinline>
+              <source src="src/images/main/FLYECover.mp4" type="video/mp4">
+              您的浏览器不支持视频播放。
+          </video>
+          <div class="overlay" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);"></div>
+          <img src="src/images/main/FlyEbikeLogo.svg" alt="Logo" style="position: absolute; top: 40%; left: 48%; transform: translateX(-50%); width: 50%; height: auto;">
+        </div>
+        <h2>Fly E-Bike Customer Experience Design</h2>
+        <h3>UX & UI, Brand Identity, Retail Space, Product & Packing, Marketing & Promotional </h3>
+      </div>
+
+      <div class="garden">
+        <div style="height:32vw;" style="background-color: #7d1414;"></div>
+        <h2>Bunny Mood</h2>
+        <h3>Game Design</h3>
+      </div>
+
+      <div class="garden">
+        <div style="width:100%;height:32vw;" style="background-color: #7d1414;"></div>
+        <h2>Tappal</h2>
+        <h3>A meetup platform for young people.</h3>
+      </div>
+    </section>
+    <!-- End Garden -->
+
+    
+    <section  style="background-color:#7d1414 ;">
+      
+
+      <!-- ======= Play Section ======= -->
+      <section id="Play" class="sectionBlock" style="margin-top:-0.2vw;" onmouseover="setActive('PlayIcon')" onmouseout="setInactive('PlayIcon')">
+
+       <div id="project-links" class="circleRegion" style="position:relative; animation-duration:1s; animation-fill-mode:forwards;">
+
+         <div id="roblox" class="project-link-yellow other" style="width:38.4%; height:auto; position:absolute; right:12%; top:48vw;" onmouseover="playRlAnimation()" onmouseout="withdrawRlAnimation()">
+           <a href="src/html/roblox.html"><img src="src/images/main/RobloxCover.svg" style="width:100%; height:auto; "></a>
+           <a href="src/html/roblox.html"><img src="src/images/main/RobloxTitle.png" id="RlTitle" style="width:100%; height:auto; position:absolute; top:10%; left:0;animation-duration:1s; animation-fill-mode:forwards;"></a>
+           <a href="src/html/roblox.html"><img src="src/images/Roblox/GoldenFeather.jpg" id="GoldenFeather" style="width:32.5%; height:auto;position:absolute; bottom:5%; left:15%; animation-duration:1s; animation-fill-mode:forwards;"></a>
+           <a href="src/html/roblox.html"><img src="src/images/Roblox/WaterDress.jpg" id="WaterDress" style="width:32.5%; height:auto; position:absolute; bottom:5%; right:15%; animation-duration:1s; animation-fill-mode:forwards;"></a>
+         </div>
+
+         <div id="margot" class="project-link-yellow other" style="width:38.4%; height:auto; position:absolute; left:0; top:0;" onmouseover="playMgAnimation()" onmouseout="withdrawMgAnimation()">
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot2.jpg" id="mg01" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:45%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot3.jpg" id="mg02" class="coverImage" style="width:50%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:19.5%; right:5%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/Margot/margot1.jpg" id="mg03" class="coverImage" style="width:60%;height:auto;border-style: solid; border-color:#1C2122; position:absolute; bottom:16%; right:20%;"></a>
+           <a href="src/html/margot.html"><img src="src/images/main/MargotCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+
+         <div id="p5jsWorks" class="project-link-yellow game-design" style="width:30%; height:auto; position:absolute; left: 16%; top: 32vw;">
+           <a href="src/html/p1.html"><img src="src/images/main/p5jsWorksCover.svg" style="width: 100%; height: auto; "></a>
+           <a href="src/html/p1.html"><img onmouseover="p5cover()" onmouseout=" p5cover1()" src="src/images/main/P5Cover0.png" id="p5Cover" style="width:60%;height:auto; position:absolute; bottom:12%; left:21%;"></a>
+         </div>
+
+         <div id="Installation" class="project-link-yellow other" style="width:38.4%; height:auto; position:absolute; left:0;  top:60vw;"onmouseover="playInsAnimation()" onmouseout="withdrawInsAnimation()">
+           <img src="src/images/Installation/Egg.png" id="Egg"style="width:100%;height:auto;position:absolute; bottom:5%; left:-60%;opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
+           <img src="src/images/Installation/cloud.png" id="cloud" style="width:75%;height:auto;position:absolute; bottom:10%; right:-50%; opacity:0;animation-duration:1s; animation-fill-mode: forwards;">
+           <a href="src/html/Cocoon.html"><img src="src/images/Installation/cocoon.png" style="width:100%;height:auto;position:absolute; bottom:5%; right:-10%;"></a>
+           <a href="src/html/Cocoon.html"><img src="src/images/main/InstallationsCover.svg" style="width: 100%; height: auto; "></a>
+         </div>
+       </div>     
+     </section>
+     <!-- End Portfolio -->
+
+     <!-- ======= About Section ======= -->
+     <section id="About" style="margin-top:0;" onmouseover="setActive('AboutIcon')" onmouseout="setInactive('AboutIcon')" class="sectionBlock">
+
+        <div class="filterNav" id="filter-buttons-about" style="background-color:#D6E86A;">
+          <div class="filterText">
+            <h1 class="filterh1">What to know more about me?</h1>
+          </div>
+          <div class="filterTag">
+            <button class="filter-button active" onclick="scrollToSection('AboutBihan'); toggleActive(this);">About Bihan</button>     
+            <button class="filter-button" onclick="scrollToSection('Skills'); toggleActive(this);">Skills</button>
+            <button class="filter-button" onclick="scrollToSection('Resume'); toggleActive(this);">Resume</button>
+          </div>
+        </div>
+          
+        <div id="AboutBihan"class="aboutColumn">
+          <div class="aboutText">
+            <img src="src/images/main/aboutImage.jpg" style="width:100%;height:auto; margin:0; padding:0;">
+            <a href="https://www.instagram.com/bihan_alive/"><img src="src/images/main/insIcon.svg" style="width:16%;height:auto; margin:auto; position:relative; bottom:4vw; left:15vw;"></a>
+            <a href="https://www.linkedin.com/in/BihanDesign/"><img src="src/images/main/LinkedinIcon.svg" style="width:16%;height:auto; margin:auto;position:relative; bottom:4vw; right:-16vw;"></a>
+          </div>
+          <div class="aboutText">
+            <h3 style="text-align:left; margin:0; color:black;"> My name is Bihan Li (李碧涵). "bi-碧" represents pure green, and "han-涵" signifies ocean-deep water.</h3>
+            <img src="src/images/main/aboutGraphic.svg" style="width:80%;height:auto; margin:auto;">
+            <p style="font-size:1.2vw; color:black;">
+              As a designer, I enjoy learning from different disciplines and embracing diverse perspectives. I felt design adds depth to my existence by providing a unique lens that magnifies and colorizes the world.</br></br>
+              I believe design goes beyond decoration and involves a strong business perspective, humanistic care, and effective problem-solving. It fosters connections between users and products, creates engaging experiences, and drives positive outcomes.</br></br>
+              In my spare time, I love exploring creative technologies and creating manga art.
+            </p>    
+          </div>
+       </div>
+
+       <section id="Skills">
+         <div>
+           <h3 style="text-align: left; width:90%; padding-left:8vw; margin:32px auto 8px auto;"> My skill set is diverse and well-rounded, enabling me to excel in collaborative environments:</h3>
+           <h3 class="skillTypeName" style="margin:40px auto 8px auto;">Prototype</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Physical models</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Unity</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Sketch</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+             </div> 
+           </div>
+         
+           <h3 class="skillTypeName">Coding</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">HTML+CSS</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">JavaScript</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Unity C#</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Unity Cg/HLSL</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">p5.js</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">C++</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Python</p><div class="progressContainer"><div class="progressBar" style="width: 20%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Git</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+             </div>
+           </div>
+           <h3 class="skillTypeName">3D</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Cinema 4D</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Marvelous Designer</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">zbrush</p><div class="progressContainer"><div class="progressBar" style="width: 50%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Rhino</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Grasshopper</p><div class="progressContainer"><div class="progressBar" style="width: 40%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">SketchUp</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Robolox studio</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             </div>
+           </div>
+           <h3 class="skillTypeName">2D</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Adobe PhotoShop</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Adobe InDesign</p><div class="progressContainer"><div class="progressBar" style="width: 80%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Figma</p><div class="progressContainer"><div class="progressBar" style="width: 90%;"></div></div></div>
+             </div> 
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Adobe Illustrator</p><div class="progressContainer"><div class="progressBar" style="width: 70%;"></div></div></div>
+             </div> 
+           </div>
+           <h3 class="skillTypeName">Animation</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">After Effect</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Procreate</p><div class="progressContainer"><div class="progressBar" style="width: 100%;"></div></div></div>
+               <div class="skillContainer"><p class="skillName">Blender</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             </div> 
+           </div>
+           <h3 class="skillTypeName">Sound</h3>
+           <div class="skillRow">
+             <div class="skillBlock">
+               <div class="skillContainer"><p class="skillName">ProTools</p><div class="progressContainer"><div class="progressBar" style="width: 60%;"></div></div></div>
+             </div> 
+           </div>
+           <p class="skillTypeName"></p>
+         </div>
+       </section>
+       <p>&nbsp</p>
+       <a id="Resume" href="src/html/BihanLiResume.pdf" download style="color:black;" target="_blank" aria-label="Download my resume - Opens in a new tab"><h3 id="Resume" style="text-align:left; width:90%; padding-left:8vw; margin:32px auto 8px auto;"> Download my resume↗</h3></a>        
+     </section>
+     <!-- End About -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="Contact" style="background-color: #F6F5E8 ;"onmouseover="setActive('ContactIcon')" onmouseout="setInactive('ContactIcon')" class="sectionBlock">
+      <div class="filterNav" id="filter-buttons-about" style="background-color:#F8CAB9;">
+        <div class="filterText">
+          <h1 class="filterh1">Let's connect!</h1>
+        </div>
+        <div class="filterTag">
+          <h1 class="filterh1" style="text-align:center;">But please do not call me.</h1>
+        </div>
+      </div>
+      <div>
+        <div class="contactInfo" style="width:80%; margin:auto; text-align:left; padding-top:4vw; padding-bottom:12vw;padding-left:6vw;">
+          <div class="contactItem">
+            <img class="contactIcon" src="src/images/main/contactLocationIcon.svg">
+            <h3>Location</h3>
+            <p>New Port, NJ 07310</p>
+          </div>         
+          <div class="contactItem">
+            <img class="contactIcon" src="src/images/main/contactEmailIcon.svg">
+            <h3>Email</h3>
+            <p>lib678@newschool.edu</p>
+          </div>
+          <div class="contactItem">
+            <img class="contactIcon"src="src/images/main/contactMessageIcon.svg">
+            <h3>Message</h3>
+            <p>+1 201-988-7964</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- ======= Footer Section ======= -->
+    <section style="background-color: #1C2122; padding: 30px; position: relative; bottom:0px; z-index:150;" >
+      <div style="color: #F6F5E8;border:#F6F5E8 ; color: #F6F5E8; text-align:center;">
+       <h3>Bihan Design</h3>
+       <p>Thanks for your review. Have a good day!</p><br>
+       <p>&copy; Copyright <strong><span> 2023 Bihan Li</span></strong> &nbsp All Rights Reserved </p>
+       <p>Designed and developed by Bihan Li</p>
+      </div>
+    </section>
+    <!-- End Footer -->
+  </section>
+
+  </body>
+</html>

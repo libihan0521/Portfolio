@@ -20,14 +20,25 @@
 }
 
 /*--------------general-------------------------*/
-body {
+html, body {
     color: #1A1A1A;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
   }
+
+html, section{
+  padding:0px 30px;
+  margin:100px 0px 0px 0px;
+}
+
+video {
+  width: 100%; /* 视频占满容器宽度 */
+  height: auto; /* 保持视频的比例 */
+  display: block;/* 移除视频元素默认的内边距空隙 */
+}
+
 
   /* 修改滚动条的颜色 */
 ::-webkit-scrollbar {
@@ -59,13 +70,14 @@ h1{
 h2{
   font-family: 'Roboto-Regular';
   font-size: 32px;
+  margin:20px 0;
 }
 
 h3{
   font-family: 'Roboto-LightItalic';
   font-size: 32px;
   font-weight: 550;
-  margin:10px 0;
+  margin:20px 0;
   padding:0;
 }
 
@@ -73,23 +85,59 @@ h4{
 }
 
 p{
+  font-family: 'Roboto-Regular';
+  font-size: 20px;
+  margin:0;
+  line-height: 1.5;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/*--------------section-------------------------*/
-.sectionBlock {
-  margin:10vw auto 0 auto;
+.video-container {
+  position: relative; /* 确保内容可以覆盖视频 */
+  width: 100%;
+  overflow: hidden; /* 隐藏超出 div 的视频部分 */
 }
 
-@media screen and (max-width: 800px) {
-  .sectionBlock {
-    margin:8vw auto 0 auto;
+.content {
+  position: relative; /* 确保内容位于视频之上 */
+  color: white; /* 根据需要设置内容颜色 */
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+/*--------------section-------------------------*/
+
+.garden{
+  margin:0;
+  padding:0;
+}
+
+/*--------------footer-------------------------*/
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容换行 */
+  justify-content: space-between; /* 元素均匀分布 */
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer-item {
+  margin: 10px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; 
+    align-items: left;
   }
 }
-
 
 /*-----------work-----------*/
 .projectBlock{
