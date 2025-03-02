@@ -13,11 +13,6 @@
     <link href="" rel="apple-touch-icon"> 
 
     <link rel="stylesheet" href="src/css/index.css" />
-    <!-- <link rel="preload" href="src/images/BunnyMood/CoverBG.png" as="image">
-    <link rel="preload" href="src/images/BunnyMood/CoverBGLeft.png" as="image">
-    <link rel="preload" href="src/images/BunnyMood/CoverBGRight.png" as="image">
-    <link rel="preload" href="src/images/BunnyMood/CoverBGTop.png" as="image"> -->
-
     <script src="src/js/main.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWB0H84EDW"></script>
     <script>
@@ -31,61 +26,75 @@
 
   <body>
     <!-- Nav -->
-    <div id="Nav" style="background-color: rgb(255, 255, 255); width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; padding:28px 2vw 10px 2vw; left:0; right:0; top:0; z-index: 1000;" >
-      <div style="width:112px; ">
-        <a href="#Hero"><img src="src/images/main/HomeIcon.svg"></a>
-      </div>
-      <nav class="nav-menu">
-        <a>WORK</a>
-        <a>ABOUT</a>
-        <a>CONTACT</a>
-      </nav>
-      <div class="menu-icon"> <a href="#Hero"><img src="src/images/main/MenuIcon.svg"></a></div> 
+    <div id="Nav" class="container" style="display: flex; justify-content: space-between; width: 100%; padding:16px 8px 24px 8px" >
+        <a href="https://www.libihan.com"><h2>About</h2></a>
+        <a href="https://www.libihan.com"><h2>Bihan Li</h2></a>
+        <a style="align-items: center;"  href="https://www.linkedin.com/in/bihandesign" target="_blank" rel="noopener noreferrer"><img src="src/images/main/Linkedin Icon.png" style=" width:18px; height:18px;"></a>
     </div>
     <!-- End Nav -->
 
-    <!-- Hero Section -->
-    <section id="Hero">
-      <div style="width:100%; padding:3vm 0px 0px 0px; display:flex; flex-direction:column; align-items:center;"> 
-        <h1 style="width:100%;">A designer behind <br>multi-million dollar business!</h1>
-      </div>
-    </section>
-    <!-- End Hero -->
+    <!-- Projects-->
+    <div class="container">
 
-    <!-- Garden Section -->
-    <section id="Garden">
-      <div class="projectProfile" >
-        <div class="video-container">
-          <video autoplay loop muted playsinline>
-              <source src="src/images/main/FLYECover.mp4" type="video/mp4">
-              您的浏览器不支持视频播放。
-          </video>
-          <div class="overlay" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);"></div>
-          <img src="src/images/main/FlyEbikeLogo.svg" alt="Logo" style="position: absolute; top: 40%; left: 48%; transform: translateX(-50%); width: 50%; height: auto;">
-        </div>
-        <br>
-        <h3>Fly E-Bike Customer Experience Design</h3>
-        <p>UX & UI, Brand Identity, Retail Space, Product & Packing, Marketing & Promotional </p>
+      <div class="item">
+        <a href="src/html/bunnyMood.html">
+          <img src="src/images/main/FLYEStoreCover.jpg" alt="FLYE-CYCLE Flushing Store">
+          <div class="project-info">
+            <p>FLYE-CYCLE Flushing Store</p>
+          </div>
+        </a>
       </div>
 
-      <div class="projectProfile">
-        <div>
-          <img src="src/images/main/BunnyMoodCover.jpg" alt="Bunny Mood Cover" width="100%" height="auto">
-        </div>
-        <br>
-        <h3>Bunny Mood</h3>
-        <p>An AR pet game that playfully encourages you to log your emotions.</p>
+      <div class="item">
+        <a href="src/html/bunnyMood.html">
+            <img src="src/images/main/FLYEWebCover.jpg" alt="FLYE-CYCLE Website">
+            <div class="project-info">
+              <p>FLYE-CYCLE Website</p>
+            </div>
+        </a>
       </div>
-    </section>
-    <!-- End Garden -->
 
-   <!-- ======= Footer Section ======= -->
+      <div class="item">
+          <a href="src/html/bunnyMood.html">
+              <img src="src/images/main/FLYEBrandCover.jpg" alt="FLYE-CYCLE Brand Identity">
+              <div class="project-info">
+                <p>FLYE-CYCLE Brand Identity</p>
+              </div>
+          </a>
+      </div>
+     
+      <div class="item">
+       <a href="src/html/bunnyMood.html">
+         <img src="src/images/main/FLYEMarketingCover.jpg" alt="FLYE-CYCLE Marketing Collateral">
+         <div class="project-info">
+           <p>FLYE-CYCLE Marketing Collateral</p>
+         </div>
+       </a>
+      </div>
 
-   <footer class="footer">
-     <div class="footer-item">CONTACT: bihanlidesign@gmail.com</div>
-     <div class="footer-item">ABOUT ME</div>
-     <div class="footer-item">OTHER WORKS</div>
-     <div class="footer-item" style="color:#848484;">@2022~2024 Bihan Design</div>
+      <div class="item">
+       <a href="src/html/bunnyMood.html">
+         <img src="src/images/main/FLYEAPPCover.jpg" alt="FLYE-CYCLE Riding APP">
+         <div class="project-info">
+           <p>FLYE-CYCLE Riding APP</p>
+         </div>
+       </a>
+      </div>
+
+      <div class="item">
+       <a href="src/html/bunnyMood.html">
+         <img src="src/images/main/BunnyMoodCover.jpg" alt="Bunny Mood: Thesis Project @Parson School of Design">
+         <div class="project-info">
+           <p>Bunny Mood: Thesis Project @Parson School of Design</p>
+         </div>
+       </a>
+      </div>
+   </div>
+   <!-- End Project -->
+
+   <!-- Footer-->
+   <footer style="padding:24px 8px;">
+     <h3>Copyright @2025 Bihan Design</h3>
    </footer>
    <!-- End Footer -->
 
