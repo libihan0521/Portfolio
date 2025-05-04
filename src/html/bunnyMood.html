@@ -48,48 +48,61 @@
 
   <body>
     <!-- Nav -->
-    <div id="Nav" style="background-color: rgb(255, 255, 255); width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; padding:28px 2vw 10px 3vw; left:0; right:0; top:0; z-index: 1000;" >
-      <div style="width:112px;">
-        <a href="../../index.html"><img src="../images/main/HomeIcon.svg"></a>
-      </div>
-      <nav class="nav-menu">
-        <a>WORK</a>
-        <a>ABOUT</a>
-        <a>CONTACT</a>
-      </nav>
-      <div class="menu-icon"> <a href="#Hero"><img src="src/images/main/MenuIcon.svg"></a></div> 
+    <div id="Nav" class="container" style="display: flex; justify-content: space-between; width: 100%; padding:16px 8px 32px 8px" >
+      <a href="https://www.libihan.com"><h3>About</h3></a>
+      <a href="https://www.libihan.com"><h3>Bihan Li</h3></a>
+      <a style="align-items: center;"  href="https://www.linkedin.com/in/bihandesign" target="_blank" rel="noopener noreferrer"><img src="../images/main/Linkedin Icon.png" style=" width:18px; height:18px;"></a>
     </div>
     <!-- End Nav -->
 
-    <!-- Banner section -->
-    <section id="Banner" style="margin:0; padding:0;">
-      <div style="margin:0; padding:0; width: 100%; height: 47vw; background-image: url('../images/BunnyMood/CoverBG.png'); background-repeat: no-repeat; background-size: 100%; position: relative; top:0px;">
-        <div class="bannerImageTop" style="margin:0; padding:0; width: 100%; height: 16vw;">
-          <img src="../images/BunnyMood/CoverBGTop.png" style="width: 100%; height: auto;">
+    <!-- Project Review -->
+    <section id="Project Review">
+        <div class="container">
+          <div class="item">
+            <h1>Bunny Mood</h1>
+            <h4 class="projectInfo">
+              Thesis project @Parsons School of Design</br>
+              Mentors: <a href="https://www.linkedin.com/in/jess-irish/" target="_blank">Jess Irish</a>,
+                       <a href="https://www.linkedin.com/in/ethan-silverman-39b136a/" target="_blank">Ethan Silverman</a>,
+                       <a href="https://www.linkedin.com/in/davidcarroll/" target="_blank">David Carroll</a></br>
+              Time: February 2023 ~ May 2023
+            </h4> 
+          </div>
+          <div class="item">
+            <h2>Bunny Mood is an AR game dedicated to fostering social-emotional learning. The core gameplay involves feeding your pet bunny with your daily emotions, collecting the emotion chocolates it "produces" (which also serve as in-game currency), and using them to purchase items that unlock more gameplay experiences.</h2>
+          </div>
         </div>
-        <img class="bannerImageLeft" src="../images/BunnyMood/CoverBGLeft.png" style="width: 30%; height: auto;position:absolute; bottom:0; ">
-        <img class="bannerImageRight" src="../images/BunnyMood/CoverBGRight.png" style="width: 16%; height: auto; position:absolute; top:20vw; left:64vw;">
-      </div>
-      <div class="SectionBlock" style="margin-top:8vw;">
-          <h3 style="color:black;">Time</h3>
-          <p>February 2023 ~ May 2023</br></p>       
-          <h3 style="color:black;">Introduction</h3>
-          <p>"Bunny Mood" is an emotion recording app that helps East Asian teenagers improve their emotional well-being through gamified journaling.</br></p>  
-          <h3 style="color:black;">My Role</h3>
-          <p>This is my independent graduation project, for which I handled all tasks, including user research, game design, user testing, prototyping, 3D modeling, interaction design and visual design, under the guidance of <a href="https://www.linkedin.com/in/jess-irish/" target="_blank">Jess Irish</a>, <a href="https://www.linkedin.com/in/ethan-silverman-39b136a/" target="_blank">Ethan Silverman</a>, and <a href="https://www.linkedin.com/in/davidcarroll/" target="_blank">David Carroll</a></br></p>
-          <h3 style="color:black;">Tools</h3>
-          <p>Figma, Unity, Blender</p>
-      </div>
+      </section>
+    <!-- End Project Review -->
+
+    <!-- Banner section -->
+    <section id="Banner">
+      <img src="../images/BunnyMood/heroImage.png" style="width: 100%; height: auto;">  
     </section>
     <!-- End Banner -->
+
+    <!-- Content section -->
+    <section id="Content">
+      <div class="container">
+        <div class="item">
+         <p></p>
+        </div>
+        <div class="item">
+          <h2>
+            The game mechanics smoothly embed key social and emotional learning (SEL) practices commonly used in schools, making SEL skill-building fun and appealing for teens. 
+            </br> 
+            </br>
+          </h2>
+        </div>
+      </div>
+      <img src="../images/BunnyMood/CoreMechanismImage.png" style="width: 100%; height: auto;"> 
+    </section>
+    <!-- End Content -->
+
+
+
     <!-- Overview section -->
     <section id="Overview" class="SectionBlock">
-      <h1><span class="titleFront">● </span>Overview:"Bunny Mood"=<br><span class="titleFront"></span>Emotion journaling application + Gaming</h1>
-      <h2>Design Goal</h2>
-      <p style="text-align: justify;">My primary goal is to engage <span class="bold">East Asian juveniles</span> who grow up in a <span class="bold">test-oriented educational environment that neglects social-emotional learning</span>, fostering their understanding and acknowledgment of emotions.<br><br>Additionally, I strive to captivate the <span class="bold">existing users of emotional journaling products</span> by providing a juicier experience to <span class="bold">nudge continued journaling</span>.</p>
-      <h2>Solution</h2>
-      <p style="text-align: justify;">I enhances the emotion-tracking process by integrating <span class="bold">stress-free</span> journaling and <span class="bold">highly-customizable</span> features in <span class="bold">engaging and intuitive gameplay</span>. </p>        
-      <img src="../images/BunnyMood/CoreMechanismImage.png" style="width:100%;">
       <h2>Outcome</h2>
       <p style="text-align: justify;">At our pop-up Thesis Show, I showcased "Bunny Mood" to the public to evaluate its effectiveness. I garnered positive feedback from audiences of diverse age groups and cultural backgrounds, despite my primary focus on East Asian juveniles.</p>
       <div class="twoColumn"style="width: 100%; height:auto; margin:auto;">
@@ -104,6 +117,8 @@
       </div>
     </section>
     <!-- End Overview -->
+
+    
 
 
     <!-- Background section -->
