@@ -12,8 +12,8 @@
     <link href="src/images/main/Favicon.svg" rel="icon">
     <link href="" rel="apple-touch-icon"> 
 
-    <link rel="stylesheet" href="src/css/index.css" />
-    <script src="src/js/main.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWB0H84EDW"></script>
     <script>
      window.dataLayer = window.dataLayer || [];
@@ -26,14 +26,26 @@
 
   <body>
     <!-- Nav -->
-     <div id="Nav" class="container" style="display: flex; justify-content: space-between; width: 100%; padding:16px 8px 32px 8px" >
-        <a href="https://www.libihan.com"><h3>About</h3></a>
-        <a href="https://www.libihan.com"><h3>Bihan Li</h3></a>
-        <a style="align-items: center;"  href="https://www.linkedin.com/in/bihandesign" target="_blank" rel="noopener noreferrer"><img src="src/images/main/Linkedin Icon.png" style=" width:18px; height:18px;"></a>
-     </div>
+     <header class="header" id="siteHeader">
+       <a style="align-items: center;"  href="index.html"><img src="src/images/main/Logo.svg" style=" width:100px; height:auto;"></a>  
+       <p><a href="index.html"class="bold">WORK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="contact.html"class="bold">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="about.html"class="bold">ABOUT</a></p>
+     </header>
     <!-- End Nav -->
+     
+    
+    <!-- Intro -->
+    <section>
+      <p class="display" style="padding:120px 0;">Hi, I’m Bihan Li — </br>
+        a designer with 4+ years of experience in fast-paced startup environments,</br>
+        currently leading design at FLYE (formerly Fly E-Bike).</br>
+        I take a strategic approach to creating meaningful brand and product experiences.
+      </p>
+    <!-- End Intro -->
+
     <!-- Projects-->
-    <div class="container">
+     <div class="container">
 
       <div class="item">
         <a href="src/html/bunnyMood.html">
@@ -88,13 +100,16 @@
          </div>
        </a>
       </div>
-   </div>
+     </div>
+   </section>
    <!-- End Project -->
-
+   <hr class="divider">
    <!-- Footer-->
-   <footer style="padding:24px 8px; color: dimgray;">
-     <h4>Copyright @2025 Bihan Design</h4>
-   </footer>
+   <section>
+     <footer>
+       <p class="caption">Copyright @2025 Bihan Design</p>
+     </footer>
+   </section>
    <!-- End Footer -->
 
   </body>
