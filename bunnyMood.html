@@ -34,8 +34,8 @@
     <link rel="preload" href="../images/BunnyMood/Rec-00018.gif" as="image">
 
 
-    <link rel="stylesheet" href="src/css/index.css" />
-    <script src="src/js/bunny.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="main.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWB0H84EDW"></script>
     <script>
      window.dataLayer = window.dataLayer || [];
@@ -48,63 +48,67 @@
 
   <body>
     <!-- Nav -->
-    <div id="Nav" class="container" style="display: flex; justify-content: space-between; width: 100%; padding:16px 8px 32px 8px" >
-      <a href="https://www.libihan.com"><h3>About</h3></a>
-      <a href="https://www.libihan.com"><h3>Bihan Li</h3></a>
-      <a style="align-items: center;"  href="https://www.linkedin.com/in/bihandesign" target="_blank" rel="noopener noreferrer"><img src="../images/main/Linkedin Icon.png" style=" width:18px; height:18px;"></a>
-    </div>
+     <header class="header" id="siteHeader">
+       <a style="align-items: center;"  href="index.html"><img src="src/images/main/Logo.svg" style=" width:100px; height:auto;"></a>  
+       <p><a href="index.html"class="bold">WORK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="about.html"class="bold">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="contact.html"class="bold">CONTACT</a></p>
+     </header>
     <!-- End Nav -->
 
-    <!-- Project Review -->
-    <section id="Project Review">
-        <div class="container">
-          <div class="item">
-            <h1 class="projectTitle">Bunny Mood</h1>
-            <h4 class="projectInfo">
-              Academic project @Parsons School of Design</br>
-              Mentors: <a href="https://www.linkedin.com/in/jess-irish/" target="_blank">Jess Irish</a>,
-                       <a href="https://www.linkedin.com/in/ethan-silverman-39b136a/" target="_blank">Ethan Silverman</a>,
-                       <a href="https://www.linkedin.com/in/davidcarroll/" target="_blank">David Carroll</a></br>
-              Time: February 2023 ~ May 2023
-            </h4> 
-          </div>
-          <div class="item">
-            <h2>Bunny Mood is an AR game dedicated to fostering social-emotional learning. The core gameplay involves feeding your pet bunny with your daily emotions, collecting the emotion chocolates it "produces" (which also serve as in-game currency), and using them to purchase items that unlock more gameplay experiences.</h2>
-          </div>
-        </div>
-      </section>
-    <!-- End Project Review -->
-
     <!-- Banner section -->
-    <section id="Banner">
-      <img src="src/images/BunnyMood/heroImage.png" style="width: 100%; height: auto;">  
+    <section class="title">
+      <img src="src/images/BunnyMood/heroImage.png" style="width: 100%; height: auto; padding:120px 0 100px 0;"> 
+      <H1>Bunny Mood</H1> 
+      <p class="display" style="text-align: center;">A gamified approach to making social emotional learning (SEL) more</br> approachable and engaging.</p>
     </section>
     <!-- End Banner -->
 
-    <!-- Content section -->
-    <section id="Content">
-      <div class="container">
-        <div class="item">
-         <p></p>
-        </div>
-        <div class="item">
-          <h2 class="intro">
-            The game mechanics smoothly embed key social and emotional learning (SEL) practices commonly used in schools, making SEL skill-building fun and appealing for teens. 
-          </h2>
-        </div>
-      </div>
-      <img src="src/images/BunnyMood/CoreMechanismImage.png" style="width: 100%; height: auto;" class="divider"> 
-      <div class="container" >
-        <div class="item">
-          <h1 class="intro">Feed the Bunny, </br>Log the Emotions</h1>
-        </div>
-        <div class="item">
-          <h2 class="intro">
-           Feeding your emotions to the Bunny—who then poops them into Emo-Chocolate, the game’s currency—marks the start of the game loop. This playful process draws on psychological concepts like emotional externalization and symbolic expression: by turning inner feelings into tangible, humorous elements, players are encouraged to acknowledge, accept, and express their emotions in a non-judgmental way.
-          </h2>
-        </div>
-      </div>
+    <hr>    
 
+    <section class="tworows">
+      <div class="tworows1">
+        <div>
+         <p class="caption"> TIME</p>
+         <p>February 2023 ~ May 2023</p>
+        </div>
+        <div>
+         <p class="caption"> TEAM</p>
+         <p>Independent Student Project</p>
+        </div>
+        <div>
+         <p class="caption"> INSTRUCTOR</p>
+         <p>
+         <a href="https://www.linkedin.com/in/jess-irish/">Jess Irish</a></br>
+         <a href="https://www.linkedin.com/in/ethan-silverman-39b136a/">Ethan Sliverman</a></br>
+         <a href="https://www.linkedin.com/in/davidcarroll/">David Carroll</a>
+         </p>
+        </div>
+      </div>
+      <div class="tworows2">
+        <h2>The Personal Story Behind This Project</h2>
+        <img src="src/images/BunnyMood/personalstory.jpg" style="width: 100%; height: auto;"> 
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- overview section -->
+    <section>
+      <div class="tworows">
+       <div class="tworows1"><p class="tag">[ Overview ]</p></div>
+       <div class="tworows2">
+        <h2>But first—here’s a glimpse</h2>
+        <p>This realization became the foundation for my last student project—Bunny Mood. It transforms emotional check-ins into a daily, rewarding ritual: players log how they feel by feeding a virtual bunny, and receive “emotion chocolates” to unlock new items and stories. At its core, the game integrates SEL into playful, interactive experiences.</p>
+       </div>
+      </div>
+      <img src="src/images/BunnyMood/CoreMechanismImage.png" style="width: 100%; height: auto; margin:80px 0 0 0;"> 
+    </section>
+    <!-- end overview section -->
+
+    <hr>
+
+<section>
       <div class="divider">     
        <div class="image-grid" style="margin-bottom: 3vw;">
         <div class="image-item">
