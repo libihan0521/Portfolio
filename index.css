@@ -15,35 +15,44 @@
 }
 
 @font-face {
-  font-family: 'Canela';
+  font-family: 'CanelaItalic';
   src: url('src/fonts/Canela-RegularItalic-Trial.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Canela';
+  src: url('src/fonts/Canela-Regular-Trial.otf') format('opentype');
+}
 
 
 /*--------------general-------------------------*/
-html, body {
+body {
     color: #111111;
-    margin: 0 auto;
-    padding: 24px 0;
+    margin: 0;
+    padding:0;
     overflow-x: hidden;
     width: 100%;
-    max-width: 1200px; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    display: flex;
+    justify-content: center;
   }
-
-html, section{
-  padding:100px 0;
+section{
+  padding:0;
+  margin:120px 0;
+  width: 100%;
 }
 
-html, div{
-  padding:0 0;
+div{
+  padding:0;
+  margin: 0;
 }
 
-.divider{
-  border: 0;            
-  height: 1px;            
-  background: #111111;   
-  margin: 0;  
+.content {
+  max-width: 1200px;
+  margin: 0 1vw;
+  padding: 0;  
+  box-sizing: border-box; 
 }
 
 /* 修改滚动条上的滑块的样式 */
@@ -56,9 +65,21 @@ html, div{
   display:none;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 * {
   box-sizing: border-box;
 }
+
+.divider{
+  border-bottom: 1px solid #111111;
+  margin:0 0;
+}
+
 
 /*--------------Text-------------------------*/
 h1{
@@ -80,7 +101,7 @@ h2{
 
 p{
   font-family: 'Graphik';
-  font-size: 20px;
+  font-size: 18px;
   padding:0;
   margin:0;
   line-height: 28px;
@@ -104,8 +125,8 @@ p{
 }
 
 .tag {
-  font-family: 'Graphik';
-  font-size: 20px;
+  font-family: 'Canela';
+  font-size: 16px;
   line-height: 20px;
   color: #8B8B8B;
   padding:0;
@@ -113,7 +134,7 @@ p{
 }
 
 .display {
-  font-family: 'Canela';
+  font-family: 'CanelaItalic';
   font-size: 36px;
   line-height: 1.15;
   padding:0;
@@ -125,7 +146,27 @@ a {
   color: inherit;
 }
 
+.title{
+  display:flex;
+  flex-direction: column;
+  gap:32px;
+}
+
+
 /*--------------video&image-------------------------*/
+.iPadMockup{
+  width: 400px;
+  height: auto;
+  border-radius: 32px; 
+  border: 4px solid #E9C300;
+}
+.UIdisplay{
+  display: flex;
+  align-items: center; 
+  flex-direction:row;
+  gap:24px;
+}
+
 video {
   width: 100%; /* 视频占满容器宽度 */
   height: auto; /* 保持视频的比例 */
@@ -138,35 +179,10 @@ video {
   overflow: hidden; /* 隐藏超出 div 的视频部分 */
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  width: 100%; 
-  gap: 20px;
-  justify-content: flex-start; 
-}
+/*--------------顶部导航栏-------------------------*/
 
-.image-item {
-  min-width: 400px;         /* 最小宽度 400px */
-  max-width: 850px;         /* 最大宽度 650px */
-  padding: 0;
-  margin: 0; 
-  position: relative;
-}
-
-.image-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6%;       /* 可选：让图片边角圆润 */
-  margin: 16px 0;
-}
-
-
-
-/*--------------layout-------------------------*/
-/* 使用一行布局 */
 :root { --header-h: 64px; }
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -176,12 +192,23 @@ video {
   padding:16px 0;
   border-top: solid 1px #111111;
   border-bottom: solid 1px #111111;
-  position: fixed; top: 24px;
+  position: fixed; 
+  top: 24px;
+  left: 0; 
+  right: 0;
   z-index: 1000;
-  background: #fff;
+  background: #ffffff;
   transition: opacity 300ms ease, box-shadow 200ms ease;
   will-change: opacity;
   opacity: 1;
+  margin:0 auto;
+}
+@media (max-width: 1200px) {
+  .header { 
+    flex-direction:column;
+    padding: 16px 1vw;         /* 左右加和 .content 一样的 gutter */
+    box-sizing: border-box;    /* 确保 padding 不会撑破宽度 */
+  }
 }
 /* 向下滚：透明 */
 .header.hide {
@@ -192,6 +219,150 @@ video {
 .header.stuck {
   opacity: 1;
 }
+
+
+ /*---------------------------- 两列布局---------------------------- */
+.tworows{
+  display:flex;
+  flex-direction:row;
+  gap:64px;
+  align-items: flex-start;
+}
+.tworows1{
+  top: var(--sticky-top, 24px);
+  align-self: flex-start;  
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  width:336px;
+}
+.tworows2{
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  width:800px;
+}
+
+.tworowssticky{
+  position: sticky;
+}
+@media (max-width: 1200px){
+  .tworowssticky{
+    position: static; 
+  }
+}
+
+@media (max-width: 1200px) {
+  .tworows { 
+    flex-direction:column;
+    padding: 16px 1vw;         /* 左右加和 .content 一样的 gutter */
+    box-sizing: border-box;    /* 确保 padding 不会撑破宽度 */
+  }
+}
+
+
+/*---------------------------- 横线滚动box ---------------------------- */
+
+.yellowbox{
+  border: 1px solid #E9C300;
+  background:  #FFF;
+  box-shadow: 10px 10px 0 0 #E9C300;
+  padding:24px;
+  flex: 0 0 auto;/* 关键：卡片不收缩，保证宽度恒定 */
+}
+
+.yellowboxContainer.marquee-cards{
+  position: relative;
+  display: block;
+}
+
+.yellowboxContainer.marquee-cards .marquee__track{
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  will-change: transform;
+  animation: yb-marquee var(--yb-duration, 16s) linear infinite;
+}
+
+/* 无缝循环：移动“半个轨道宽度”*/
+@keyframes yb-marquee { to { transform: translateX(-250%); } }
+
+/* 悬停暂停（可选） */
+.yellowboxContainer.marquee-cards:hover .marquee__track{
+  animation-play-state: paused;
+}
+
+/* 无动画偏好（可选） */
+@media (prefers-reduced-motion: reduce){
+  .yellowboxContainer.marquee-cards .marquee__track{ animation: none; }
+}
+
+
+.marquee { position: relative; }
+.marquee__track{
+  display:flex;
+  align-items:center;
+  gap: 48px;                 /* 两段内容之间的间距 */
+  white-space: nowrap;       /* 单行 */
+  will-change: transform;
+  animation: marquee var(--duration, 30s) linear infinite;
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }  /* 两份内容时，移动自身宽度的一半即可无缝衔接 */
+}
+
+/* 悬停暂停（可选） */
+.marquee:hover .marquee__track{ animation-play-state: paused; }
+
+/* 减少动画（可选，尊重系统无动画偏好） */
+@media (prefers-reduced-motion: reduce){
+  .marquee__track{ animation: none; }
+}
+
+
+/*---------------------------- 容器：多列瀑布流 ---------------------------- */
+
+.gallery{
+  column-gap: 16px;                 /* 列与列之间的间距 */
+  columns: 4 260px;                  /* 最多4列，列最小宽260px（浏览器会自适应） */
+}
+
+/* 每个卡片：禁止被拆分到两列 */
+.gallery__item{
+  break-inside: avoid;               /* 关键：避免跨列断裂 */
+  display: block;
+  margin-bottom: 16px;               /* 同列内的上下间距 */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 图片填满卡片宽度 */
+.gallery__item img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 响应式：窄屏减少列数 */
+@media (max-width: 1200px){ .gallery{ columns: 3 220px; } }
+@media (max-width: 900px ){ .gallery{ columns: 2 200px; } }
+@media (max-width: 600px ){ .gallery{ columns: 1 100%; } }
+
+
+/*---------------------------- 容器：图片格 ---------------------------- */
+.imageGrid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+.imageGrid img{
+  width:100%;
+  object-fit: cover;
+  display:block;
+}
+
+/*---------------------------- 首页项目布局 ---------------------------- */
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
@@ -213,51 +384,8 @@ video {
   object-fit: cover;
   transition: opacity 0.3s ease;
 }
-.divider{
-  border-bottom: 1px solid #111111;
-  margin:0 0;
-}
 
-.gallery {
-  column-count: 3; /* 控制列数，可以根据屏幕大小自适应调整 */
-  column-gap: 1rem; /* 列之间的间距 */
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
 
-.gallery img {
-  width: 100%;
-  margin-bottom: 1rem;
-  display: block;
-  break-inside: avoid; /* 防止图片被拆开到不同的列中 */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.title{
-  display:flex;
-  flex-direction: column;
-  gap:32px;
-}
- /* 两列布局 */
-.tworows{
-  display:flex;
-  flex-direction:row;
-  gap:64px;
-
-}
-.tworows1{
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-  width:336px;
-}
-.tworows2{
-  display:flex;
-  flex-direction:column;
-  gap:40px;
-  width:800px;
-}
 
 /*--------------project cover-------------------------*/
 .project-info {
