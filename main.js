@@ -88,3 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
     new ResizeObserver(updateDuration).observe(track);
     window.addEventListener('load', updateDuration);
   });
+
+
+  const original = document.getElementById('projectContent');
+  const clone = original.cloneNode(true);
+  document.getElementById('projectContentFooter').appendChild(clone);
