@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
   }
+
 section{
   padding:0;
   margin:120px 0;
@@ -79,7 +80,6 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid #111111;
   margin:0 0;
 }
-
 
 /*--------------Text-------------------------*/
 h1{
@@ -295,10 +295,10 @@ video {
 /* 无缝循环：移动“半个轨道宽度”*/
 @keyframes yb-marquee { to { transform: translateX(-250%); } }
 
-/* 悬停暂停（可选） */
+/* 悬停暂停（可选）
 .yellowboxContainer.marquee-cards:hover .marquee__track{
   animation-play-state: paused;
-}
+} */
 
 /* 无动画偏好（可选） */
 @media (prefers-reduced-motion: reduce){
